@@ -1,0 +1,150 @@
+{
+  "passed": true,
+  "status": "new exploratory companion exercise, not adopted as a book result",
+  "origin": "Prompted by the v38 external reviewer after examining the exposed pair. Independently implemented here.",
+  "convention": "f_r(L,C,R) = (r >> (4L+2C+R)) & 1",
+  "context_measure": "Uniform over all 8 one-step and all 32 two-step local contexts",
+  "horizons": [
+    1,
+    2
+  ],
+  "implementations": "Bit-table shrinking window and explicit Boolean rules on a padded synchronous array",
+  "results": {
+    "24": {
+      "one_step_left_centre_right": [
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "one_step_neighbour_mean": "1/2",
+      "reflection_invariant_imbalance": "0",
+      "two_step_minus2_to_plus2": [
+        "3/8",
+        "3/8",
+        "3/8",
+        "1/8",
+        "1/8"
+      ],
+      "two_step_noncentral_mean": "1/4",
+      "recodings": [
+        {
+          "reflected": false,
+          "complemented": false,
+          "rule": 24,
+          "profile": [
+            "1/2",
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "reflected": false,
+          "complemented": true,
+          "rule": 231,
+          "profile": [
+            "1/2",
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "reflected": true,
+          "complemented": false,
+          "rule": 66,
+          "profile": [
+            "1/2",
+            "1/2",
+            "1/2"
+          ]
+        },
+        {
+          "reflected": true,
+          "complemented": true,
+          "rule": 189,
+          "profile": [
+            "1/2",
+            "1/2",
+            "1/2"
+          ]
+        }
+      ]
+    },
+    "44": {
+      "one_step_left_centre_right": [
+        "3/4",
+        "3/4",
+        "1/4"
+      ],
+      "one_step_neighbour_mean": "1/2",
+      "reflection_invariant_imbalance": "1/2",
+      "two_step_minus2_to_plus2": [
+        "7/16",
+        "5/16",
+        "7/16",
+        "3/16",
+        "1/16"
+      ],
+      "two_step_noncentral_mean": "1/4",
+      "recodings": [
+        {
+          "reflected": false,
+          "complemented": false,
+          "rule": 44,
+          "profile": [
+            "3/4",
+            "3/4",
+            "1/4"
+          ]
+        },
+        {
+          "reflected": false,
+          "complemented": true,
+          "rule": 203,
+          "profile": [
+            "3/4",
+            "3/4",
+            "1/4"
+          ]
+        },
+        {
+          "reflected": true,
+          "complemented": false,
+          "rule": 100,
+          "profile": [
+            "1/4",
+            "3/4",
+            "3/4"
+          ]
+        },
+        {
+          "reflected": true,
+          "complemented": true,
+          "rule": 217,
+          "profile": [
+            "1/4",
+            "3/4",
+            "3/4"
+          ]
+        }
+      ]
+    }
+  },
+  "original_e3_rerun": false,
+  "terminal_response_predicted": false,
+  "held_out_cases_tested": false,
+  "limitations": [
+    "Not Conway Game of Life.",
+    "Not E3 full-ring preparations or response variable.",
+    "Distinguishes this exposed pair only; no causal explanation of their E3 difference.",
+    "No fitted replacement, transfer success, general descriptor validation or novelty claim."
+  ],
+  "execution": {
+    "utc": "2026-09-16T21:43:04.468853+00:00",
+    "command": [
+      "examples/exploratory/local_rule_profiles_v39.py"
+    ],
+    "python": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+    "executable": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v39-clean\\Scripts\\python.exe",
+    "source_sha256": "3bb53c6effe9236e0520f2e00782c2b99527099c2ca1b81ad4c9e0c3eabb34b3"
+  }
+}

@@ -1,0 +1,818 @@
+{
+  "bundle": "how-matter-learns-to-continue-v40-companion",
+  "local_only": true,
+  "public_release_claimed": false,
+  "compatible_edition": {
+    "edition": "v40",
+    "edition_type": "reading edition",
+    "binding_status": "final_explicit_hash_binding",
+    "path_basis": "Paths are relative to the delivered book directory, not the extracted companion. PDFs are separate.",
+    "historical_path_policy": "Retained v39 and earlier script/data paths identify original compatible calculations and execution records, not this companion's edition.",
+    "covered_pdf": {
+      "path": "output/pdf/how-matter-learns-to-continue-v40.pdf",
+      "sha256": "9b809e8d8a78cceb962d29fc630b3b71cb1055ce76a94815dd8f1fc1252e34eb",
+      "pdf_pages": 352
+    },
+    "interior_pdf": {
+      "path": "output/pdf/how-matter-learns-to-continue-v40-interior.pdf",
+      "sha256": "c6b47b3304c5acd6267b7a0a8e7d7a734a279b619989db1a0cc64e67acf84168",
+      "pdf_pages": 349
+    }
+  },
+  "scope": "Ten original reader sources including the v39 in-memory motion reproduction and exploratory local-rule diagnostic; frozen NPZ and E3 evidence; inherited v34 and v39 framework records, hash-bound original v39 notes and current v40 printed snippets. Fresh v40 portable runs do not constitute fresh framework execution or complete book regeneration.",
+  "entrypoints": [
+    "examples/ch01/investigation_v9.py",
+    "examples/ch01_04/reader_lab_v11.py",
+    "examples/ch05_07/reader_lab_v13.py",
+    "outputs/publication-v29/ch10/assignment_check.py",
+    "outputs/publication-v29/ch11/continuation_checks.py",
+    "outputs/publication-v29/ch13/survival_checks.py",
+    "examples/resource_learning_v31.py",
+    "examples/model_comparison_v31.py",
+    "examples/memory_reproduction_v39.py",
+    "examples/exploratory/local_rule_profiles_v39.py",
+    "reader_lab_v13.py",
+    "verify_e3.py",
+    "verify_companion.py",
+    "verify_framework_record.py",
+    "verify_v39_evidence.py"
+  ],
+  "framework_execution_provenance": {
+    "edition": "v40",
+    "source": "manuscript/chapters/v40-01-neural-networks/notes-v40.tex",
+    "source_sha256": "0d7257bfe213eaf1680abbfe21081b631a3d0eb68c8fe10b19c68f3b22579a12",
+    "execution_receipt": "reviews/publication-v34/framework-verification.json",
+    "execution_receipt_sha256": "4d07499cf5d18026eb1d7560d2b164d060b71989454136d77f40a82b8aba381a",
+    "environment_lock_sha256": "98e452eb9c2772783a0eec04683ed4c9785966f783897947ab4f8b52c2811412",
+    "frameworks_executed_by_v40_builder": false,
+    "snippets": {
+      "torch": "import torch\n\nmodel = torch.nn.Sequential(\n    torch.nn.Linear(9, 6),\n    torch.nn.ReLU(),\n    torch.nn.Linear(6, 1),\n)\n",
+      "tensorflow": "import tensorflow as tf\n\ndef tensorflow_score(x, params):\n    W, b, V, c = params\n    h = tf.nn.relu(tf.linalg.matmul(x, W) + b)\n    return tf.linalg.matmul(h, V) + c\n",
+      "jax": "import jax\nimport jax.numpy as jnp\n\ndef jax_score(params, x):\n    W, b, V, c = params\n    h = jax.nn.relu(jnp.matmul(x, W) + b)\n    return jnp.matmul(h, V) + c\n",
+      "keras": "import os\nos.environ[\"KERAS_BACKEND\"] = \"tensorflow\"\nimport keras\n\nmodel = keras.Sequential([\n    keras.Input(shape=(9,)),\n    keras.layers.Dense(6, activation=\"relu\"),\n    keras.layers.Dense(1),\n])\n"
+    },
+    "scope": "Exact v40 snippet and saved-array compatibility with an unchanged historical forward-only execution receipt."
+  },
+  "retained_v39_evidence": {
+    "execution_edition": "v39",
+    "frameworks_executed_by_v40_builder": false,
+    "record": "reviews/publication-v39/framework-precision.json",
+    "original_notes": "manuscript/chapters/v39-01-neural-networks/notes-v39.tex",
+    "original_checker": "scripts/verify-framework-precision-v39.py",
+    "record_verifier": "scripts/verify-extra-companion-v39.py",
+    "record_verifier_root_alias": "verify_v39_evidence.py",
+    "scope": "Original v39 evidence is retained byte-for-byte; the v40 portable suite verifies it and reruns the original reader modes."
+  },
+  "excluded_modes": [
+    "all historical producer scripts",
+    "survival_checks.py --figure"
+  ],
+  "provenance_not_entrypoints": [
+    "examples/investigation_v24.py",
+    "outputs/investigation-v24/figure-data.json",
+    "examples/ch03_04/experiment_v7.py"
+  ],
+  "files": [
+    {
+      "path": "README-v40-original.md",
+      "origin": "additive_v46_edition_metadata",
+      "bytes": 20423,
+      "sha256": "360842684aef3b80b60ad70fa0da75be3068c4f7389eb90a4ed59fe7fb685f79"
+    },
+    {
+      "path": "README-v44-original.md",
+      "origin": "additive_v46_edition_metadata",
+      "bytes": 24119,
+      "sha256": "1fdaf17c926db55ad724beecbcad811ea574de829575b6f5191f0e8643c32c8e"
+    },
+    {
+      "path": "README-v45-original.md",
+      "origin": "additive_v46_edition_metadata",
+      "bytes": 25081,
+      "sha256": "689eccfffd5af83155a02e760e9ae594a29fd69f45dc04e953c4948964e244e4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12386,
+      "sha256": "74998f327c64cd791898c3b9b8f46b32bd8d1621ee16fec1720ed89296279c4f",
+      "origin": "current_v47_reader_material_historical_v46_copy_preserved"
+    },
+    {
+      "path": "connection-checks-v45.py",
+      "origin": "inherited_v45_independent_connection_checks",
+      "bytes": 21755,
+      "sha256": "a17252b55a76f6e96335202c5faa5e8591e62732af738ed0285656781b48c868"
+    },
+    {
+      "path": "continuation-checks-v47.py",
+      "origin": "additive_v47_edition_material",
+      "bytes": 15301,
+      "sha256": "0d2ae7bed7e3ed8705220363182e0ae5614b15594f38d798608ca2d36d5cd3d0"
+    },
+    {
+      "path": "deep-dive.md",
+      "origin": "inherited_v44_optional_constructive_extensions",
+      "bytes": 8589,
+      "sha256": "32ba7d9e739d4074f582538cef2d87bfffba62a247a45bff5fbd2c26c3bc0f17"
+    },
+    {
+      "path": "evidence/e3/analysis/aggregate.json",
+      "bytes": 1656,
+      "sha256": "d0d37e3a0016ad2225829070a2c7fa6c3f0e0c06b11ada4624899cc0101af5ed",
+      "origin": "frozen E3 manifest-listed artifact:analysis/aggregate.json"
+    },
+    {
+      "path": "evidence/e3/analysis/per_class.jsonl",
+      "bytes": 21024,
+      "sha256": "a3df4ef9eceb693f821cf1886bd76d7db6e2d3170ea3702f1309fad6f73106b6",
+      "origin": "frozen E3 manifest-listed artifact:analysis/per_class.jsonl"
+    },
+    {
+      "path": "evidence/e3/controls/coefficient_freeze.json",
+      "bytes": 7496,
+      "sha256": "50c889e01d6a0edb8bbfa9addc2b8d6fcef864d427ed1fae8f77ff69ff8e78b5",
+      "origin": "frozen E3 manifest-listed artifact:controls/coefficient_freeze.json"
+    },
+    {
+      "path": "evidence/e3/controls/controls.json",
+      "bytes": 377,
+      "sha256": "a0a8621f67da976d825d9467c58cfcfea874858d83c932a75cdfcfe2eee24800",
+      "origin": "frozen E3 manifest-listed artifact:controls/controls.json"
+    },
+    {
+      "path": "evidence/e3/controls/development_receipt.json",
+      "bytes": 10408,
+      "sha256": "90539577e88942d328a44061008c26923cd2f328f80eaf74132b6c6fef36a4a7",
+      "origin": "frozen E3 manifest-listed artifact:controls/development_receipt.json"
+    },
+    {
+      "path": "evidence/e3/controls/post_coefficient_pilot_receipt.json",
+      "bytes": 4169,
+      "sha256": "6ad93e3947f89d3fbcf854dc9be6826bdab878d9d56410913bf348b2405eadd0",
+      "origin": "frozen E3 manifest-listed artifact:controls/post_coefficient_pilot_receipt.json"
+    },
+    {
+      "path": "evidence/e3/controls/probe_commitment.json",
+      "bytes": 185,
+      "sha256": "5a2e90dccdcfa694615a3347d4169f52310dd3caed90b942680649dab858c800",
+      "origin": "frozen E3 manifest-listed artifact:controls/probe_commitment.json"
+    },
+    {
+      "path": "evidence/e3/manifest.json",
+      "bytes": 3404,
+      "sha256": "3750b736c09efd0aaa7bc512a74de06383f4b53458e287b6bfefd348eb81556a",
+      "origin": "frozen E3 original manifest"
+    },
+    {
+      "path": "evidence/e3/public/classes.jsonl",
+      "bytes": 7565,
+      "sha256": "4b6257109681f051e8871f2730a80b87487c5069aa8c8bf312367b1334e523cf",
+      "origin": "frozen E3 manifest-listed artifact:public/classes.jsonl"
+    },
+    {
+      "path": "evidence/framework-forward-snippets.json",
+      "bytes": 1397,
+      "sha256": "43077406a20414dfd0f91f0397c13bc166af0071a02e07f40eb8c49a055ee549",
+      "origin": "exact v40 printed snippets bound to unchanged v34 execution receipt"
+    },
+    {
+      "path": "evidence/v40-bundle-manifest-original.json",
+      "origin": "additive_v46_edition_metadata",
+      "bytes": 17592,
+      "sha256": "ec1fda0e3f5e95ca297f8b2e8c3b6e6e9c26a0c6efb0a949adf83574088a6533"
+    },
+    {
+      "path": "evidence/v42-companion-replay-inherited.json",
+      "origin": "additive_v46_edition_metadata",
+      "bytes": 146925,
+      "sha256": "c7564224910264f6c494fe3eb385ed7d95df2718e44681670b54a25d196823bf"
+    },
+    {
+      "path": "evidence/v44-bundle-manifest-original.json",
+      "origin": "additive_v46_edition_metadata",
+      "bytes": 20077,
+      "sha256": "89d94c6918856eeec6226a7ad4c4731094a47f44773382d30c4ac07b63e2e386"
+    },
+    {
+      "path": "evidence/v44-companion-delivery-inherited.json",
+      "origin": "additive_v46_edition_metadata",
+      "bytes": 931341,
+      "sha256": "4afdcaf7d9e61c9372b290fe65bad4e79a31b3b44089b0a1f293dbbc733ed066"
+    },
+    {
+      "path": "evidence/v44/orthogonal-lab-report-v44.md",
+      "origin": "inherited_v44_repository_lab_report",
+      "bytes": 5599,
+      "sha256": "d7ff73bfdb1a6cd12293cc189b211f1a79135ac7067fbb42133bdde21af4ce31"
+    },
+    {
+      "path": "evidence/v44/orthogonal-results-v44.json",
+      "origin": "inherited_v44_repository_lab_snapshot",
+      "bytes": 396993,
+      "sha256": "2a1b4c3cff04ab6369f616be803bf6c7a6e5a454ac60089e9248c7868dcd9c9b"
+    },
+    {
+      "path": "evidence/v45-bundle-manifest-original.json",
+      "origin": "additive_v46_edition_metadata",
+      "bytes": 21218,
+      "sha256": "9949d0f73c3f2abff7ca2a986556dc9bb538bbb154311c74aa5e4aa179b40340"
+    },
+    {
+      "path": "evidence/v45-companion-delivery-inherited.json",
+      "origin": "additive_v46_edition_metadata",
+      "bytes": 976537,
+      "sha256": "e3965e153f55182f9b349e2739b55028eb5f42c09be7ef79bcfe0293e8835e55"
+    },
+    {
+      "path": "evidence/v45-source-manifest-original.json",
+      "origin": "additive_v46_edition_metadata",
+      "bytes": 17999,
+      "sha256": "d3d93e63ddc82fcbb20f96ee7b6e7004ebf546368b116c6177750b1eb7bad5f4"
+    },
+    {
+      "path": "evidence/v45/connection-results-v45.json",
+      "origin": "inherited_v45_repository_connection_snapshot",
+      "bytes": 20450,
+      "sha256": "c910afe2415181cc25be068025b2fd8ef2a7408cafc2231778fc46216a58b973"
+    },
+    {
+      "path": "evidence/v46-companion-delivery-inherited.json",
+      "origin": "additive_v47_edition_material",
+      "bytes": 1000015,
+      "sha256": "9f1817dd36a9acde1877296f1b92d76cbb036c8e6ab21166d13d62de27e575cf"
+    },
+    {
+      "path": "evidence/v46-compatibility.json",
+      "origin": "additive_v46_edition_metadata",
+      "bytes": 11552,
+      "sha256": "3528a63ce9112c926e90757cdbeed89dbc338cab9654dd8f06c91e21e5f20e30"
+    },
+    {
+      "path": "evidence/v46-source-manifest.json",
+      "origin": "additive_v46_edition_metadata",
+      "bytes": 18078,
+      "sha256": "f8b54b97ae88cc0023bf4efb751a1feecb251f8e39869c336f12deb9da383a7f"
+    },
+    {
+      "path": "evidence/v46-source-route-inventory.json",
+      "origin": "additive_v46_edition_metadata",
+      "bytes": 42937,
+      "sha256": "ba19f82fc4f5ca0dd1db148381595f4aa79f090dc102bf4011766e377969cb91"
+    },
+    {
+      "path": "evidence/v46/reader-operations-v46.json",
+      "origin": "new_v46_repository_reader_snapshot",
+      "bytes": 7923,
+      "sha256": "2bdbf9d866dc4c956855d1f8ee4d6be86e3af090df54e2dc53bb18a10000c6a1"
+    },
+    {
+      "path": "evidence/v47-compatibility.json",
+      "origin": "additive_v47_edition_material",
+      "bytes": 11647,
+      "sha256": "c6c35f2a01a74ec0aed784a8adea4496e825c178dd71eb1033a0a3a597450194"
+    },
+    {
+      "path": "evidence/v47-source-manifest.json",
+      "origin": "additive_v47_edition_material",
+      "bytes": 18166,
+      "sha256": "bcb4861b42804ad3baa6bf44fe918cda29f57255b7aeb41748f82e20eed7cd08"
+    },
+    {
+      "path": "evidence/v47-source-route-inventory.json",
+      "origin": "additive_v47_edition_material",
+      "bytes": 43830,
+      "sha256": "8c1c859bbb116513f7639f26ed28defdc40bca11da29777800309d5fc926d272"
+    },
+    {
+      "path": "evidence/v47/continuation-checks-v47.json",
+      "origin": "additive_v47_edition_material",
+      "bytes": 7333,
+      "sha256": "d75b7c538855e1c0e4f3fcde5f8cb700d1b393313c5d9efa5e6846536152e702"
+    },
+    {
+      "path": "evidence/v47/w7-reconstruction-v47.json",
+      "origin": "additive_v47_edition_material",
+      "bytes": 30690,
+      "sha256": "086881b688a99b3bf5fad1ea3f707da8a15d1c392d37bdd06d0b8b048a28ea7e"
+    },
+    {
+      "path": "evidence/verify_revision_source_v28.py",
+      "bytes": 19180,
+      "sha256": "c39a123b1829c15312661414b2e4ee38830216223588ce9bbfc69c96c51af7fe",
+      "origin": "book:reviews/publication-v28/verify-revision.py; called only through verify_e3.py"
+    },
+    {
+      "path": "examples/ch01/investigation_v9.py",
+      "bytes": 4415,
+      "sha256": "29b003fb9c27d7ec8741808eab8be46d6583ed41ad6ed2a951615dfb37bdfe4f",
+      "origin": "book:examples/ch01/investigation_v9.py"
+    },
+    {
+      "path": "examples/ch01_04/reader_lab_v11.py",
+      "bytes": 6330,
+      "sha256": "b5574cd836cd96b342f645c21ac340fba20036c2bf438084c4961e51b113748b",
+      "origin": "book:examples/ch01_04/reader_lab_v11.py"
+    },
+    {
+      "path": "examples/ch03_04/experiment_v7.py",
+      "bytes": 20541,
+      "sha256": "141a4e3b923d6e19f2be0a6fb590f342c03350870dddc39bebff5dedfef608ad",
+      "origin": "book:examples/ch03_04/experiment_v7.py"
+    },
+    {
+      "path": "examples/ch05_07/reader_lab_v13.py",
+      "bytes": 5154,
+      "sha256": "272fcedad62efa3276bd4fb04f2bddb3549ae35f72fd12ddeb326d16dc978088",
+      "origin": "book:examples/ch05_07/reader_lab_v13.py"
+    },
+    {
+      "path": "examples/exploratory/local_rule_profiles_v39.py",
+      "bytes": 4593,
+      "sha256": "3bb53c6effe9236e0520f2e00782c2b99527099c2ca1b81ad4c9e0c3eabb34b3",
+      "origin": "book:examples/exploratory/local_rule_profiles_v39.py"
+    },
+    {
+      "path": "examples/investigation_v24.py",
+      "bytes": 17270,
+      "sha256": "e638584d578c0480ff5e7c737cef0b24878d6e768a37720701e829f79a0cf01f",
+      "origin": "book:examples/investigation_v24.py"
+    },
+    {
+      "path": "examples/memory_reproduction_v39.py",
+      "bytes": 5790,
+      "sha256": "34029579d66f2ace1144f69c6c24fd72141ddffd6101e66d3bc17edb039a8195",
+      "origin": "book:examples/memory_reproduction_v39.py"
+    },
+    {
+      "path": "examples/model_comparison_v31.py",
+      "bytes": 1890,
+      "sha256": "ea0b3cd4d3e4561fec7e0665d0121cb90e914120221e36984eda38004e08e6a3",
+      "origin": "book:examples/model_comparison_v31.py"
+    },
+    {
+      "path": "examples/resource_learning_v31.py",
+      "bytes": 4843,
+      "sha256": "63ba0fdeedbd4952e9ffc9d5de90a92e7595ec0fd9f0105583e70e98f07724d5",
+      "origin": "book:examples/resource_learning_v31.py"
+    },
+    {
+      "path": "historical/v46/README.md",
+      "origin": "additive_v47_edition_material",
+      "bytes": 25337,
+      "sha256": "fb961793b21278816834e6a1ee51b4c9801e2d2de872062127a158ec4d3decb4"
+    },
+    {
+      "path": "historical/v46/bundle-manifest.json",
+      "origin": "additive_v47_edition_material",
+      "bytes": 25966,
+      "sha256": "3aec733acbfa611077aefdcd8c6d634cc87df86e8f33d2488c244b87566f128e"
+    },
+    {
+      "path": "historical/v46/reader-exercise-key.html",
+      "origin": "additive_v47_edition_material",
+      "bytes": 4776,
+      "sha256": "c397359b198a692a72cf4b99a8b6ac575ebe377a23c41700343cd14e15deeffd"
+    },
+    {
+      "path": "historical/v46/reader-exercise-key.md",
+      "origin": "additive_v47_edition_material",
+      "bytes": 2839,
+      "sha256": "9cfb384605bb1e629e705cc7f93baece00568c61c7353ad8162d55c44112206e"
+    },
+    {
+      "path": "historical/v46/reader-exercise.html",
+      "origin": "additive_v47_edition_material",
+      "bytes": 3758,
+      "sha256": "350eccb8b281d456c77bb105b52aae3606142a218461a13836f6730db853993a"
+    },
+    {
+      "path": "historical/v46/reader-exercise.md",
+      "origin": "additive_v47_edition_material",
+      "bytes": 2093,
+      "sha256": "61c815af6820e9b7337c54cef7c9f26436347d1aa79f6ad19bc86a1ad1d370b8"
+    },
+    {
+      "path": "historical/v46/reader-guide-bindings.json",
+      "origin": "additive_v47_edition_material",
+      "bytes": 6022,
+      "sha256": "a21cfa3d995644d31b26437d92d534738483b941c47aba8105703c71730827b0"
+    },
+    {
+      "path": "historical/v46/reader-pilot-card-a.html",
+      "origin": "additive_v47_edition_material",
+      "bytes": 3012,
+      "sha256": "7b7b0ac47abf455f9200a8b60447fc6769d382dc651e956343365bb7b2e50a31"
+    },
+    {
+      "path": "historical/v46/reader-pilot-card-a.md",
+      "origin": "additive_v47_edition_material",
+      "bytes": 1632,
+      "sha256": "24930ba36112d46b4bdbe4eeea13b1901be8db0a0c8b56c56173f5f72897733f"
+    },
+    {
+      "path": "historical/v46/reader-pilot-card-b.html",
+      "origin": "additive_v47_edition_material",
+      "bytes": 3184,
+      "sha256": "78005a4fe11746b715087fd1b72f0a00412e238253f750ccf34c6b2d21492633"
+    },
+    {
+      "path": "historical/v46/reader-pilot-card-b.md",
+      "origin": "additive_v47_edition_material",
+      "bytes": 1784,
+      "sha256": "8ef9a7f11c3f26664cddc9d65fe9d5c1a4fe42e28a6cced160c4b57570b1d9b3"
+    },
+    {
+      "path": "historical/v46/reader-pilot-facilitator.html",
+      "origin": "additive_v47_edition_material",
+      "bytes": 6615,
+      "sha256": "1314b246bd4c58a8f7ef716a5a5091d6627f97b402a69d094d1177999f67f82f"
+    },
+    {
+      "path": "historical/v46/reader-pilot-facilitator.md",
+      "origin": "additive_v47_edition_material",
+      "bytes": 4912,
+      "sha256": "d7feb3f34e10f0da0faf8f477520dd5861b9b44d926a747de7a02482640da696"
+    },
+    {
+      "path": "historical/v46/reader-pilot.html",
+      "origin": "additive_v47_edition_material",
+      "bytes": 6002,
+      "sha256": "ad132a479238fc04846e0bad4bb5ae2705b8081bebe38ed8f68af57baa1cb0fe"
+    },
+    {
+      "path": "historical/v46/reader-pilot.md",
+      "origin": "additive_v47_edition_material",
+      "bytes": 4300,
+      "sha256": "37d7cb144b7a728832f922f1dd32f8a177b59ebb9ad574d48e7a63c9c4f8788d"
+    },
+    {
+      "path": "historical/v46/reader-response-form.html",
+      "origin": "additive_v47_edition_material",
+      "bytes": 2700,
+      "sha256": "593fcca4e95a30034c3cf4e5caa7bc69c0e8be445be4c339b7723ca6acbbd1a2"
+    },
+    {
+      "path": "historical/v46/reader-response-form.md",
+      "origin": "additive_v47_edition_material",
+      "bytes": 1044,
+      "sha256": "e72470fdf81ba95072ac21b3cb7a51e6da97a7fc2ae315e17cbbebe83465456f"
+    },
+    {
+      "path": "historical/v46/where-to-return.html",
+      "origin": "additive_v47_edition_material",
+      "bytes": 11118,
+      "sha256": "46529456c04a00dca2ac6414bc8d2ac34d51832739eb8a986e68cf2a66392a09"
+    },
+    {
+      "path": "historical/v46/where-to-return.md",
+      "origin": "additive_v47_edition_material",
+      "bytes": 6466,
+      "sha256": "ac728f72fcc111e33dceb22e1fcf6215f4aed0cce0135c8f29a40045c47b7ad8"
+    },
+    {
+      "path": "manuscript/chapters/v39-01-neural-networks/notes-v39.tex",
+      "bytes": 14232,
+      "sha256": "2ed7333cc64aed4255c1cb72250f4373d4598fa9bfc39897c20015731a3846e2",
+      "origin": "book:manuscript/chapters/v39-01-neural-networks/notes-v39.tex"
+    },
+    {
+      "path": "manuscript/chapters/v40-01-neural-networks/notes-v40.tex",
+      "bytes": 14233,
+      "sha256": "0d7257bfe213eaf1680abbfe21081b631a3d0eb68c8fe10b19c68f3b22579a12",
+      "origin": "book:manuscript/chapters/v40-01-neural-networks/notes-v40.tex"
+    },
+    {
+      "path": "manuscript/chapters/v46-01-neural-networks/notes-v46.tex",
+      "origin": "additive_v46_edition_metadata",
+      "bytes": 14233,
+      "sha256": "59b1c6e4c30ba4298c482f7fd4ab14b80a9d09125af6b4a30c6038edff4cf66e"
+    },
+    {
+      "path": "manuscript/chapters/v47-01-neural-networks/notes-v47.tex",
+      "origin": "additive_v47_edition_material",
+      "bytes": 14233,
+      "sha256": "4b244b7378444711d8729051b0a12ab68ea133c6cedd0d49cf16962a9846e968"
+    },
+    {
+      "path": "orthogonal-checks-v44.py",
+      "origin": "inherited_v44_independent_numerical_lab",
+      "bytes": 36690,
+      "sha256": "a16d168314f32f8523b7f3c022161f7585d218de8535ca596db4beb4a90b20a1"
+    },
+    {
+      "path": "outputs/chapter-one-draft/v3/experiment/data-and-model.npz",
+      "bytes": 101946,
+      "sha256": "fea8a5d178deb40354ed6c8090f6f5b11d1d0fcc84765d4c6c040864098d8c40",
+      "origin": "book:outputs/chapter-one-draft/v3/experiment/data-and-model.npz"
+    },
+    {
+      "path": "outputs/chapter-one-draft/v5/ring/data-and-models.npz",
+      "bytes": 197466,
+      "sha256": "bb8ef07ab39bf6b637bce1cd699044a72f7053f676dd04984c7b81ce51acbf2b",
+      "origin": "book:outputs/chapter-one-draft/v5/ring/data-and-models.npz"
+    },
+    {
+      "path": "outputs/chapters-three-six/v7/experiments-memory/data.npz",
+      "bytes": 54744,
+      "sha256": "7de672bd468830dd1befb74fbc7bb7fbd13e36eecccf1781742eca97ea865e34",
+      "origin": "book:outputs/chapters-three-six/v7/experiments-memory/data.npz"
+    },
+    {
+      "path": "outputs/chapters-three-six/v7/experiments-memory/results.json",
+      "bytes": 4644,
+      "sha256": "bd96e19df1b71c4f2ed745e2d21b8ac7b753486f486d55ac008eb7ba12bd319f",
+      "origin": "book:outputs/chapters-three-six/v7/experiments-memory/results.json"
+    },
+    {
+      "path": "outputs/investigation-v24/figure-data.json",
+      "bytes": 353145,
+      "sha256": "63cbe858a61b9975fb2909fe757d5c5f97abf5b2ecdadc657a20d20ab04a1e0f",
+      "origin": "book:outputs/investigation-v24/figure-data.json"
+    },
+    {
+      "path": "outputs/publication-v29/ch10/assignment_check.py",
+      "bytes": 1770,
+      "sha256": "e98f3e7ed5501e2187865f707c5a8a1eaf83cceec015546e5a58abed149361ba",
+      "origin": "book:outputs/publication-v29/ch10/assignment_check.py"
+    },
+    {
+      "path": "outputs/publication-v29/ch11/continuation_checks.py",
+      "bytes": 511,
+      "sha256": "c8773526aa7ffce296a839bfe210fc9d8acab27ef1ce48bc644be51941dec9ce",
+      "origin": "book:outputs/publication-v29/ch11/continuation_checks.py"
+    },
+    {
+      "path": "outputs/publication-v29/ch13/survival_checks.py",
+      "bytes": 4041,
+      "sha256": "00796fe06e3208907f0433112bb357d64f59e45421499f46665349da11e38f84",
+      "origin": "book:outputs/publication-v29/ch13/survival_checks.py"
+    },
+    {
+      "path": "outputs/publication-v31/ch11/signal-and-memory-marked.pdf",
+      "bytes": 15416,
+      "sha256": "08c08b2825b81bcd8ddcbc103dbbc7187c600bcc0ad8fad2a8bb26f56aab780d",
+      "origin": "book:outputs/publication-v31/ch11/signal-and-memory-marked.pdf"
+    },
+    {
+      "path": "outputs/publication-v31/figures/v31-late-equal-pool-decay.pdf",
+      "bytes": 12100,
+      "sha256": "963cbd7cf436db8c87feda89274fc8f309a8ee76703a4ab48ea8cf35e94b2f45",
+      "origin": "book:outputs/publication-v31/figures/v31-late-equal-pool-decay.pdf"
+    },
+    {
+      "path": "outputs/publication-v31/figures/v31-late-learning-continuation.pdf",
+      "bytes": 16062,
+      "sha256": "87e62278746ce5db4402612f062bedea1bcf9c87e87cc98913d24a937e3ad63e",
+      "origin": "book:outputs/publication-v31/figures/v31-late-learning-continuation.pdf"
+    },
+    {
+      "path": "reader-exercise-key.html",
+      "origin": "current_v47_reader_material_historical_v46_copy_preserved",
+      "bytes": 4776,
+      "sha256": "c397359b198a692a72cf4b99a8b6ac575ebe377a23c41700343cd14e15deeffd"
+    },
+    {
+      "path": "reader-exercise-key.md",
+      "origin": "current_v47_reader_material_historical_v46_copy_preserved",
+      "bytes": 2839,
+      "sha256": "9cfb384605bb1e629e705cc7f93baece00568c61c7353ad8162d55c44112206e"
+    },
+    {
+      "path": "reader-exercise.html",
+      "origin": "current_v47_reader_material_historical_v46_copy_preserved",
+      "bytes": 3758,
+      "sha256": "350eccb8b281d456c77bb105b52aae3606142a218461a13836f6730db853993a"
+    },
+    {
+      "path": "reader-exercise.md",
+      "origin": "current_v47_reader_material_historical_v46_copy_preserved",
+      "bytes": 2093,
+      "sha256": "61c815af6820e9b7337c54cef7c9f26436347d1aa79f6ad19bc86a1ad1d370b8"
+    },
+    {
+      "path": "reader-guide-bindings.json",
+      "origin": "current_v47_reader_material_historical_v46_copy_preserved",
+      "bytes": 8884,
+      "sha256": "6a3d6b3e13546cf4fb662d870f6102d227236ba4cfdb2e703b205644d920ea0a"
+    },
+    {
+      "path": "reader-operations-v46.py",
+      "origin": "new_v46_reader_operation_checks",
+      "bytes": 12122,
+      "sha256": "26a8dc8b496d9c3015a1906e76a2fc2aa394020a5acc9de4cbcc0a726e2e78fc"
+    },
+    {
+      "path": "reader-pilot-card-a.html",
+      "origin": "current_v47_reader_material_historical_v46_copy_preserved",
+      "bytes": 3012,
+      "sha256": "7b7b0ac47abf455f9200a8b60447fc6769d382dc651e956343365bb7b2e50a31"
+    },
+    {
+      "path": "reader-pilot-card-a.md",
+      "origin": "current_v47_reader_material_historical_v46_copy_preserved",
+      "bytes": 1632,
+      "sha256": "24930ba36112d46b4bdbe4eeea13b1901be8db0a0c8b56c56173f5f72897733f"
+    },
+    {
+      "path": "reader-pilot-card-b.html",
+      "origin": "current_v47_reader_material_historical_v46_copy_preserved",
+      "bytes": 3184,
+      "sha256": "78005a4fe11746b715087fd1b72f0a00412e238253f750ccf34c6b2d21492633"
+    },
+    {
+      "path": "reader-pilot-card-b.md",
+      "origin": "current_v47_reader_material_historical_v46_copy_preserved",
+      "bytes": 1784,
+      "sha256": "8ef9a7f11c3f26664cddc9d65fe9d5c1a4fe42e28a6cced160c4b57570b1d9b3"
+    },
+    {
+      "path": "reader-pilot-facilitator.html",
+      "origin": "current_v47_reader_material_historical_v46_copy_preserved",
+      "bytes": 6771,
+      "sha256": "c38e6ab731077323697a79ceb19831b6d4ca7f960f0ee5322c7648583251ac69"
+    },
+    {
+      "path": "reader-pilot-facilitator.md",
+      "origin": "current_v47_reader_material_historical_v46_copy_preserved",
+      "bytes": 5068,
+      "sha256": "e1848db2b0a5649cc938649adcd96491756393b3e70c0f9d5693b44ff1c8f47f"
+    },
+    {
+      "path": "reader-pilot.html",
+      "origin": "current_v47_reader_material_historical_v46_copy_preserved",
+      "bytes": 6002,
+      "sha256": "ad132a479238fc04846e0bad4bb5ae2705b8081bebe38ed8f68af57baa1cb0fe"
+    },
+    {
+      "path": "reader-pilot.md",
+      "origin": "current_v47_reader_material_historical_v46_copy_preserved",
+      "bytes": 4300,
+      "sha256": "37d7cb144b7a728832f922f1dd32f8a177b59ebb9ad574d48e7a63c9c4f8788d"
+    },
+    {
+      "path": "reader-response-form.html",
+      "origin": "current_v47_reader_material_historical_v46_copy_preserved",
+      "bytes": 2700,
+      "sha256": "593fcca4e95a30034c3cf4e5caa7bc69c0e8be445be4c339b7723ca6acbbd1a2"
+    },
+    {
+      "path": "reader-response-form.md",
+      "origin": "current_v47_reader_material_historical_v46_copy_preserved",
+      "bytes": 1044,
+      "sha256": "e72470fdf81ba95072ac21b3cb7a51e6da97a7fc2ae315e17cbbebe83465456f"
+    },
+    {
+      "path": "reader-route-inventory.json",
+      "bytes": 25341,
+      "sha256": "3d77079448a8f6a57097c1a58cc690492bbddf39e486e1d71707acb70ec94637",
+      "origin": "read-only scan of v40 main/notes and nested TeX inputs"
+    },
+    {
+      "path": "reader-variations-key.html",
+      "origin": "additive_v47_edition_material",
+      "bytes": 6621,
+      "sha256": "326b2e48c9e88fdec1a67ef82737d22d5448deaa499a9b8c344bcbf7bf716b8c"
+    },
+    {
+      "path": "reader-variations-key.md",
+      "origin": "additive_v47_edition_material",
+      "bytes": 4963,
+      "sha256": "c70fd7d012e22ab500cfb8410268302297b25bed5dbe1e113137c5b75af7fd5a"
+    },
+    {
+      "path": "reader-variations.html",
+      "origin": "additive_v47_edition_material",
+      "bytes": 5260,
+      "sha256": "b11b67718043d26375ef1c100f4e65d70bc016e63a7113175230b25e1df4d2d9"
+    },
+    {
+      "path": "reader-variations.md",
+      "origin": "additive_v47_edition_material",
+      "bytes": 3596,
+      "sha256": "b107c820675e23e85b6e1f430d5aec5b518d8746b06f6a51e0b7dae709061d2b"
+    },
+    {
+      "path": "reader_lab_v13.py",
+      "bytes": 5154,
+      "sha256": "272fcedad62efa3276bd4fb04f2bddb3549ae35f72fd12ddeb326d16dc978088",
+      "origin": "byte-identical alias:examples/ch05_07/reader_lab_v13.py"
+    },
+    {
+      "path": "reconstruct-w7-v47.py",
+      "origin": "additive_v47_edition_material",
+      "bytes": 18855,
+      "sha256": "6562505be2f085f260d69c8de7e6dbeed26a15149193925f74cae4c809de6b1f"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 162,
+      "sha256": "0ae3ea88f942f7acddd2920d853409e3cdfda6b98a1ee6eb0c689d1d6186e60b",
+      "origin": "inherited-v34-companion-template:requirements.txt"
+    },
+    {
+      "path": "reviews/publication-v31/late-numerical-report.json",
+      "bytes": 8236,
+      "sha256": "bd92ad55560a95962c144a0b3aaffe0cf565fad8e29c4e065d97c933e1017ddd",
+      "origin": "book:reviews/publication-v31/late-numerical-report.json"
+    },
+    {
+      "path": "reviews/publication-v31/learning-resource-model.json",
+      "bytes": 3300,
+      "sha256": "23c46f665068b0923c1815e777c81cfba3aed54778d901f8bcd3403d0ff3f4fd",
+      "origin": "book:reviews/publication-v31/learning-resource-model.json"
+    },
+    {
+      "path": "reviews/publication-v34/environment-lock.txt",
+      "bytes": 970,
+      "sha256": "98e452eb9c2772783a0eec04683ed4c9785966f783897947ab4f8b52c2811412",
+      "origin": "book:reviews/publication-v34/environment-lock.txt"
+    },
+    {
+      "path": "reviews/publication-v34/framework-verification.json",
+      "bytes": 3767,
+      "sha256": "4d07499cf5d18026eb1d7560d2b164d060b71989454136d77f40a82b8aba381a",
+      "origin": "book:reviews/publication-v34/framework-verification.json"
+    },
+    {
+      "path": "reviews/publication-v39/exploratory-rule-profiles.json",
+      "bytes": 3890,
+      "sha256": "624072472150d5ea4c3ec1f1f2aa0f396fb824cfc5b43dee574c8d488faba9ca",
+      "origin": "book:reviews/publication-v39/exploratory-rule-profiles.json"
+    },
+    {
+      "path": "reviews/publication-v39/framework-environment-lock.txt",
+      "bytes": 876,
+      "sha256": "1e727120cfe0909c3a30b6a67366828e1c8dbf89a3ac09a6d07d2ca5adf3c2d6",
+      "origin": "book:reviews/publication-v39/framework-environment-lock.txt"
+    },
+    {
+      "path": "reviews/publication-v39/framework-precision-initial.json",
+      "bytes": 21914,
+      "sha256": "89f13816b50dce28e342647c05fe4d1e033c29f735d23ec48154a4359209bbe3",
+      "origin": "book:reviews/publication-v39/framework-precision-initial.json"
+    },
+    {
+      "path": "reviews/publication-v39/framework-precision.json",
+      "bytes": 31174,
+      "sha256": "1d3498f441b58a3610c0c8d8403802c572e7c9a894b87a4c8c04dd0afe1884ae",
+      "origin": "book:reviews/publication-v39/framework-precision.json"
+    },
+    {
+      "path": "reviews/publication-v39/memory-reproduction.json",
+      "bytes": 3070,
+      "sha256": "fe9bb27bc9e2c904229293cfe91f674e2908c33ca8c57cc2f5418eea82f778b9",
+      "origin": "book:reviews/publication-v39/memory-reproduction.json"
+    },
+    {
+      "path": "scripts/verify-extra-companion-v39.py",
+      "bytes": 4926,
+      "sha256": "40e7123141f54adb8bc92888782d7776f30dc386734e181ab2521ccefcc6e2ed",
+      "origin": "book:scripts/verify-extra-companion-v39.py"
+    },
+    {
+      "path": "scripts/verify-framework-precision-v39.py",
+      "bytes": 10029,
+      "sha256": "5d54918f561f567b49869f3bbfc85b8e97c70434a773d22c2f88bb9c27c69cb6",
+      "origin": "book:scripts/verify-framework-precision-v39.py"
+    },
+    {
+      "path": "verify_companion.py",
+      "bytes": 12741,
+      "sha256": "9fe1022aeb0223691eb202fd2fda3c1b2bbb03cec185f7b5ee33d9618e661f18",
+      "origin": "v34 read-only verifier plus inherited v34/v39 record consistency, current v40 snippet bindings, memory evaluation/retraining and exploratory local-rule checks"
+    },
+    {
+      "path": "verify_e3.py",
+      "bytes": 811,
+      "sha256": "b057fed6eb4a7afc77b4788d6a5f926337b985b6a8c5af095d176f6f8482355a",
+      "origin": "inherited-v34-companion-template:verify_e3.py"
+    },
+    {
+      "path": "verify_framework_record.py",
+      "bytes": 7223,
+      "sha256": "03e66ffa63b3f1b68920497cf05847daf3a93bc77c95aafb66fb7b499c267610",
+      "origin": "book:scripts/verify-companion-framework-record-v40.py"
+    },
+    {
+      "path": "verify_v39_evidence.py",
+      "bytes": 4926,
+      "sha256": "40e7123141f54adb8bc92888782d7776f30dc386734e181ab2521ccefcc6e2ed",
+      "origin": "byte-identical alias:scripts/verify-extra-companion-v39.py; retained v39 record consistency"
+    },
+    {
+      "path": "where-to-return.html",
+      "origin": "current_v47_reader_material_historical_v46_copy_preserved",
+      "bytes": 12022,
+      "sha256": "05b0dd71a5db1c49e78a4e93bf15d264542666a690db4ed97d6a92ee7511a8ec"
+    },
+    {
+      "path": "where-to-return.md",
+      "origin": "current_v47_reader_material_historical_v46_copy_preserved",
+      "bytes": 7270,
+      "sha256": "370746bdc0fb9e853cc16cdfa62fb09f77f22aeb18b10b84d60e137e3c7d1df6"
+    }
+  ],
+  "delivery_edition": "v47",
+  "delivery_compatibility_record": "evidence/v47-compatibility.json",
+  "inherited_manifest_record": "historical/v46/bundle-manifest.json"
+}

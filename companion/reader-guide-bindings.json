@@ -1,0 +1,267 @@
+{
+  "edition": "v48",
+  "question_count": 8,
+  "all_destinations_verified": true,
+  "new_source_anchors_verified": true,
+  "new_source_anchor_checks": {
+    "note:v47-fisher-decision": {
+      "number": "34",
+      "printed_page": "316",
+      "destination": "section*.626",
+      "covered_pdf_page": 321,
+      "interior_pdf_page": 318
+    },
+    "notes:v47-paid-calibration": {
+      "number": "30",
+      "printed_page": "288",
+      "destination": "section*.594",
+      "covered_pdf_page": 293,
+      "interior_pdf_page": 290
+    },
+    "notes:v47-infinite-continuation": {
+      "number": "30",
+      "printed_page": "286",
+      "destination": "section*.593",
+      "covered_pdf_page": 291,
+      "interior_pdf_page": 288
+    },
+    "note:v47-rule150-return": {
+      "number": "36",
+      "printed_page": "342",
+      "destination": "section*.669",
+      "covered_pdf_page": 347,
+      "interior_pdf_page": 344
+    },
+    "sec:v47-paid-calibration": {
+      "number": "30",
+      "printed_page": "278",
+      "destination": "section*.571",
+      "covered_pdf_page": 283,
+      "interior_pdf_page": 280
+    },
+    "fig:v47-rule150-return": {
+      "number": "36.4",
+      "printed_page": "333",
+      "destination": "figure.656",
+      "covered_pdf_page": 338,
+      "interior_pdf_page": 335
+    },
+    "eq:v47-fisher-flow": {
+      "number": "34.1",
+      "printed_page": "316",
+      "destination": "equation.627",
+      "covered_pdf_page": 321,
+      "interior_pdf_page": 318
+    },
+    "eq:v47-fisher-threshold": {
+      "number": "34.2",
+      "printed_page": "316",
+      "destination": "equation.628",
+      "covered_pdf_page": 321,
+      "interior_pdf_page": 318
+    }
+  },
+  "method": "Final aux labels cross-checked with final object map; physical pages and printed page labels resolved independently in both final PDFs. No offset inferred.",
+  "new_source_anchor_method": "All eight retained scientific v47 source anchors must directly resolve to the aux printed page in both PDFs; no named-page fallback is accepted for them. Historical guide heading fallbacks remain explicitly identified.",
+  "aux": {
+    "path": "tmp/pdfs/publication-v48/how-matter-learns-to-continue-v48-interior.aux",
+    "sha256": "6194566f1057254d9f28c62e59dd7484c7651a4e035c944a6eeed4da5a0a0f16"
+  },
+  "object_map": {
+    "path": "reviews/publication-v48/object-map.json",
+    "sha256": "b36c2f9b2534a9ec65b957e071f7d35f917aed665bbd37e515667376ac80fe82"
+  },
+  "generator": {
+    "path": "scripts/reader-guide-v48.py",
+    "sha256": "10fd67bd56bd371f7afa9af3d2ee29a9abd10e531dd9a8a115bcadb9b3c1196f"
+  },
+  "pdfs": {
+    "covered_pdf": {
+      "path": "output/pdf/how-matter-learns-to-continue-v48.pdf",
+      "filename": "how-matter-learns-to-continue-v48.pdf",
+      "sha256": "349906adf8ad62ce732c1b0e68b0c8a8d3435a59e808e27c79cfcde40b003526",
+      "pages": 363
+    },
+    "interior_pdf": {
+      "path": "output/pdf/how-matter-learns-to-continue-v48-interior.pdf",
+      "filename": "how-matter-learns-to-continue-v48-interior.pdf",
+      "sha256": "fb2715cb7a23dd071eab2c397878156fb0714e1c44dc26383d1df42c565e7d21",
+      "pages": 360
+    }
+  },
+  "targets": {
+    "eq:update": {
+      "number": "1.6",
+      "printed_page": "9",
+      "destination": "equation.13",
+      "label": "eq:update",
+      "title": "Chapter 1: the learning update",
+      "covered_pdf_page": 14,
+      "interior_pdf_page": 11
+    },
+    "fig:v29-recurrent-state": {
+      "number": "3.4",
+      "printed_page": "56",
+      "destination": "figure.143",
+      "label": "fig:v29-recurrent-state",
+      "title": "Chapter 3: a retained frame",
+      "covered_pdf_page": 61,
+      "interior_pdf_page": 58
+    },
+    "note:v47-fisher-decision": {
+      "number": "34",
+      "printed_page": "316",
+      "destination": "section*.626",
+      "label": "note:v47-fisher-decision",
+      "title": "Chapter 34 notes: a chosen Fisher flow and retained decision",
+      "covered_pdf_page": 321,
+      "interior_pdf_page": 318
+    },
+    "fig:v21-coarse": {
+      "number": "23.2",
+      "printed_page": "221",
+      "destination": "figure.477",
+      "label": "fig:v21-coarse",
+      "title": "Chapter 23: one coarse state, different futures",
+      "covered_pdf_page": 226,
+      "interior_pdf_page": 223
+    },
+    "eq:v29-coarse-closure": {
+      "number": "23.1",
+      "printed_page": "224",
+      "destination": "equation.479",
+      "label": "eq:v29-coarse-closure",
+      "title": "Chapter 23 notes: exact closure",
+      "covered_pdf_page": 229,
+      "interior_pdf_page": 226
+    },
+    "fig:v24-existence": {
+      "number": "31.1",
+      "printed_page": "291",
+      "destination": "figure.597",
+      "label": "fig:v24-existence",
+      "title": "Chapter 31: amounts and detector reports",
+      "covered_pdf_page": 296,
+      "interior_pdf_page": 293
+    },
+    "notes:v44-detector-bound": {
+      "number": "31",
+      "printed_page": "295",
+      "destination": "section*.599",
+      "label": "notes:v44-detector-bound",
+      "title": "Chapter 31 notes: the compatible interval",
+      "covered_pdf_page": 300,
+      "interior_pdf_page": 297
+    },
+    "fig:v21-action": {
+      "number": "12.1",
+      "printed_page": "154",
+      "destination": "figure.344",
+      "label": "fig:v21-action",
+      "title": "Chapter 12: information and action",
+      "covered_pdf_page": 159,
+      "interior_pdf_page": 156
+    },
+    "sec:v31-learned-continuation": {
+      "number": "30",
+      "printed_page": "275",
+      "destination": "section*.566",
+      "label": "sec:v31-learned-continuation",
+      "title": "Chapter 30: learn a response",
+      "covered_pdf_page": 280,
+      "interior_pdf_page": 277
+    },
+    "notes:v47-paid-calibration": {
+      "number": "30",
+      "printed_page": "288",
+      "destination": "section*.594",
+      "label": "notes:v47-paid-calibration",
+      "title": "Chapter 30 notes: purchasing the labels",
+      "covered_pdf_page": 293,
+      "interior_pdf_page": 290
+    },
+    "fig:v22-causal": {
+      "number": "14.1",
+      "printed_page": "169",
+      "destination": "figure.379",
+      "label": "fig:v22-causal",
+      "title": "Chapter 14: two causal accounts",
+      "covered_pdf_page": 174,
+      "interior_pdf_page": 171
+    },
+    "fig:v31-model-comparison": {
+      "number": "37.3",
+      "printed_page": "351",
+      "destination": "figure.679",
+      "label": "fig:v31-model-comparison",
+      "title": "Chapter 37: a discriminating operation",
+      "covered_pdf_page": 356,
+      "interior_pdf_page": 353
+    },
+    "fig:v23-region": {
+      "number": "30.1",
+      "printed_page": "272",
+      "destination": "figure.561",
+      "label": "fig:v23-region",
+      "title": "Chapter 30: the monotone pool",
+      "covered_pdf_page": 277,
+      "interior_pdf_page": 274
+    },
+    "notes:v31-learned-continuation": {
+      "number": "30",
+      "printed_page": "284",
+      "destination": "section*.591",
+      "label": "notes:v31-learned-continuation",
+      "title": "Chapter 30 notes: positive at every boundary",
+      "covered_pdf_page": 289,
+      "interior_pdf_page": 286
+    },
+    "notes:v47-infinite-continuation": {
+      "number": "30",
+      "printed_page": "286",
+      "destination": "section*.593",
+      "label": "notes:v47-infinite-continuation",
+      "title": "Chapter 30 notes: unlimited and capped storage",
+      "covered_pdf_page": 291,
+      "interior_pdf_page": 288
+    },
+    "fig:v23-coordinate": {
+      "number": "29.1",
+      "printed_page": "263",
+      "destination": "figure.547",
+      "label": "fig:v23-coordinate",
+      "title": "Chapter 29: recoding a description",
+      "covered_pdf_page": 268,
+      "interior_pdf_page": 265
+    },
+    "fig:v23-coupling": {
+      "number": "29.2",
+      "printed_page": "265",
+      "destination": "figure.549",
+      "label": "fig:v23-coupling",
+      "title": "Chapter 29: changing a coupling",
+      "covered_pdf_page": 270,
+      "interior_pdf_page": 267
+    },
+    "fig:v24-worlds": {
+      "number": "37.1",
+      "printed_page": "345",
+      "destination": "figure.675",
+      "label": "fig:v24-worlds",
+      "title": "Chapter 37: same region, different measures",
+      "covered_pdf_page": 350,
+      "interior_pdf_page": 347
+    },
+    "note:v34-meaning-ledger": {
+      "number": "37",
+      "printed_page": "357",
+      "destination": "section*.694",
+      "label": "note:v34-meaning-ledger",
+      "title": "Existing ledger: same word, different object",
+      "covered_pdf_page": 362,
+      "interior_pdf_page": 359
+    }
+  },
+  "human_reader_pilot": "not_run",
+  "public_download_route": "not_established"
+}

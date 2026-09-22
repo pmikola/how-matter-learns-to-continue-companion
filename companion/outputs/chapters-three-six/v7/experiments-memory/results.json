@@ -1,0 +1,151 @@
+{
+  "configuration": {
+    "train_position_seed": 7321,
+    "test_position_seed": 9248,
+    "network_seed": 1701,
+    "train_base_positions": 256,
+    "test_base_positions": 512,
+    "current_position_interval": [
+      -2.0,
+      2.0
+    ],
+    "velocities": [
+      -1.0,
+      1.0
+    ],
+    "time_interval": 1.0,
+    "hidden_relu_units": 8,
+    "input_divisor": 3.0,
+    "full_batch_updates": 10000,
+    "learning_rate": 0.03,
+    "objective": "mean(0.5 * (prediction - target)**2)",
+    "selection": "one fixed run per architecture; no validation or test selection",
+    "noise_sigma": 0.75,
+    "observed_previous_position": -0.6
+  },
+  "data": {
+    "train_trajectories": 512,
+    "test_trajectories": 1024,
+    "independent_unit": "a sampled current position with both equally weighted velocity trajectories",
+    "noiseless_experiment": true,
+    "split": "independent position draws with no overlap"
+  },
+  "models": {
+    "current_only": {
+      "parameters": 25,
+      "train_rmse": 1.0000221618253664,
+      "test_rmse": 1.0000261452316914
+    },
+    "history": {
+      "parameters": 33,
+      "train_rmse": 0.017397851942331267,
+      "test_rmse": 0.017811815614758357
+    }
+  },
+  "current_only_conditional_mean": {
+    "formula": "E[q_(n+1)|q_n] = q_n",
+    "test_rmse": 1.0,
+    "analytic_population_rmse": 1.0
+  },
+  "exact_two_frame_predictor": {
+    "formula": "q_(n+1) = 2*q_n - q_(n-1)",
+    "test_rmse": 0.0
+  },
+  "gradient_checks": {
+    "current_only": {
+      "parameters_checked": 25,
+      "max_absolute_error": 6.422948284345864e-11
+    },
+    "history": {
+      "parameters_checked": 33,
+      "max_absolute_error": 6.530442159258243e-11
+    }
+  },
+  "current_only_mse_decomposition": {
+    "identity": "MSE = 1 + mean((f(q_n)-q_n)^2) for the paired balanced test data",
+    "absolute_check_error": 0.0
+  },
+  "designed_memory": {
+    "status": "hand-designed exact shift register; not a trained recurrent neural network",
+    "state": "s_n = [q_(n-1), q_n]",
+    "update": "s_(n+1) = A s_n + B q_(n+1)",
+    "A": [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "B": [
+      0.0,
+      1.0
+    ],
+    "readout": [
+      -1.0,
+      2.0
+    ],
+    "checked_updates": 80,
+    "max_prediction_absolute_error": 4.440892098500626e-16
+  },
+  "bayes": {
+    "assumptions": "q_n=0 known exactly; v in {-1,+1}, equal prior; y=-v+N(0,sigma^2)",
+    "posterior_right_formula": "1/(1+exp(2*y/sigma^2))",
+    "likelihood_density_right": 0.4614051909025639,
+    "likelihood_density_left": 0.05464967472696292,
+    "posterior_right": 0.8941010377640822,
+    "posterior_left": 0.10589896223591777,
+    "prior_entropy_bits": 1.0,
+    "posterior_entropy_bits": 0.4874206923727155,
+    "realized_entropy_reduction_bits": 0.5125793076272844,
+    "note": "This realized entropy reduction is not an average mutual-information estimate."
+  },
+  "limitations": [
+    "Synthetic constant-speed motion only; no acceleration, collisions, or physical uncertainty in part one.",
+    "One fixed seed per model; not a model-ranking study or estimate of typical performance.",
+    "The two-frame network is feedforward; the separate memory update is hand-designed.",
+    "Bayesian uncertainty refers to direction under the stated observation model, not thermodynamic entropy."
+  ],
+  "figure_width_mm": 138,
+  "figures": [
+    "fig-M01-same-position-different-histories",
+    "fig-M02-measured-learning-curves",
+    "fig-M03-held-out-predictions",
+    "fig-M04-likelihoods-and-possible-futures",
+    "fig-M05-posterior-entropy"
+  ],
+  "pdf_checks": [
+    {
+      "file": "fig-M01-same-position-different-histories.pdf",
+      "width_mm": 137.99999999999832,
+      "height_mm": 86.9999999999836,
+      "embedded_raster_images": 0
+    },
+    {
+      "file": "fig-M02-measured-learning-curves.pdf",
+      "width_mm": 137.99999999999832,
+      "height_mm": 84.00000000000972,
+      "embedded_raster_images": 0
+    },
+    {
+      "file": "fig-M03-held-out-predictions.pdf",
+      "width_mm": 137.99999999999832,
+      "height_mm": 88.99999999998971,
+      "embedded_raster_images": 0
+    },
+    {
+      "file": "fig-M04-likelihoods-and-possible-futures.pdf",
+      "width_mm": 137.99999999999832,
+      "height_mm": 88.99999999998971,
+      "embedded_raster_images": 0
+    },
+    {
+      "file": "fig-M05-posterior-entropy.pdf",
+      "width_mm": 137.99999999999832,
+      "height_mm": 79.9999999999975,
+      "embedded_raster_images": 0
+    }
+  ]
+}

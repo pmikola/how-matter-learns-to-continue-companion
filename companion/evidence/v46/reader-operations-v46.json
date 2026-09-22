@@ -1,0 +1,266 @@
+{
+  "environment": {
+    "implementation": "CPython",
+    "python": "3.11.0"
+  },
+  "generated_utc": "2026-09-19T16:45:35.265552+00:00",
+  "groups": {
+    "N01": {
+      "calibration_histories": 32,
+      "case_count": 128,
+      "example_histories": [
+        "11100",
+        "00011"
+      ],
+      "example_policies": [
+        "FOLLOW",
+        "REVERSE"
+      ],
+      "examples": [
+        {
+          "chosen_sides": [
+            "LEFT",
+            "RIGHT"
+          ],
+          "hidden_resource_for_scoring": "LEFT",
+          "next_amounts": [
+            4,
+            2
+          ],
+          "report": "LEFT"
+        },
+        {
+          "chosen_sides": [
+            "LEFT",
+            "RIGHT"
+          ],
+          "hidden_resource_for_scoring": "RIGHT",
+          "next_amounts": [
+            2,
+            4
+          ],
+          "report": "LEFT"
+        },
+        {
+          "chosen_sides": [
+            "RIGHT",
+            "LEFT"
+          ],
+          "hidden_resource_for_scoring": "LEFT",
+          "next_amounts": [
+            2,
+            4
+          ],
+          "report": "RIGHT"
+        },
+        {
+          "chosen_sides": [
+            "RIGHT",
+            "LEFT"
+          ],
+          "hidden_resource_for_scoring": "RIGHT",
+          "next_amounts": [
+            4,
+            2
+          ],
+          "report": "RIGHT"
+        }
+      ],
+      "scope": "Constructed single actions; hidden truth scores the action and is not a learner input. No typical trajectory or aggregate continuation is inferred.",
+      "start_amount": 3,
+      "status": "passed"
+    },
+    "N02": {
+      "continuation_given_follow_bit": {
+        "decimal": 0.990098261528608,
+        "exact": "30940570672769/31250000000000"
+      },
+      "count_rows": [
+        {
+          "correct_count": 0,
+          "count_probability": {
+            "decimal": 0.29525,
+            "exact": "1181/4000"
+          },
+          "policy": "REVERSE",
+          "posterior_high_orientation": {
+            "decimal": 1.693480101608806e-05,
+            "exact": "1/59050"
+          },
+          "selected_continuation": {
+            "decimal": 0.9986139026613344,
+            "exact": "294840754760759/295250000000000"
+          }
+        },
+        {
+          "correct_count": 1,
+          "count_probability": {
+            "decimal": 0.16425,
+            "exact": "657/4000"
+          },
+          "policy": "REVERSE",
+          "posterior_high_orientation": {
+            "decimal": 0.0013698630136986301,
+            "exact": "1/730"
+          },
+          "selected_continuation": {
+            "decimal": 0.9972653174791781,
+            "exact": "3640018408799/3650000000000"
+          }
+        },
+        {
+          "correct_count": 2,
+          "count_probability": {
+            "decimal": 0.0405,
+            "exact": "81/2000"
+          },
+          "policy": "REVERSE",
+          "posterior_high_orientation": {
+            "decimal": 0.1,
+            "exact": "1/10"
+          },
+          "selected_continuation": {
+            "decimal": 0.89895179278,
+            "exact": "44947589639/50000000000"
+          }
+        },
+        {
+          "correct_count": 3,
+          "count_probability": {
+            "decimal": 0.0405,
+            "exact": "81/2000"
+          },
+          "policy": "FOLLOW",
+          "posterior_high_orientation": {
+            "decimal": 0.9,
+            "exact": "9/10"
+          },
+          "selected_continuation": {
+            "decimal": 0.89895179278,
+            "exact": "44947589639/50000000000"
+          }
+        },
+        {
+          "correct_count": 4,
+          "count_probability": {
+            "decimal": 0.16425,
+            "exact": "657/4000"
+          },
+          "policy": "FOLLOW",
+          "posterior_high_orientation": {
+            "decimal": 0.9986301369863013,
+            "exact": "729/730"
+          },
+          "selected_continuation": {
+            "decimal": 0.9972653174791781,
+            "exact": "3640018408799/3650000000000"
+          }
+        },
+        {
+          "correct_count": 5,
+          "count_probability": {
+            "decimal": 0.29525,
+            "exact": "1181/4000"
+          },
+          "policy": "FOLLOW",
+          "posterior_high_orientation": {
+            "decimal": 0.999983065198984,
+            "exact": "59049/59050"
+          },
+          "selected_continuation": {
+            "decimal": 0.9986139026613344,
+            "exact": "294840754760759/295250000000000"
+          }
+        }
+      ],
+      "follow_bit_probability": {
+        "decimal": 0.5,
+        "exact": "1/2"
+      },
+      "posterior_high_given_follow_bit": {
+        "decimal": 0.99144,
+        "exact": "12393/12500"
+      },
+      "scope": "The bit suffices for this two-policy decision, but cannot reconstruct confidence or continuation conditional on the original count. A posterior conditional on the bit still exists.",
+      "status": "passed"
+    },
+    "N03": {
+      "calibration_environment_cases": 64,
+      "calibration_error": {
+        "decimal": 0.00856,
+        "exact": "107/12500"
+      },
+      "certain_reversal": {
+        "decimal": 0.010373401471392,
+        "exact": "324168795981/31250000000000"
+      },
+      "deployment_paths_enumerated": 4096,
+      "learned_continuation": {
+        "decimal": 0.990098261528608,
+        "exact": "30940570672769/31250000000000"
+      },
+      "positive_prefix_path_counts_by_successes": {
+        "5": 297,
+        "6": 704,
+        "7": 726,
+        "8": 483,
+        "9": 219,
+        "10": 66,
+        "11": 12,
+        "12": 1
+      },
+      "report_ignoring_continuation": {
+        "decimal": 0.6123046875,
+        "exact": "627/1024"
+      },
+      "scope": "Twelve deployment updates from three, positive at every boundary, equal fixed environment weights, conditionally independent labels and deployment, frozen policy; no apparatus cost or global controller optimum.",
+      "status": "passed",
+      "survival_high": {
+        "decimal": 0.9986307831,
+        "exact": "9986307831/10000000000"
+      },
+      "survival_low": {
+        "decimal": 0.0018408799,
+        "exact": "18408799/10000000000"
+      }
+    },
+    "N04": {
+      "example": {
+        "acceleration": {
+          "decimal": 3.0,
+          "exact": "3"
+        },
+        "current_position": {
+          "decimal": 0.0,
+          "exact": "0"
+        },
+        "current_velocity": {
+          "decimal": 0.0,
+          "exact": "0"
+        },
+        "interval": {
+          "decimal": 2.0,
+          "exact": "2"
+        },
+        "true_next_minus_forecast_acceleration_after_current": {
+          "decimal": 6.0,
+          "exact": "6"
+        },
+        "true_next_minus_forecast_constant_two_intervals": {
+          "decimal": 12.0,
+          "exact": "12"
+        }
+      },
+      "paired_protocol_cases": 81,
+      "scope": "Exact analytic counterfactuals in one-dimensional motion; no trained predictor was tested here. Each error means true next position minus the linear two-frame extrapolation. Position, velocity, acceleration and interval use consistent arbitrary length/time units.",
+      "status": "passed"
+    }
+  },
+  "schema_version": "reader-operations-v46/1",
+  "scope": "Four overlapping analytic acceptance groups, independently implemented for v46. Not empirical experiments, reader testing, or E3 trajectory reproduction.",
+  "script": {
+    "path": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\scripts\\reader-operations-v46.py",
+    "sha256": "26a8dc8b496d9c3015a1906e76a2fc2aa394020a5acc9de4cbcc0a726e2e78fc"
+  },
+  "status": "passed"
+}

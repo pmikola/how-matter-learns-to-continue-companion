@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "archive_sha256": "7de672bd468830dd1befb74fbc7bb7fbd13e36eecccf1781742eca97ea865e34",
+  "source_hashes": {
+    "outputs\\chapters-three-six\\v7\\experiments-memory\\data.npz": "7de672bd468830dd1befb74fbc7bb7fbd13e36eecccf1781742eca97ea865e34",
+    "outputs\\chapters-three-six\\v7\\experiments-memory\\results.json": "bd96e19df1b71c4f2ed745e2d21b8ac7b753486f486d55ac008eb7ba12bd319f",
+    "examples\\ch03_04\\experiment_v7.py": "141a4e3b923d6e19f2be0a6fb590f342c03350870dddc39bebff5dedfef608ad"
+  },
+  "python_numpy_version": "2.4.4",
+  "configuration": {
+    "train_position_seed": 7321,
+    "test_position_seed": 9248,
+    "network_seed": 1701,
+    "train_base_positions": 256,
+    "test_base_positions": 512,
+    "current_position_interval": [
+      -2.0,
+      2.0
+    ],
+    "velocities": [
+      -1.0,
+      1.0
+    ],
+    "time_interval": 1.0,
+    "hidden_relu_units": 8,
+    "input_divisor": 3.0,
+    "full_batch_updates": 10000,
+    "learning_rate": 0.03,
+    "objective": "mean(0.5 * (prediction - target)**2)",
+    "selection": "one fixed run per architecture; no validation or test selection",
+    "noise_sigma": 0.75,
+    "observed_previous_position": -0.6
+  },
+  "initialization": {
+    "generator": "numpy.random.default_rng(1701), restarted for each input dimension",
+    "W1": "normal(0, sqrt(2/d)), shape (d,8), drawn first",
+    "b1": "eight entries equal 0.3",
+    "W2": "normal(0, sqrt(2/8)), shape (8,1), drawn after W1",
+    "b2": "one zero",
+    "matches_isolated_historical_initializer": true
+  },
+  "generated_data_exactly_matches_archive": true,
+  "models": {
+    "current_only": {
+      "train_rmse": 1.0000221618253664,
+      "new_reproduction": {
+        "updates": 10000,
+        "final_parameter_max_error": 0.0,
+        "learning_curve_max_error": 0.0,
+        "absolute_tolerance": 1e-11
+      },
+      "test_rmse": 1.0000261452316914,
+      "saved_prediction_max_error": 0.0
+    },
+    "history": {
+      "train_rmse": 0.017397851942331267,
+      "new_reproduction": {
+        "updates": 10000,
+        "final_parameter_max_error": 0.0,
+        "learning_curve_max_error": 0.0,
+        "absolute_tolerance": 1e-11
+      },
+      "test_rmse": 0.017811815614758357,
+      "saved_prediction_max_error": 0.0
+    }
+  },
+  "exact_predictor_test_rmse": 0.0,
+  "newly_retrained": true,
+  "files_written": false,
+  "scope": "Frozen-array verification plus optional fresh in-memory reproduction. Not evidence that the historical run used this current environment.",
+  "execution": {
+    "utc": "2026-09-16T21:43:04.340206+00:00",
+    "command": [
+      "examples/memory_reproduction_v39.py",
+      "--retrain"
+    ],
+    "python": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+    "executable": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v39-clean\\Scripts\\python.exe",
+    "source_sha256": "34029579d66f2ace1144f69c6c24fd72141ddffd6101e66d3bc17edb039a8195"
+  }
+}

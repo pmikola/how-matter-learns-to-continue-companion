@@ -1,0 +1,1063 @@
+{
+  "started_at_utc": "2026-09-17T14:31:06.393155+00:00",
+  "source_commit": "66d3885811e0a195655c2480920df4966453e6fb",
+  "covered_v41_sha256": "6afc2de9b3d0ea71c177bbaf22518c5098b76dddbfc0f09ac7895498cb0efb7b",
+  "archive": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\output\\companion\\how-matter-learns-to-continue-v40-companion.zip",
+  "archive_sha256_before": "756495d1a7af290e01779299ce4c87b80677f53c299538bb88607ea3d094b396",
+  "zip_members": 53,
+  "fresh_extraction": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+  "fresh_environment": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv",
+  "controlled_environment": {
+    "PYTHONPATH": "",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONNOUSERSITE": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "PYTHONUTF8": "1"
+  },
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Msi\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+        "-m",
+        "venv",
+        "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv"
+      ],
+      "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf",
+      "started_at_utc": "2026-09-17T14:31:06.393155+00:00",
+      "finished_at_utc": "2026-09-17T14:31:23.087891+00:00",
+      "elapsed_seconds": 16.687,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "--disable-pip-version-check",
+        "-r",
+        "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\requirements.txt"
+      ],
+      "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf",
+      "started_at_utc": "2026-09-17T14:31:23.087891+00:00",
+      "finished_at_utc": "2026-09-17T14:31:37.532562+00:00",
+      "elapsed_seconds": 14.454,
+      "exit_code": 0,
+      "stdout": "Collecting numpy==2.4.4\n  Using cached numpy-2.4.4-cp311-cp311-win_amd64.whl (12.6 MB)\nInstalling collected packages: numpy\nSuccessfully installed numpy-2.4.4\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "freeze"
+      ],
+      "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf",
+      "started_at_utc": "2026-09-17T14:31:37.534123+00:00",
+      "finished_at_utc": "2026-09-17T14:31:38.257212+00:00",
+      "elapsed_seconds": 0.718,
+      "exit_code": 0,
+      "stdout": "numpy==2.4.4\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+        "-B",
+        "-c",
+        "import contextlib,io,json,runpy,subprocess,time\nfrom datetime import datetime,timezone\nrecords=[]\noriginal=subprocess.run\ndef observed(*args,**kwargs):\n    start=datetime.now(timezone.utc).isoformat()\n    tick=time.monotonic()\n    result=original(*args,**kwargs)\n    records.append({\"command\":args[0],\"cwd\":str(kwargs.get(\"cwd\")),\"started_at_utc\":start,\"finished_at_utc\":datetime.now(timezone.utc).isoformat(),\"elapsed_seconds\":round(time.monotonic()-tick,3),\"exit_code\":result.returncode,\"stderr\":result.stderr})\n    return result\nsubprocess.run=observed\ncapture=io.StringIO()\nwith contextlib.redirect_stdout(capture):\n    runpy.run_path(\"verify_companion.py\",run_name=\"__main__\")\nprint(json.dumps({\"suite\":json.loads(capture.getvalue()),\"command_receipts\":records}))\n"
+      ],
+      "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+      "started_at_utc": "2026-09-17T14:31:38.258760+00:00",
+      "finished_at_utc": "2026-09-17T14:31:49.433385+00:00",
+      "elapsed_seconds": 11.172,
+      "exit_code": 0,
+      "stdout": "{\"suite\": {\"passed\": true, \"python\": \"3.11.0\", \"numpy\": \"2.4.4\", \"working_directory\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"files_verified_before_and_after\": 52, \"command_count\": 35, \"runs\": [{\"entrypoint\": \"examples/ch01/investigation_v9.py\", \"arguments\": [\"--json\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"stage\\\": \\\"trained\\\",\\n  \\\"input\\\": [\\n    0.0,\\n    1.0,\\n    0.0,\\n    0.0,\\n    1.0,\\n    0.0,\\n    0.0,\\n    1.0,\\n    0.0\\n  ],\\n  \\\"manual_weight_delta\\\": 0.0,\\n  \\\"training_update_requested\\\": false,\\n  \\\"before\\\": {\\n    \\\"hidden_sums\\\": [\\n      3.8492590291589655,\\n      -2.1446078324437714,\\n      -0.10904520524255559,\\n      -2.5381408822504037,\\n      -0.24747072192330677,\\n      -0.0716079074341559\\n    ],\\n    \\\"hidden_responses\\\": [\\n      3.8492590291589655,\\n      0.0,\\n      0.0,\\n      0.0,\\n      0.0,\\n      0.0\\n    ],\\n    \\\"score\\\": 6.257793842544071,\\n    \\\"probability_vertical\\\": 0.9980881950388769,\\n    \\\"chosen_label\\\": \\\"vertical\\\",\\n    \\\"pixel_2_to_unit_1_weight\\\": 1.8965484533189758\\n  },\\n  \\\"mean_training_loss_before\\\": 0.007108390036097399\\n}\"}, {\"entrypoint\": \"examples/ch01/investigation_v9.py\", \"arguments\": [\"--pixel\", \"5\", \"0.5\", \"--json\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"stage\\\": \\\"trained\\\",\\n  \\\"input\\\": [\\n    0.0,\\n    1.0,\\n    0.0,\\n    0.0,\\n    0.5,\\n    0.0,\\n    0.0,\\n    1.0,\\n    0.0\\n  ],\\n  \\\"manual_weight_delta\\\": 0.0,\\n  \\\"training_update_requested\\\": false,\\n  \\\"before\\\": {\\n    \\\"hidden_sums\\\": [\\n      3.8023884875057,\\n      -1.7487782647315846,\\n      0.36731701133388617,\\n      -2.0675972095776554,\\n      0.2413747874911174,\\n      0.03123972259037211\\n    ],\\n    \\\"hidden_responses\\\": [\\n      3.8023884875057,\\n      0.0,\\n      0.36731701133388617,\\n      0.0,\\n      0.2413747874911174,\\n      0.03123972259037211\\n    ],\\n    \\\"score\\\": 4.605310245215005,\\n    \\\"probability_vertical\\\": 0.9901003828018162,\\n    \\\"chosen_label\\\": \\\"vertical\\\",\\n    \\\"pixel_2_to_unit_1_weight\\\": 1.8965484533189758\\n  },\\n  \\\"mean_training_loss_before\\\": 0.007108390036097399\\n}\"}, {\"entrypoint\": \"examples/ch01/investigation_v9.py\", \"arguments\": [\"--weight-delta\", \"0.01\", \"--json\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"stage\\\": \\\"trained\\\",\\n  \\\"input\\\": [\\n    0.0,\\n    1.0,\\n    0.0,\\n    0.0,\\n    1.0,\\n    0.0,\\n    0.0,\\n    1.0,\\n    0.0\\n  ],\\n  \\\"manual_weight_delta\\\": 0.01,\\n  \\\"training_update_requested\\\": false,\\n  \\\"before\\\": {\\n    \\\"hidden_sums\\\": [\\n      3.8592590291589652,\\n      -2.1446078324437714,\\n      -0.10904520524255559,\\n      -2.5381408822504037,\\n      -0.24747072192330677,\\n      -0.0716079074341559\\n    ],\\n    \\\"hidden_responses\\\": [\\n      3.8592590291589652,\\n      0.0,\\n      0.0,\\n      0.0,\\n      0.0,\\n      0.0\\n    ],\\n    \\\"score\\\": 6.2831629284662505,\\n    \\\"probability_vertical\\\": 0.9981359964745936,\\n    \\\"chosen_label\\\": \\\"vertical\\\",\\n    \\\"pixel_2_to_unit_1_weight\\\": 1.9065484533189758\\n  },\\n  \\\"mean_training_loss_before\\\": 0.007102153730666254\\n}\"}, {\"entrypoint\": \"examples/ch01/investigation_v9.py\", \"arguments\": [\"--stage\", \"300\", \"--step\", \"--json\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"stage\\\": \\\"300\\\",\\n  \\\"input\\\": [\\n    0.0,\\n    1.0,\\n    0.0,\\n    0.0,\\n    1.0,\\n    0.0,\\n    0.0,\\n    1.0,\\n    0.0\\n  ],\\n  \\\"manual_weight_delta\\\": 0.0,\\n  \\\"training_update_requested\\\": true,\\n  \\\"before\\\": {\\n    \\\"hidden_sums\\\": [\\n      0.608978932697741,\\n      -0.6933786969049254,\\n      -0.05939573970397746,\\n      -1.6139456142702617,\\n      -0.19249350094902204,\\n      0.050391072058533715\\n    ],\\n    \\\"hidden_responses\\\": [\\n      0.608978932697741,\\n      0.0,\\n      0.0,\\n      0.0,\\n      0.0,\\n      0.050391072058533715\\n    ],\\n    \\\"score\\\": -0.02420654352586063,\\n    \\\"probability_vertical\\\": 0.4939486596009617,\\n    \\\"chosen_label\\\": \\\"horizontal\\\",\\n    \\\"pixel_2_to_unit_1_weight\\\": 0.5419393353228699\\n  },\\n  \\\"mean_training_loss_before\\\": 0.3579801374061621,\\n  \\\"after\\\": {\\n    \\\"hidden_sums\\\": [\\n      0.6133436879479803,\\n      -0.696041654074063,\\n      -0.05990038600477396,\\n      -1.6152582025190907,\\n      -0.1926673634887881,\\n      0.04761888729701669\\n    ],\\n    \\\"hidden_responses\\\": [\\n      0.6133436879479803,\\n      0.0,\\n      0.0,\\n      0.0,\\n      0.0,\\n      0.04761888729701669\\n    ],\\n    \\\"score\\\": -0.022215777207661574,\\n    \\\"probability_vertical\\\": 0.4944462841116344,\\n    \\\"chosen_label\\\": \\\"horizontal\\\",\\n    \\\"pixel_2_to_unit_1_weight\\\": 0.544183467512125\\n  },\\n  \\\"mean_training_loss_after\\\": 0.35671638695637703\\n}\"}, {\"entrypoint\": \"examples/ch01_04/reader_lab_v11.py\", \"arguments\": [\"representation\", \"--index\", \"50\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"point_index\\\": 50,\\n  \\\"input\\\": [\\n    -0.7905127918886528,\\n    0.21142392739982374\\n  ],\\n  \\\"hidden_units\\\": 256,\\n  \\\"positive_total\\\": 26.211257896151174,\\n  \\\"negative_magnitude_total\\\": 29.428965031670828,\\n  \\\"bias\\\": 3.0170487050552186,\\n  \\\"original_score\\\": -0.2006584304644301,\\n  \\\"reconstructed_score\\\": -0.20065843046443455,\\n  \\\"score_error\\\": 4.440892098500626e-15,\\n  \\\"probability_ring\\\": 0.4500030355887975,\\n  \\\"chosen_label\\\": 0,\\n  \\\"true_label\\\": 1,\\n  \\\"radius\\\": 0.818297348899994,\\n  \\\"radius_rule_label\\\": 1,\\n  \\\"parameters_changed\\\": false,\\n  \\\"source\\\": \\\"archived 256-unit model after 5000 updates\\\"\\n}\"}, {\"entrypoint\": \"examples/ch01_04/reader_lab_v11.py\", \"arguments\": [\"motion\", \"--current\", \"0\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"current\\\": 0.0,\\n  \\\"previous\\\": null,\\n  \\\"learned_prediction\\\": 0.005917952762745121,\\n  \\\"source\\\": \\\"archived feedforward model\\\",\\n  \\\"parameters_changed\\\": false,\\n  \\\"assumptions\\\": \\\"constant velocity, equal observation intervals; no new training\\\",\\n  \\\"possible_next_positions\\\": [\\n    -1.0,\\n    1.0\\n  ],\\n  \\\"exact_squared_error_optimum\\\": 0.0,\\n  \\\"balanced_pair_minimum_rmse\\\": 1.0\\n}\"}, {\"entrypoint\": \"examples/ch01_04/reader_lab_v11.py\", \"arguments\": [\"motion\", \"--previous\", \"-1\", \"--current\", \"0\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"current\\\": 0.0,\\n  \\\"previous\\\": -1.0,\\n  \\\"learned_prediction\\\": 0.9961090715754022,\\n  \\\"source\\\": \\\"archived feedforward model\\\",\\n  \\\"parameters_changed\\\": false,\\n  \\\"assumptions\\\": \\\"constant velocity, equal observation intervals; no new training\\\",\\n  \\\"hand_built_prediction\\\": 1.0,\\n  \\\"learned_minus_hand\\\": -0.003890928424597817,\\n  \\\"warning\\\": \\\"Exact hand prediction needs constant velocity and exact observations.\\\"\\n}\"}, {\"entrypoint\": \"examples/ch01_04/reader_lab_v11.py\", \"arguments\": [\"sensor\", \"--readings\", \"-0.6\", \"0.6\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"sigma\\\": 0.75,\\n  \\\"prior_right\\\": 0.5,\\n  \\\"stages\\\": [\\n    {\\n      \\\"observations\\\": 0,\\n      \\\"reading\\\": null,\\n      \\\"posterior_right\\\": 0.5,\\n      \\\"posterior_left\\\": 0.5,\\n      \\\"mean_next_position\\\": 0.0,\\n      \\\"entropy_bits\\\": 1.0\\n    },\\n    {\\n      \\\"observations\\\": 1,\\n      \\\"reading\\\": -0.6,\\n      \\\"posterior_right\\\": 0.8941010377640821,\\n      \\\"posterior_left\\\": 0.10589896223591788,\\n      \\\"mean_next_position\\\": 0.7882020755281642,\\n      \\\"entropy_bits\\\": 0.4874206923727159\\n    },\\n    {\\n      \\\"observations\\\": 2,\\n      \\\"reading\\\": 0.6,\\n      \\\"posterior_right\\\": 0.5,\\n      \\\"posterior_left\\\": 0.5,\\n      \\\"mean_next_position\\\": 0.0,\\n      \\\"entropy_bits\\\": 1.0\\n    }\\n  ],\\n  \\\"source\\\": \\\"analytic Bayesian model, not a trained network\\\",\\n  \\\"assumptions\\\": \\\"current position exactly 0; V in {-1,+1}; repeated errors independent given V\\\",\\n  \\\"readings_are\\\": \\\"chosen illustrative measurements of the same past position\\\"\\n}\"}, {\"entrypoint\": \"examples/ch01_04/reader_lab_v11.py\", \"arguments\": [\"sensor\", \"--sigma\", \"1.5\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"sigma\\\": 1.5,\\n  \\\"prior_right\\\": 0.5,\\n  \\\"stages\\\": [\\n    {\\n      \\\"observations\\\": 0,\\n      \\\"reading\\\": null,\\n      \\\"posterior_right\\\": 0.5,\\n      \\\"posterior_left\\\": 0.5,\\n      \\\"mean_next_position\\\": 0.0,\\n      \\\"entropy_bits\\\": 1.0\\n    },\\n    {\\n      \\\"observations\\\": 1,\\n      \\\"reading\\\": -0.6,\\n      \\\"posterior_right\\\": 0.6302602229177513,\\n      \\\"posterior_left\\\": 0.3697397770822487,\\n      \\\"mean_next_position\\\": 0.2605204458355026,\\n      \\\"entropy_bits\\\": 0.9504720770468174\\n    }\\n  ],\\n  \\\"source\\\": \\\"analytic Bayesian model, not a trained network\\\",\\n  \\\"assumptions\\\": \\\"current position exactly 0; V in {-1,+1}; repeated errors independent given V\\\",\\n  \\\"readings_are\\\": \\\"chosen illustrative measurements of the same past position\\\"\\n}\"}, {\"entrypoint\": \"examples/ch01_04/reader_lab_v11.py\", \"arguments\": [\"sensor\", \"--prior\", \"0.2\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"sigma\\\": 0.75,\\n  \\\"prior_right\\\": 0.2,\\n  \\\"stages\\\": [\\n    {\\n      \\\"observations\\\": 0,\\n      \\\"reading\\\": null,\\n      \\\"posterior_right\\\": 0.2,\\n      \\\"posterior_left\\\": 0.8,\\n      \\\"mean_next_position\\\": -0.6,\\n      \\\"entropy_bits\\\": 0.7219280948873623\\n    },\\n    {\\n      \\\"observations\\\": 1,\\n      \\\"reading\\\": -0.6,\\n      \\\"posterior_right\\\": 0.678533164025287,\\n      \\\"posterior_left\\\": 0.32146683597471304,\\n      \\\"mean_next_position\\\": 0.3570663280505739,\\n      \\\"entropy_bits\\\": 0.9059694604775955\\n    }\\n  ],\\n  \\\"source\\\": \\\"analytic Bayesian model, not a trained network\\\",\\n  \\\"assumptions\\\": \\\"current position exactly 0; V in {-1,+1}; repeated errors independent given V\\\",\\n  \\\"readings_are\\\": \\\"chosen illustrative measurements of the same past position\\\"\\n}\"}, {\"entrypoint\": \"reader_lab_v13.py\", \"arguments\": [\"walk\", \"--steps\", \"16\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"updates\\\": 16,\\n  \\\"starting_sites\\\": [\\n    -4,\\n    4\\n  ],\\n  \\\"possible_final_sites\\\": 41,\\n  \\\"position_entropy_bits\\\": 4.269081938310866,\\n  \\\"mutual_information_bits\\\": 0.7221119464669927,\\n  \\\"best_accuracy\\\": 0.918622171273455\\n}\"}, {\"entrypoint\": \"reader_lab_v13.py\", \"arguments\": [\"walk\", \"--steps\", \"96\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"updates\\\": 96,\\n  \\\"starting_sites\\\": [\\n    -4,\\n    4\\n  ],\\n  \\\"possible_final_sites\\\": 41,\\n  \\\"position_entropy_bits\\\": 5.011673135544875,\\n  \\\"mutual_information_bits\\\": 0.184444200296622,\\n  \\\"best_accuracy\\\": 0.7092692375999154\\n}\"}, {\"entrypoint\": \"reader_lab_v13.py\", \"arguments\": [\"walk\", \"--steps\", \"96\", \"--separation\", \"12\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"updates\\\": 96,\\n  \\\"starting_sites\\\": [\\n    -6,\\n    6\\n  ],\\n  \\\"possible_final_sites\\\": 41,\\n  \\\"position_entropy_bits\\\": 5.166283358187392,\\n  \\\"mutual_information_bits\\\": 0.3390544229391379,\\n  \\\"best_accuracy\\\": 0.7881365241878288\\n}\"}, {\"entrypoint\": \"reader_lab_v13.py\", \"arguments\": [\"phase\", \"--gap\", \"1.8\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"initial_gap\\\": 1.8,\\n  \\\"final_gap\\\": 0.0018816319278985852,\\n  \\\"coupling\\\": 0.6,\\n  \\\"time\\\": 6.0,\\n  \\\"alignment\\\": 0.9999995574326936,\\n  \\\"common_phase_change\\\": 6.0,\\n  \\\"status\\\": \\\"Specified first-order phase rule, omega=1. Not a physical measurement.\\\"\\n}\"}, {\"entrypoint\": \"reader_lab_v13.py\", \"arguments\": [\"phase\", \"--gap\", \"3.141592653589793\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"initial_gap\\\": 3.141592653589793,\\n  \\\"final_gap\\\": 3.141592653589793,\\n  \\\"coupling\\\": 0.6,\\n  \\\"time\\\": 6.0,\\n  \\\"alignment\\\": 6.123233995736766e-17,\\n  \\\"common_phase_change\\\": 6.0,\\n  \\\"status\\\": \\\"Specified first-order phase rule, omega=1. Not a physical measurement.\\\"\\n}\"}, {\"entrypoint\": \"reader_lab_v13.py\", \"arguments\": [\"phase\", \"--gap\", \"1.8\", \"--coupling\", \"0\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"initial_gap\\\": 1.8,\\n  \\\"final_gap\\\": 1.8,\\n  \\\"coupling\\\": 0.0,\\n  \\\"time\\\": 6.0,\\n  \\\"alignment\\\": 0.6216099682706644,\\n  \\\"common_phase_change\\\": 6.0,\\n  \\\"status\\\": \\\"Specified first-order phase rule, omega=1. Not a physical measurement.\\\"\\n}\"}, {\"entrypoint\": \"reader_lab_v13.py\", \"arguments\": [\"sensor\", \"--mode\", \"x\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"mode\\\": \\\"x\\\",\\n  \\\"readings\\\": 1,\\n  \\\"candidate_angles\\\": [\\n    1.0471975511965976,\\n    -1.0471975511965976\\n  ],\\n  \\\"mean_readings\\\": [\\n    [\\n      0.5000000000000001\\n    ],\\n    [\\n      0.5000000000000001\\n    ]\\n  ],\\n  \\\"noise_scales\\\": [\\n    0.1\\n  ],\\n  \\\"standardized_mean_distance\\\": 0.0,\\n  \\\"best_accuracy\\\": 0.5,\\n  \\\"fisher_per_reading\\\": [\\n    74.99999999999997,\\n    74.99999999999997\\n  ],\\n  \\\"status\\\": \\\"Equal-prior fixed Gaussian candidates, independent repeated readings.\\\"\\n}\"}, {\"entrypoint\": \"reader_lab_v13.py\", \"arguments\": [\"sensor\", \"--mode\", \"xy\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"mode\\\": \\\"xy\\\",\\n  \\\"readings\\\": 1,\\n  \\\"candidate_angles\\\": [\\n    1.0471975511965976,\\n    -1.0471975511965976\\n  ],\\n  \\\"mean_readings\\\": [\\n    [\\n      0.5000000000000001,\\n      0.8660254037844386\\n    ],\\n    [\\n      0.5000000000000001,\\n      -0.8660254037844386\\n    ]\\n  ],\\n  \\\"noise_scales\\\": [\\n    0.1,\\n    0.3\\n  ],\\n  \\\"standardized_mean_distance\\\": 5.773502691896257,\\n  \\\"best_accuracy\\\": 0.9980537914386107,\\n  \\\"fisher_per_reading\\\": [\\n    77.77777777777776,\\n    77.77777777777776\\n  ],\\n  \\\"status\\\": \\\"Equal-prior fixed Gaussian candidates, independent repeated readings.\\\"\\n}\"}, {\"entrypoint\": \"reader_lab_v13.py\", \"arguments\": [\"sensor\", \"--mode\", \"xy\", \"--sx\", \"0.2\", \"--sy\", \"0.6\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"mode\\\": \\\"xy\\\",\\n  \\\"readings\\\": 1,\\n  \\\"candidate_angles\\\": [\\n    1.0471975511965976,\\n    -1.0471975511965976\\n  ],\\n  \\\"mean_readings\\\": [\\n    [\\n      0.5000000000000001,\\n      0.8660254037844386\\n    ],\\n    [\\n      0.5000000000000001,\\n      -0.8660254037844386\\n    ]\\n  ],\\n  \\\"noise_scales\\\": [\\n    0.2,\\n    0.6\\n  ],\\n  \\\"standardized_mean_distance\\\": 2.8867513459481287,\\n  \\\"best_accuracy\\\": 0.9255426634106172,\\n  \\\"fisher_per_reading\\\": [\\n    19.44444444444444,\\n    19.44444444444444\\n  ],\\n  \\\"status\\\": \\\"Equal-prior fixed Gaussian candidates, independent repeated readings.\\\"\\n}\"}, {\"entrypoint\": \"reader_lab_v13.py\", \"arguments\": [\"sensor\", \"--angle-a\", \"0\", \"--angle-b\", \"0.12\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"mode\\\": \\\"xy\\\",\\n  \\\"readings\\\": 1,\\n  \\\"candidate_angles\\\": [\\n    0.0,\\n    0.12\\n  ],\\n  \\\"mean_readings\\\": [\\n    [\\n      1.0,\\n      0.0\\n    ],\\n    [\\n      0.9928086358538663,\\n      0.11971220728891936\\n    ]\\n  ],\\n  \\\"noise_scales\\\": [\\n    0.1,\\n    0.3\\n  ],\\n  \\\"standardized_mean_distance\\\": 0.40546891973677807,\\n  \\\"best_accuracy\\\": 0.5803287063206757,\\n  \\\"fisher_per_reading\\\": [\\n    11.11111111111111,\\n    12.38497889546535\\n  ],\\n  \\\"status\\\": \\\"Equal-prior fixed Gaussian candidates, independent repeated readings.\\\"\\n}\"}, {\"entrypoint\": \"reader_lab_v13.py\", \"arguments\": [\"sensor\", \"--readings\", \"10\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"mode\\\": \\\"xy\\\",\\n  \\\"readings\\\": 10,\\n  \\\"candidate_angles\\\": [\\n    1.0471975511965976,\\n    -1.0471975511965976\\n  ],\\n  \\\"mean_readings\\\": [\\n    [\\n      0.5000000000000001,\\n      0.8660254037844386\\n    ],\\n    [\\n      0.5000000000000001,\\n      -0.8660254037844386\\n    ]\\n  ],\\n  \\\"noise_scales\\\": [\\n    0.1,\\n    0.3\\n  ],\\n  \\\"standardized_mean_distance\\\": 5.773502691896257,\\n  \\\"best_accuracy\\\": 1.0,\\n  \\\"fisher_per_reading\\\": [\\n    77.77777777777776,\\n    77.77777777777776\\n  ],\\n  \\\"status\\\": \\\"Equal-prior fixed Gaussian candidates, independent repeated readings.\\\"\\n}\"}, {\"entrypoint\": \"reader_lab_v13.py\", \"arguments\": [\"bernoulli\", \"--p\", \"0.45\", \"--q\", \"0.5\", \"--readings\", \"100\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"p\\\": 0.45,\\n  \\\"q\\\": 0.5,\\n  \\\"readings\\\": 100,\\n  \\\"best_accuracy\\\": 0.6922359155005519,\\n  \\\"fisher_rao_distance\\\": 0.10016742116155997\\n}\"}, {\"entrypoint\": \"reader_lab_v13.py\", \"arguments\": [\"bernoulli\", \"--p\", \"0.01\", \"--q\", \"0.06\", \"--readings\", \"100\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"p\\\": 0.01,\\n  \\\"q\\\": 0.06,\\n  \\\"readings\\\": 100,\\n  \\\"best_accuracy\\\": 0.9320070105399614,\\n  \\\"fisher_rao_distance\\\": 0.2945992840177759\\n}\"}, {\"entrypoint\": \"examples/ch05_07/reader_lab_v13.py\", \"arguments\": [\"walk\", \"--steps\", \"16\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"updates\\\": 16,\\n  \\\"starting_sites\\\": [\\n    -4,\\n    4\\n  ],\\n  \\\"possible_final_sites\\\": 41,\\n  \\\"position_entropy_bits\\\": 4.269081938310866,\\n  \\\"mutual_information_bits\\\": 0.7221119464669927,\\n  \\\"best_accuracy\\\": 0.918622171273455\\n}\"}, {\"entrypoint\": \"outputs/publication-v29/ch10/assignment_check.py\", \"arguments\": [], \"exit_code\": 0, \"stdout\": \"All 64 conditional rows sum exactly to one.\\nSame nucleotide string: 0.2993803913\\nAll assignments retained: 0.3710703619\"}, {\"entrypoint\": \"outputs/publication-v29/ch11/continuation_checks.py\", \"arguments\": [], \"exit_code\": 0, \"stdout\": \"time=11, m=1.2835, y=0.7165\\ntime=16, m=1.8647, y=0.1353\\nM(35)=30.1194, M(45)=68.6006\"}, {\"entrypoint\": \"outputs/publication-v29/ch13/survival_checks.py\", \"arguments\": [], \"exit_code\": 0, \"stdout\": \"Fixed risk: P100=0.3660323; P1000=0.00004317\\nDecreasing-risk limit: 0.904837\\nrepair=0.200: 0.334269, 0.033427, 0.632305\\nrepair=0.000: 0.000000, 0.367695, 0.632305\"}, {\"entrypoint\": \"examples/resource_learning_v31.py\", \"arguments\": [], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"verified\\\": true,\\n  \\\"writes\\\": false,\\n  \\\"model\\\": {\\n    \\\"model_id\\\": \\\"v31-learning-resource-continuation\\\",\\n    \\\"status\\\": \\\"new analytic teaching construction, not a historical or biological experiment\\\",\\n    \\\"environment\\\": \\\"Equal stipulated mixture of sensor correctness 0.9 and 0.1. Resource sides iid fair. Correctness draws iid and independent of side within environment. Calibration and deployment independent conditional on environment.\\\",\\n    \\\"calibration\\\": \\\"Five labeled trials, same opportunity for all four strategies. Follow iff at least three sensor reports were correct, otherwise reverse. One retained binary policy; frozen during deployment.\\\",\\n    \\\"deployment\\\": {\\n      \\\"start\\\": 3,\\n      \\\"horizon\\\": 12,\\n      \\\"update\\\": \\\"M(t+1)=M(t)-1+2*X(t)\\\",\\n      \\\"failure\\\": \\\"Absorbing on first update boundary at zero\\\",\\n      \\\"outcome\\\": \\\"Positive at every boundary 1 through 12\\\"\\n    },\\n    \\\"cost_scope\\\": \\\"Equal deployment starts after calibration; does not debit separate calibration, sensing, memory or actuator costs; abstract trial accounting only.\\\",\\n    \\\"boundary\\\": \\\"Sensor orientation reverses once after calibration, before deployment; no warning or relearning. Resource-side distribution and all other conditions stay fixed.\\\",\\n    \\\"calibration_error\\\": {\\n      \\\"rational\\\": \\\"107/12500\\\",\\n      \\\"decimal\\\": 0.00856,\\n      \\\"ten_decimals\\\": \\\"0.0085600000\\\"\\n    },\\n    \\\"conditional_continuation\\\": {\\n      \\\"1/10\\\": {\\n        \\\"rational\\\": \\\"18408799/10000000000\\\",\\n        \\\"decimal\\\": 0.0018408799,\\n        \\\"ten_decimals\\\": \\\"0.0018408799\\\"\\n      },\\n      \\\"1/2\\\": {\\n        \\\"rational\\\": \\\"627/1024\\\",\\n        \\\"decimal\\\": 0.6123046875,\\n        \\\"ten_decimals\\\": \\\"0.6123046875\\\"\\n      },\\n      \\\"9/10\\\": {\\n        \\\"rational\\\": \\\"9986307831/10000000000\\\",\\n        \\\"decimal\\\": 0.9986307831,\\n        \\\"ten_decimals\\\": \\\"0.9986307831\\\"\\n      }\\n    },\\n    \\\"strategies\\\": {\\n      \\\"always_follow\\\": {\\n        \\\"rational\\\": \\\"1000471663/2000000000\\\",\\n        \\\"decimal\\\": 0.5002358315,\\n        \\\"ten_decimals\\\": \\\"0.5002358315\\\"\\n      },\\n      \\\"always_left\\\": {\\n        \\\"rational\\\": \\\"627/1024\\\",\\n        \\\"decimal\\\": 0.6123046875,\\n        \\\"ten_decimals\\\": \\\"0.6123046875\\\"\\n      },\\n      \\\"learn_five_labels\\\": {\\n        \\\"rational\\\": \\\"30940570672769/31250000000000\\\",\\n        \\\"decimal\\\": 0.990098261528608,\\n        \\\"ten_decimals\\\": \\\"0.9900982615\\\"\\n      },\\n      \\\"given_deployment_orientation\\\": {\\n        \\\"rational\\\": \\\"9986307831/10000000000\\\",\\n        \\\"decimal\\\": 0.9986307831,\\n        \\\"ten_decimals\\\": \\\"0.9986307831\\\"\\n      },\\n      \\\"learn_then_unannounced_reversal\\\": {\\n        \\\"rational\\\": \\\"324168795981/31250000000000\\\",\\n        \\\"decimal\\\": 0.010373401471392,\\n        \\\"ten_decimals\\\": \\\"0.0103734015\\\"\\n      }\\n    },\\n    \\\"independent_verification\\\": {\\n      \\\"calibration_sequences_per_environment\\\": 32,\\n      \\\"deployment_sequences_per_probability\\\": 4096,\\n      \\\"probabilities_checked\\\": [\\n        \\\"1/10\\\",\\n        \\\"1/2\\\",\\n        \\\"9/10\\\"\\n      ],\\n      \\\"surviving_sequences_by_number_of_successes\\\": [\\n        0,\\n        0,\\n        0,\\n        0,\\n        0,\\n        297,\\n        704,\\n        726,\\n        483,\\n        219,\\n        66,\\n        12,\\n        1\\n      ],\\n      \\\"exact_fraction_agreement\\\": true\\n    },\\n    \\\"wrong_average_probability_result_for_diagnostic_only\\\": {\\n      \\\"rational\\\": \\\"2770817371941511752937204569257368106732571001349/2775557561562891351059079170227050781250000000000\\\",\\n      \\\"decimal\\\": 0.9982921667029991,\\n      \\\"ten_decimals\\\": \\\"0.9982921667\\\"\\n    },\\n    \\\"source\\\": \\\"examples/resource_learning_v31.py\\\",\\n    \\\"generation_source\\\": \\\"examples/publication_v31_late.py\\\"\\n  }\\n}\"}, {\"entrypoint\": \"examples/model_comparison_v31.py\", \"arguments\": [], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"passive_Y\\\": {\\n    \\\"A\\\": [\\n      0.5,\\n      0.5\\n    ],\\n    \\\"B\\\": [\\n      0.5,\\n      0.5\\n    ],\\n    \\\"total_variation\\\": 0.0,\\n    \\\"best_equal_prior_single_draw_success\\\": 0.5\\n  },\\n  \\\"force_X_on_then_read_Y\\\": {\\n    \\\"A\\\": [\\n      0.0,\\n      1.0\\n    ],\\n    \\\"B\\\": [\\n      0.5,\\n      0.5\\n    ],\\n    \\\"total_variation\\\": 0.5,\\n    \\\"best_equal_prior_single_draw_success\\\": 0.75\\n  }\\n}\"}, {\"entrypoint\": \"verify_e3.py\", \"arguments\": [], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"passed\\\": true,\\n  \\\"checks\\\": {\\n    \\\"root\\\": \\\"C:\\\\\\\\PRACA\\\\\\\\NeuroMorph\\\\\\\\Aionoesis-learning\\\\\\\\books\\\\\\\\how-matter-learns-to-continue\\\\\\\\tmp\\\\\\\\validation-v42-3fmhnzkf\\\\\\\\how-matter-learns-to-continue-v40-companion\\\\\\\\evidence\\\\\\\\e3\\\",\\n    \\\"manifest_sha256\\\": \\\"3750b736c09efd0aaa7bc512a74de06383f4b53458e287b6bfefd348eb81556a\\\",\\n    \\\"baseline_artifacts_verified\\\": 8,\\n    \\\"coefficients\\\": [\\n      -0.49414752789909744,\\n      0.7191418084524686,\\n      0.6260880627343716,\\n      0.48161909928328844\\n    ],\\n    \\\"coefficient_float64_le_hex\\\": \\\"ac74eef31ca0dfbf34ab8fae3503e73f1f863bd5e908e43faf3e23ead8d2de3f\\\",\\n    \\\"analysis_public_rows_agree\\\": 30,\\n    \\\"all_256_rule_influence_counts\\\": {\\n      \\\"0\\\": 4,\\n      \\\"1/4\\\": 48,\\n      \\\"1/2\\\": 152,\\n      \\\"3/4\\\": 48,\\n      \\\"1\\\": 4\\n    },\\n    \\\"actual_30_class_influence_counts\\\": {\\n      \\\"1/4\\\": 7,\\n      \\\"1/2\\\": 17,\\n      \\\"3/4\\\": 5,\\n      \\\"1\\\": 1\\n    },\\n    \\\"actual_predictions\\\": [\\n      {\\n        \\\"prediction\\\": -0.2739692975450531,\\n        \\\"class_count\\\": 7\\n      },\\n      {\\n        \\\"prediction\\\": -0.09418384543193596,\\n        \\\"class_count\\\": 17\\n      },\\n      {\\n        \\\"prediction\\\": 0.08560160668118118,\\n        \\\"class_count\\\": 5\\n      },\\n      {\\n        \\\"prediction\\\": 0.2653870587942983,\\n        \\\"class_count\\\": 1\\n      }\\n    ],\\n    \\\"negative_prediction_count\\\": 24,\\n    \\\"negative_classes\\\": [\\n      3,\\n      5,\\n      6,\\n      8,\\n      12,\\n      13,\\n      14,\\n      15,\\n      24,\\n      32,\\n      33,\\n      34,\\n      38,\\n      44,\\n      57,\\n      58,\\n      108,\\n      126,\\n      128,\\n      132,\\n      140,\\n      142,\\n      152,\\n      178\\n    ],\\n    \\\"worked_collision\\\": [\\n      {\\n        \\\"class_representative\\\": 24,\\n        \\\"mean_local_influence\\\": 0.5,\\n        \\\"normalized_neighborhood_size\\\": 0.06451612903225806,\\n        \\\"determinism_margin\\\": 0.0,\\n        \\\"law_prediction\\\": -0.09418384543193596,\\n        \\\"response_changed_count\\\": 292,\\n        \\\"response_comparison_count\\\": 7936,\\n        \\\"response\\\": 0.03679435483870968\\n      },\\n      {\\n        \\\"class_representative\\\": 44,\\n        \\\"mean_local_influence\\\": 0.5,\\n        \\\"normalized_neighborhood_size\\\": 0.06451612903225806,\\n        \\\"determinism_margin\\\": 0.0,\\n        \\\"law_prediction\\\": -0.09418384543193596,\\n        \\\"response_changed_count\\\": 237,\\n        \\\"response_comparison_count\\\": 7936,\\n        \\\"response\\\": 0.029863911290322582\\n      }\\n    ],\\n    \\\"collision_response_difference_exact\\\": \\\"55/7936\\\",\\n    \\\"recomputed_mse\\\": {\\n      \\\"mse_law\\\": 0.04651764075889651,\\n      \\\"mse_floor\\\": 0.022214819625990624,\\n      \\\"mse_memory\\\": 0.011103334688740193,\\n      \\\"mse_disjoint_union\\\": 0.01693321813870276\\n    },\\n    \\\"mean_response_exact\\\": \\\"157/1984\\\",\\n    \\\"mean_prediction\\\": -0.09418384543193596,\\n    \\\"mean_residual\\\": -0.17331690994806498,\\n    \\\"mean_residual_squared\\\": 0.030038751273945664,\\n    \\\"centered_residual_mse\\\": 0.01647888948495083,\\n    \\\"bounding_box_prediction_range\\\": [\\n      -0.49414752789909744,\\n      1.0918918929293868\\n    ],\\n    \\\"bounding_box_squared_error_upper_bound\\\": 2.232476835126984,\\n    \\\"scope\\\": \\\"Immutable stored outcomes, descriptors and predictions only; no refitting, clipping, new outcomes, bootstrap, or causal attribution.\\\"\\n  },\\n  \\\"outcome\\\": \\\"e3_transfer_null\\\",\\n  \\\"scientific_admission\\\": false,\\n  \\\"scope\\\": \\\"Stored-byte integrity and saved-row arithmetic only; no instrument rerun, refit, new outcomes, or independent replication.\\\"\\n}\"}, {\"entrypoint\": \"verify_framework_record.py\", \"arguments\": [], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"passed\\\": true,\\n  \\\"framework_count\\\": 4,\\n  \\\"frameworks_executed_in_this_check\\\": false,\\n  \\\"receipt\\\": \\\"reviews/publication-v34/framework-verification.json\\\",\\n  \\\"receipt_sha256\\\": \\\"4d07499cf5d18026eb1d7560d2b164d060b71989454136d77f40a82b8aba381a\\\",\\n  \\\"archive_sha256\\\": \\\"fea8a5d178deb40354ed6c8090f6f5b11d1d0fcc84765d4c6c040864098d8c40\\\",\\n  \\\"snippets_match_recorded_execution\\\": true,\\n  \\\"readme_matches_receipt\\\": true,\\n  \\\"environment_versions_match_receipt\\\": true,\\n  \\\"scope\\\": \\\"Record and source compatibility only; inherited CPU forward-score checks, no fresh framework run or training.\\\"\\n}\"}, {\"entrypoint\": \"examples/memory_reproduction_v39.py\", \"arguments\": [], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"passed\\\": true,\\n  \\\"archive_sha256\\\": \\\"7de672bd468830dd1befb74fbc7bb7fbd13e36eecccf1781742eca97ea865e34\\\",\\n  \\\"source_hashes\\\": {\\n    \\\"outputs\\\\\\\\chapters-three-six\\\\\\\\v7\\\\\\\\experiments-memory\\\\\\\\data.npz\\\": \\\"7de672bd468830dd1befb74fbc7bb7fbd13e36eecccf1781742eca97ea865e34\\\",\\n    \\\"outputs\\\\\\\\chapters-three-six\\\\\\\\v7\\\\\\\\experiments-memory\\\\\\\\results.json\\\": \\\"bd96e19df1b71c4f2ed745e2d21b8ac7b753486f486d55ac008eb7ba12bd319f\\\",\\n    \\\"examples\\\\\\\\ch03_04\\\\\\\\experiment_v7.py\\\": \\\"141a4e3b923d6e19f2be0a6fb590f342c03350870dddc39bebff5dedfef608ad\\\"\\n  },\\n  \\\"python_numpy_version\\\": \\\"2.4.4\\\",\\n  \\\"configuration\\\": {\\n    \\\"train_position_seed\\\": 7321,\\n    \\\"test_position_seed\\\": 9248,\\n    \\\"network_seed\\\": 1701,\\n    \\\"train_base_positions\\\": 256,\\n    \\\"test_base_positions\\\": 512,\\n    \\\"current_position_interval\\\": [\\n      -2.0,\\n      2.0\\n    ],\\n    \\\"velocities\\\": [\\n      -1.0,\\n      1.0\\n    ],\\n    \\\"time_interval\\\": 1.0,\\n    \\\"hidden_relu_units\\\": 8,\\n    \\\"input_divisor\\\": 3.0,\\n    \\\"full_batch_updates\\\": 10000,\\n    \\\"learning_rate\\\": 0.03,\\n    \\\"objective\\\": \\\"mean(0.5 * (prediction - target)**2)\\\",\\n    \\\"selection\\\": \\\"one fixed run per architecture; no validation or test selection\\\",\\n    \\\"noise_sigma\\\": 0.75,\\n    \\\"observed_previous_position\\\": -0.6\\n  },\\n  \\\"initialization\\\": {\\n    \\\"generator\\\": \\\"numpy.random.default_rng(1701), restarted for each input dimension\\\",\\n    \\\"W1\\\": \\\"normal(0, sqrt(2/d)), shape (d,8), drawn first\\\",\\n    \\\"b1\\\": \\\"eight entries equal 0.3\\\",\\n    \\\"W2\\\": \\\"normal(0, sqrt(2/8)), shape (8,1), drawn after W1\\\",\\n    \\\"b2\\\": \\\"one zero\\\",\\n    \\\"matches_isolated_historical_initializer\\\": true\\n  },\\n  \\\"generated_data_exactly_matches_archive\\\": true,\\n  \\\"models\\\": {\\n    \\\"current_only\\\": {\\n      \\\"train_rmse\\\": 1.0000221618253664,\\n      \\\"test_rmse\\\": 1.0000261452316914,\\n      \\\"saved_prediction_max_error\\\": 0.0\\n    },\\n    \\\"history\\\": {\\n      \\\"train_rmse\\\": 0.017397851942331267,\\n      \\\"test_rmse\\\": 0.017811815614758357,\\n      \\\"saved_prediction_max_error\\\": 0.0\\n    }\\n  },\\n  \\\"exact_predictor_test_rmse\\\": 0.0,\\n  \\\"newly_retrained\\\": false,\\n  \\\"files_written\\\": false,\\n  \\\"scope\\\": \\\"Frozen-array verification plus optional fresh in-memory reproduction. Not evidence that the historical run used this current environment.\\\"\\n}\"}, {\"entrypoint\": \"examples/memory_reproduction_v39.py\", \"arguments\": [\"--retrain\"], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"passed\\\": true,\\n  \\\"archive_sha256\\\": \\\"7de672bd468830dd1befb74fbc7bb7fbd13e36eecccf1781742eca97ea865e34\\\",\\n  \\\"source_hashes\\\": {\\n    \\\"outputs\\\\\\\\chapters-three-six\\\\\\\\v7\\\\\\\\experiments-memory\\\\\\\\data.npz\\\": \\\"7de672bd468830dd1befb74fbc7bb7fbd13e36eecccf1781742eca97ea865e34\\\",\\n    \\\"outputs\\\\\\\\chapters-three-six\\\\\\\\v7\\\\\\\\experiments-memory\\\\\\\\results.json\\\": \\\"bd96e19df1b71c4f2ed745e2d21b8ac7b753486f486d55ac008eb7ba12bd319f\\\",\\n    \\\"examples\\\\\\\\ch03_04\\\\\\\\experiment_v7.py\\\": \\\"141a4e3b923d6e19f2be0a6fb590f342c03350870dddc39bebff5dedfef608ad\\\"\\n  },\\n  \\\"python_numpy_version\\\": \\\"2.4.4\\\",\\n  \\\"configuration\\\": {\\n    \\\"train_position_seed\\\": 7321,\\n    \\\"test_position_seed\\\": 9248,\\n    \\\"network_seed\\\": 1701,\\n    \\\"train_base_positions\\\": 256,\\n    \\\"test_base_positions\\\": 512,\\n    \\\"current_position_interval\\\": [\\n      -2.0,\\n      2.0\\n    ],\\n    \\\"velocities\\\": [\\n      -1.0,\\n      1.0\\n    ],\\n    \\\"time_interval\\\": 1.0,\\n    \\\"hidden_relu_units\\\": 8,\\n    \\\"input_divisor\\\": 3.0,\\n    \\\"full_batch_updates\\\": 10000,\\n    \\\"learning_rate\\\": 0.03,\\n    \\\"objective\\\": \\\"mean(0.5 * (prediction - target)**2)\\\",\\n    \\\"selection\\\": \\\"one fixed run per architecture; no validation or test selection\\\",\\n    \\\"noise_sigma\\\": 0.75,\\n    \\\"observed_previous_position\\\": -0.6\\n  },\\n  \\\"initialization\\\": {\\n    \\\"generator\\\": \\\"numpy.random.default_rng(1701), restarted for each input dimension\\\",\\n    \\\"W1\\\": \\\"normal(0, sqrt(2/d)), shape (d,8), drawn first\\\",\\n    \\\"b1\\\": \\\"eight entries equal 0.3\\\",\\n    \\\"W2\\\": \\\"normal(0, sqrt(2/8)), shape (8,1), drawn after W1\\\",\\n    \\\"b2\\\": \\\"one zero\\\",\\n    \\\"matches_isolated_historical_initializer\\\": true\\n  },\\n  \\\"generated_data_exactly_matches_archive\\\": true,\\n  \\\"models\\\": {\\n    \\\"current_only\\\": {\\n      \\\"train_rmse\\\": 1.0000221618253664,\\n      \\\"new_reproduction\\\": {\\n        \\\"updates\\\": 10000,\\n        \\\"final_parameter_max_error\\\": 0.0,\\n        \\\"learning_curve_max_error\\\": 0.0,\\n        \\\"absolute_tolerance\\\": 1e-11\\n      },\\n      \\\"test_rmse\\\": 1.0000261452316914,\\n      \\\"saved_prediction_max_error\\\": 0.0\\n    },\\n    \\\"history\\\": {\\n      \\\"train_rmse\\\": 0.017397851942331267,\\n      \\\"new_reproduction\\\": {\\n        \\\"updates\\\": 10000,\\n        \\\"final_parameter_max_error\\\": 0.0,\\n        \\\"learning_curve_max_error\\\": 0.0,\\n        \\\"absolute_tolerance\\\": 1e-11\\n      },\\n      \\\"test_rmse\\\": 0.017811815614758357,\\n      \\\"saved_prediction_max_error\\\": 0.0\\n    }\\n  },\\n  \\\"exact_predictor_test_rmse\\\": 0.0,\\n  \\\"newly_retrained\\\": true,\\n  \\\"files_written\\\": false,\\n  \\\"scope\\\": \\\"Frozen-array verification plus optional fresh in-memory reproduction. Not evidence that the historical run used this current environment.\\\"\\n}\"}, {\"entrypoint\": \"examples/exploratory/local_rule_profiles_v39.py\", \"arguments\": [], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"passed\\\": true,\\n  \\\"status\\\": \\\"new exploratory companion exercise, not adopted as a book result\\\",\\n  \\\"origin\\\": \\\"Prompted by the v38 external reviewer after examining the exposed pair. Independently implemented here.\\\",\\n  \\\"convention\\\": \\\"f_r(L,C,R) = (r >> (4L+2C+R)) & 1\\\",\\n  \\\"context_measure\\\": \\\"Uniform over all 8 one-step and all 32 two-step local contexts\\\",\\n  \\\"horizons\\\": [\\n    1,\\n    2\\n  ],\\n  \\\"implementations\\\": \\\"Bit-table shrinking window and explicit Boolean rules on a padded synchronous array\\\",\\n  \\\"results\\\": {\\n    \\\"24\\\": {\\n      \\\"one_step_left_centre_right\\\": [\\n        \\\"1/2\\\",\\n        \\\"1/2\\\",\\n        \\\"1/2\\\"\\n      ],\\n      \\\"one_step_neighbour_mean\\\": \\\"1/2\\\",\\n      \\\"reflection_invariant_imbalance\\\": \\\"0\\\",\\n      \\\"two_step_minus2_to_plus2\\\": [\\n        \\\"3/8\\\",\\n        \\\"3/8\\\",\\n        \\\"3/8\\\",\\n        \\\"1/8\\\",\\n        \\\"1/8\\\"\\n      ],\\n      \\\"two_step_noncentral_mean\\\": \\\"1/4\\\",\\n      \\\"recodings\\\": [\\n        {\\n          \\\"reflected\\\": false,\\n          \\\"complemented\\\": false,\\n          \\\"rule\\\": 24,\\n          \\\"profile\\\": [\\n            \\\"1/2\\\",\\n            \\\"1/2\\\",\\n            \\\"1/2\\\"\\n          ]\\n        },\\n        {\\n          \\\"reflected\\\": false,\\n          \\\"complemented\\\": true,\\n          \\\"rule\\\": 231,\\n          \\\"profile\\\": [\\n            \\\"1/2\\\",\\n            \\\"1/2\\\",\\n            \\\"1/2\\\"\\n          ]\\n        },\\n        {\\n          \\\"reflected\\\": true,\\n          \\\"complemented\\\": false,\\n          \\\"rule\\\": 66,\\n          \\\"profile\\\": [\\n            \\\"1/2\\\",\\n            \\\"1/2\\\",\\n            \\\"1/2\\\"\\n          ]\\n        },\\n        {\\n          \\\"reflected\\\": true,\\n          \\\"complemented\\\": true,\\n          \\\"rule\\\": 189,\\n          \\\"profile\\\": [\\n            \\\"1/2\\\",\\n            \\\"1/2\\\",\\n            \\\"1/2\\\"\\n          ]\\n        }\\n      ]\\n    },\\n    \\\"44\\\": {\\n      \\\"one_step_left_centre_right\\\": [\\n        \\\"3/4\\\",\\n        \\\"3/4\\\",\\n        \\\"1/4\\\"\\n      ],\\n      \\\"one_step_neighbour_mean\\\": \\\"1/2\\\",\\n      \\\"reflection_invariant_imbalance\\\": \\\"1/2\\\",\\n      \\\"two_step_minus2_to_plus2\\\": [\\n        \\\"7/16\\\",\\n        \\\"5/16\\\",\\n        \\\"7/16\\\",\\n        \\\"3/16\\\",\\n        \\\"1/16\\\"\\n      ],\\n      \\\"two_step_noncentral_mean\\\": \\\"1/4\\\",\\n      \\\"recodings\\\": [\\n        {\\n          \\\"reflected\\\": false,\\n          \\\"complemented\\\": false,\\n          \\\"rule\\\": 44,\\n          \\\"profile\\\": [\\n            \\\"3/4\\\",\\n            \\\"3/4\\\",\\n            \\\"1/4\\\"\\n          ]\\n        },\\n        {\\n          \\\"reflected\\\": false,\\n          \\\"complemented\\\": true,\\n          \\\"rule\\\": 203,\\n          \\\"profile\\\": [\\n            \\\"3/4\\\",\\n            \\\"3/4\\\",\\n            \\\"1/4\\\"\\n          ]\\n        },\\n        {\\n          \\\"reflected\\\": true,\\n          \\\"complemented\\\": false,\\n          \\\"rule\\\": 100,\\n          \\\"profile\\\": [\\n            \\\"1/4\\\",\\n            \\\"3/4\\\",\\n            \\\"3/4\\\"\\n          ]\\n        },\\n        {\\n          \\\"reflected\\\": true,\\n          \\\"complemented\\\": true,\\n          \\\"rule\\\": 217,\\n          \\\"profile\\\": [\\n            \\\"1/4\\\",\\n            \\\"3/4\\\",\\n            \\\"3/4\\\"\\n          ]\\n        }\\n      ]\\n    }\\n  },\\n  \\\"original_e3_rerun\\\": false,\\n  \\\"terminal_response_predicted\\\": false,\\n  \\\"held_out_cases_tested\\\": false,\\n  \\\"limitations\\\": [\\n    \\\"Not Conway Game of Life.\\\",\\n    \\\"Not E3 full-ring preparations or response variable.\\\",\\n    \\\"Distinguishes this exposed pair only; no causal explanation of their E3 difference.\\\",\\n    \\\"No fitted replacement, transfer success, general descriptor validation or novelty claim.\\\"\\n  ]\\n}\"}, {\"entrypoint\": \"verify_v39_evidence.py\", \"arguments\": [], \"exit_code\": 0, \"stdout\": \"{\\n  \\\"passed\\\": true,\\n  \\\"framework_configurations_recorded\\\": 12,\\n  \\\"frameworks_executed_by_this_check\\\": false,\\n  \\\"strict_failures_preserved\\\": [\\n    \\\"keras-tensorflow-default\\\",\\n    \\\"keras-tensorflow-float64\\\",\\n    \\\"keras-jax-default\\\",\\n    \\\"keras-jax-float64\\\",\\n    \\\"keras-torch-default\\\",\\n    \\\"keras-torch-float64\\\",\\n    \\\"keras-torch-full64\\\"\\n  ],\\n  \\\"all_recorded_classifications_match\\\": true,\\n  \\\"scope\\\": \\\"Evidence/hash consistency only. The companion verifier separately runs the motion and exploratory programs. No human reader results.\\\"\\n}\"}], \"frozen_energy_arrays\": {\"passed\": true, \"sample_count\": 1001, \"expected_total_J\": 0.75, \"max_formula_error\": 2.7755575615628914e-17, \"max_conservation_error_J\": 3.3306690738754696e-16, \"source_sha256\": \"e638584d578c0480ff5e7c737cef0b24878d6e768a37720701e829f79a0cf01f\", \"arrays_sha256\": \"63cbe858a61b9975fb2909fe757d5c5f97abf5b2ecdadc657a20d20ab04a1e0f\", \"producer_imported_or_executed\": false, \"files_written\": false}, \"glider_deletion\": {\"deleted_site\": [1, 2], \"update_three\": [[2, 2], [2, 3], [3, 1], [3, 4], [4, 2], [4, 3]], \"update_four_unchanged\": true, \"rule_changed\": false, \"training\": false}, \"extracted_tree_unchanged\": true, \"tree_files_verified_before_and_after\": 53, \"scope\": \"Fresh v40 portable reader runs, two in-memory Chapter 3 training reproductions using the original v39 reader, frozen arithmetic and a retained exploratory diagnostic. Inherited v34/v39 framework record consistency and current snippet bindings only; no fresh framework or E3 execution.\"}, \"command_receipts\": [{\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\examples\\\\ch01\\\\investigation_v9.py\", \"--json\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:40.612487+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:40.852767+00:00\", \"elapsed_seconds\": 0.234, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\examples\\\\ch01\\\\investigation_v9.py\", \"--pixel\", \"5\", \"0.5\", \"--json\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:40.852767+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:41.122548+00:00\", \"elapsed_seconds\": 0.266, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\examples\\\\ch01\\\\investigation_v9.py\", \"--weight-delta\", \"0.01\", \"--json\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:41.122548+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:41.482259+00:00\", \"elapsed_seconds\": 0.359, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\examples\\\\ch01\\\\investigation_v9.py\", \"--stage\", \"300\", \"--step\", \"--json\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:41.482259+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:41.752771+00:00\", \"elapsed_seconds\": 0.281, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\examples\\\\ch01_04\\\\reader_lab_v11.py\", \"representation\", \"--index\", \"50\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:41.752771+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:42.174957+00:00\", \"elapsed_seconds\": 0.422, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\examples\\\\ch01_04\\\\reader_lab_v11.py\", \"motion\", \"--current\", \"0\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:42.174957+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:42.498070+00:00\", \"elapsed_seconds\": 0.313, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\examples\\\\ch01_04\\\\reader_lab_v11.py\", \"motion\", \"--previous\", \"-1\", \"--current\", \"0\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:42.498070+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:42.760810+00:00\", \"elapsed_seconds\": 0.265, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\examples\\\\ch01_04\\\\reader_lab_v11.py\", \"sensor\", \"--readings\", \"-0.6\", \"0.6\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:42.760810+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:43.037600+00:00\", \"elapsed_seconds\": 0.282, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\examples\\\\ch01_04\\\\reader_lab_v11.py\", \"sensor\", \"--sigma\", \"1.5\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:43.038596+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:43.334409+00:00\", \"elapsed_seconds\": 0.296, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\examples\\\\ch01_04\\\\reader_lab_v11.py\", \"sensor\", \"--prior\", \"0.2\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:43.334409+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:43.640176+00:00\", \"elapsed_seconds\": 0.297, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\reader_lab_v13.py\", \"walk\", \"--steps\", \"16\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:43.640176+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:43.891423+00:00\", \"elapsed_seconds\": 0.25, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\reader_lab_v13.py\", \"walk\", \"--steps\", \"96\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:43.891423+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:44.146444+00:00\", \"elapsed_seconds\": 0.266, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\reader_lab_v13.py\", \"walk\", \"--steps\", \"96\", \"--separation\", \"12\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:44.146444+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:44.430791+00:00\", \"elapsed_seconds\": 0.281, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\reader_lab_v13.py\", \"phase\", \"--gap\", \"1.8\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:44.430791+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:44.702702+00:00\", \"elapsed_seconds\": 0.266, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\reader_lab_v13.py\", \"phase\", \"--gap\", \"3.141592653589793\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:44.702702+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:44.919729+00:00\", \"elapsed_seconds\": 0.219, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\reader_lab_v13.py\", \"phase\", \"--gap\", \"1.8\", \"--coupling\", \"0\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:44.919729+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:45.125878+00:00\", \"elapsed_seconds\": 0.203, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\reader_lab_v13.py\", \"sensor\", \"--mode\", \"x\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:45.125878+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:45.339443+00:00\", \"elapsed_seconds\": 0.218, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\reader_lab_v13.py\", \"sensor\", \"--mode\", \"xy\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:45.339443+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:45.540340+00:00\", \"elapsed_seconds\": 0.204, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\reader_lab_v13.py\", \"sensor\", \"--mode\", \"xy\", \"--sx\", \"0.2\", \"--sy\", \"0.6\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:45.541317+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:45.743402+00:00\", \"elapsed_seconds\": 0.203, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\reader_lab_v13.py\", \"sensor\", \"--angle-a\", \"0\", \"--angle-b\", \"0.12\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:45.743402+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:45.940540+00:00\", \"elapsed_seconds\": 0.203, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\reader_lab_v13.py\", \"sensor\", \"--readings\", \"10\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:45.940540+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:46.131833+00:00\", \"elapsed_seconds\": 0.187, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\reader_lab_v13.py\", \"bernoulli\", \"--p\", \"0.45\", \"--q\", \"0.5\", \"--readings\", \"100\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:46.131833+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:46.351655+00:00\", \"elapsed_seconds\": 0.219, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\reader_lab_v13.py\", \"bernoulli\", \"--p\", \"0.01\", \"--q\", \"0.06\", \"--readings\", \"100\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:46.353665+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:46.545740+00:00\", \"elapsed_seconds\": 0.188, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\examples\\\\ch05_07\\\\reader_lab_v13.py\", \"walk\", \"--steps\", \"16\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:46.545740+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:46.749974+00:00\", \"elapsed_seconds\": 0.203, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\outputs\\\\publication-v29\\\\ch10\\\\assignment_check.py\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:46.749974+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:46.847434+00:00\", \"elapsed_seconds\": 0.109, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\outputs\\\\publication-v29\\\\ch11\\\\continuation_checks.py\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:46.847434+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:46.908074+00:00\", \"elapsed_seconds\": 0.063, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\outputs\\\\publication-v29\\\\ch13\\\\survival_checks.py\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:46.908074+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:46.999394+00:00\", \"elapsed_seconds\": 0.078, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\examples\\\\resource_learning_v31.py\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:46.999394+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:47.127468+00:00\", \"elapsed_seconds\": 0.14, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\examples\\\\model_comparison_v31.py\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:47.127468+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:47.219090+00:00\", \"elapsed_seconds\": 0.078, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\verify_e3.py\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:47.219090+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:47.338332+00:00\", \"elapsed_seconds\": 0.125, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\verify_framework_record.py\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:47.338332+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:47.443992+00:00\", \"elapsed_seconds\": 0.11, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\examples\\\\memory_reproduction_v39.py\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:47.443992+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:48.075610+00:00\", \"elapsed_seconds\": 0.625, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\examples\\\\memory_reproduction_v39.py\", \"--retrain\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:48.075610+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:49.216129+00:00\", \"elapsed_seconds\": 1.14, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\examples\\\\exploratory\\\\local_rule_profiles_v39.py\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:49.216129+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:49.303726+00:00\", \"elapsed_seconds\": 0.094, \"exit_code\": 0, \"stderr\": \"\"}, {\"command\": [\"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\venv\\\\Scripts\\\\python.exe\", \"-B\", \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\verify_v39_evidence.py\"], \"cwd\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\", \"started_at_utc\": \"2026-09-17T14:31:49.303726+00:00\", \"finished_at_utc\": \"2026-09-17T14:31:49.393551+00:00\", \"elapsed_seconds\": 0.094, \"exit_code\": 0, \"stderr\": \"\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+        "-B",
+        "-c",
+        "import importlib.util,json; print(json.dumps({x:importlib.util.find_spec(x) is not None for x in ('torch','tensorflow','jax','keras')}))"
+      ],
+      "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf",
+      "started_at_utc": "2026-09-17T14:31:49.435397+00:00",
+      "finished_at_utc": "2026-09-17T14:31:49.515104+00:00",
+      "elapsed_seconds": 0.078,
+      "exit_code": 0,
+      "stdout": "{\"torch\": false, \"tensorflow\": false, \"jax\": false, \"keras\": false}\n",
+      "stderr": ""
+    }
+  ],
+  "host": {
+    "python": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "purchaser_access_route": "not_established",
+  "upload_performed": false,
+  "installed_packages": "numpy==2.4.4\n",
+  "venv_config": "home = C:\\Users\\Msi\\AppData\\Local\\Programs\\Python\\Python311\ninclude-system-site-packages = false\nversion = 3.11.0\nexecutable = C:\\Users\\Msi\\AppData\\Local\\Programs\\Python\\Python311\\python.exe\ncommand = C:\\Users\\Msi\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m venv C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\n",
+  "portable_suite": {
+    "suite": {
+      "passed": true,
+      "python": "3.11.0",
+      "numpy": "2.4.4",
+      "working_directory": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+      "files_verified_before_and_after": 52,
+      "command_count": 35,
+      "runs": [
+        {
+          "entrypoint": "examples/ch01/investigation_v9.py",
+          "arguments": [
+            "--json"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"stage\": \"trained\",\n  \"input\": [\n    0.0,\n    1.0,\n    0.0,\n    0.0,\n    1.0,\n    0.0,\n    0.0,\n    1.0,\n    0.0\n  ],\n  \"manual_weight_delta\": 0.0,\n  \"training_update_requested\": false,\n  \"before\": {\n    \"hidden_sums\": [\n      3.8492590291589655,\n      -2.1446078324437714,\n      -0.10904520524255559,\n      -2.5381408822504037,\n      -0.24747072192330677,\n      -0.0716079074341559\n    ],\n    \"hidden_responses\": [\n      3.8492590291589655,\n      0.0,\n      0.0,\n      0.0,\n      0.0,\n      0.0\n    ],\n    \"score\": 6.257793842544071,\n    \"probability_vertical\": 0.9980881950388769,\n    \"chosen_label\": \"vertical\",\n    \"pixel_2_to_unit_1_weight\": 1.8965484533189758\n  },\n  \"mean_training_loss_before\": 0.007108390036097399\n}"
+        },
+        {
+          "entrypoint": "examples/ch01/investigation_v9.py",
+          "arguments": [
+            "--pixel",
+            "5",
+            "0.5",
+            "--json"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"stage\": \"trained\",\n  \"input\": [\n    0.0,\n    1.0,\n    0.0,\n    0.0,\n    0.5,\n    0.0,\n    0.0,\n    1.0,\n    0.0\n  ],\n  \"manual_weight_delta\": 0.0,\n  \"training_update_requested\": false,\n  \"before\": {\n    \"hidden_sums\": [\n      3.8023884875057,\n      -1.7487782647315846,\n      0.36731701133388617,\n      -2.0675972095776554,\n      0.2413747874911174,\n      0.03123972259037211\n    ],\n    \"hidden_responses\": [\n      3.8023884875057,\n      0.0,\n      0.36731701133388617,\n      0.0,\n      0.2413747874911174,\n      0.03123972259037211\n    ],\n    \"score\": 4.605310245215005,\n    \"probability_vertical\": 0.9901003828018162,\n    \"chosen_label\": \"vertical\",\n    \"pixel_2_to_unit_1_weight\": 1.8965484533189758\n  },\n  \"mean_training_loss_before\": 0.007108390036097399\n}"
+        },
+        {
+          "entrypoint": "examples/ch01/investigation_v9.py",
+          "arguments": [
+            "--weight-delta",
+            "0.01",
+            "--json"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"stage\": \"trained\",\n  \"input\": [\n    0.0,\n    1.0,\n    0.0,\n    0.0,\n    1.0,\n    0.0,\n    0.0,\n    1.0,\n    0.0\n  ],\n  \"manual_weight_delta\": 0.01,\n  \"training_update_requested\": false,\n  \"before\": {\n    \"hidden_sums\": [\n      3.8592590291589652,\n      -2.1446078324437714,\n      -0.10904520524255559,\n      -2.5381408822504037,\n      -0.24747072192330677,\n      -0.0716079074341559\n    ],\n    \"hidden_responses\": [\n      3.8592590291589652,\n      0.0,\n      0.0,\n      0.0,\n      0.0,\n      0.0\n    ],\n    \"score\": 6.2831629284662505,\n    \"probability_vertical\": 0.9981359964745936,\n    \"chosen_label\": \"vertical\",\n    \"pixel_2_to_unit_1_weight\": 1.9065484533189758\n  },\n  \"mean_training_loss_before\": 0.007102153730666254\n}"
+        },
+        {
+          "entrypoint": "examples/ch01/investigation_v9.py",
+          "arguments": [
+            "--stage",
+            "300",
+            "--step",
+            "--json"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"stage\": \"300\",\n  \"input\": [\n    0.0,\n    1.0,\n    0.0,\n    0.0,\n    1.0,\n    0.0,\n    0.0,\n    1.0,\n    0.0\n  ],\n  \"manual_weight_delta\": 0.0,\n  \"training_update_requested\": true,\n  \"before\": {\n    \"hidden_sums\": [\n      0.608978932697741,\n      -0.6933786969049254,\n      -0.05939573970397746,\n      -1.6139456142702617,\n      -0.19249350094902204,\n      0.050391072058533715\n    ],\n    \"hidden_responses\": [\n      0.608978932697741,\n      0.0,\n      0.0,\n      0.0,\n      0.0,\n      0.050391072058533715\n    ],\n    \"score\": -0.02420654352586063,\n    \"probability_vertical\": 0.4939486596009617,\n    \"chosen_label\": \"horizontal\",\n    \"pixel_2_to_unit_1_weight\": 0.5419393353228699\n  },\n  \"mean_training_loss_before\": 0.3579801374061621,\n  \"after\": {\n    \"hidden_sums\": [\n      0.6133436879479803,\n      -0.696041654074063,\n      -0.05990038600477396,\n      -1.6152582025190907,\n      -0.1926673634887881,\n      0.04761888729701669\n    ],\n    \"hidden_responses\": [\n      0.6133436879479803,\n      0.0,\n      0.0,\n      0.0,\n      0.0,\n      0.04761888729701669\n    ],\n    \"score\": -0.022215777207661574,\n    \"probability_vertical\": 0.4944462841116344,\n    \"chosen_label\": \"horizontal\",\n    \"pixel_2_to_unit_1_weight\": 0.544183467512125\n  },\n  \"mean_training_loss_after\": 0.35671638695637703\n}"
+        },
+        {
+          "entrypoint": "examples/ch01_04/reader_lab_v11.py",
+          "arguments": [
+            "representation",
+            "--index",
+            "50"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"point_index\": 50,\n  \"input\": [\n    -0.7905127918886528,\n    0.21142392739982374\n  ],\n  \"hidden_units\": 256,\n  \"positive_total\": 26.211257896151174,\n  \"negative_magnitude_total\": 29.428965031670828,\n  \"bias\": 3.0170487050552186,\n  \"original_score\": -0.2006584304644301,\n  \"reconstructed_score\": -0.20065843046443455,\n  \"score_error\": 4.440892098500626e-15,\n  \"probability_ring\": 0.4500030355887975,\n  \"chosen_label\": 0,\n  \"true_label\": 1,\n  \"radius\": 0.818297348899994,\n  \"radius_rule_label\": 1,\n  \"parameters_changed\": false,\n  \"source\": \"archived 256-unit model after 5000 updates\"\n}"
+        },
+        {
+          "entrypoint": "examples/ch01_04/reader_lab_v11.py",
+          "arguments": [
+            "motion",
+            "--current",
+            "0"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"current\": 0.0,\n  \"previous\": null,\n  \"learned_prediction\": 0.005917952762745121,\n  \"source\": \"archived feedforward model\",\n  \"parameters_changed\": false,\n  \"assumptions\": \"constant velocity, equal observation intervals; no new training\",\n  \"possible_next_positions\": [\n    -1.0,\n    1.0\n  ],\n  \"exact_squared_error_optimum\": 0.0,\n  \"balanced_pair_minimum_rmse\": 1.0\n}"
+        },
+        {
+          "entrypoint": "examples/ch01_04/reader_lab_v11.py",
+          "arguments": [
+            "motion",
+            "--previous",
+            "-1",
+            "--current",
+            "0"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"current\": 0.0,\n  \"previous\": -1.0,\n  \"learned_prediction\": 0.9961090715754022,\n  \"source\": \"archived feedforward model\",\n  \"parameters_changed\": false,\n  \"assumptions\": \"constant velocity, equal observation intervals; no new training\",\n  \"hand_built_prediction\": 1.0,\n  \"learned_minus_hand\": -0.003890928424597817,\n  \"warning\": \"Exact hand prediction needs constant velocity and exact observations.\"\n}"
+        },
+        {
+          "entrypoint": "examples/ch01_04/reader_lab_v11.py",
+          "arguments": [
+            "sensor",
+            "--readings",
+            "-0.6",
+            "0.6"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"sigma\": 0.75,\n  \"prior_right\": 0.5,\n  \"stages\": [\n    {\n      \"observations\": 0,\n      \"reading\": null,\n      \"posterior_right\": 0.5,\n      \"posterior_left\": 0.5,\n      \"mean_next_position\": 0.0,\n      \"entropy_bits\": 1.0\n    },\n    {\n      \"observations\": 1,\n      \"reading\": -0.6,\n      \"posterior_right\": 0.8941010377640821,\n      \"posterior_left\": 0.10589896223591788,\n      \"mean_next_position\": 0.7882020755281642,\n      \"entropy_bits\": 0.4874206923727159\n    },\n    {\n      \"observations\": 2,\n      \"reading\": 0.6,\n      \"posterior_right\": 0.5,\n      \"posterior_left\": 0.5,\n      \"mean_next_position\": 0.0,\n      \"entropy_bits\": 1.0\n    }\n  ],\n  \"source\": \"analytic Bayesian model, not a trained network\",\n  \"assumptions\": \"current position exactly 0; V in {-1,+1}; repeated errors independent given V\",\n  \"readings_are\": \"chosen illustrative measurements of the same past position\"\n}"
+        },
+        {
+          "entrypoint": "examples/ch01_04/reader_lab_v11.py",
+          "arguments": [
+            "sensor",
+            "--sigma",
+            "1.5"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"sigma\": 1.5,\n  \"prior_right\": 0.5,\n  \"stages\": [\n    {\n      \"observations\": 0,\n      \"reading\": null,\n      \"posterior_right\": 0.5,\n      \"posterior_left\": 0.5,\n      \"mean_next_position\": 0.0,\n      \"entropy_bits\": 1.0\n    },\n    {\n      \"observations\": 1,\n      \"reading\": -0.6,\n      \"posterior_right\": 0.6302602229177513,\n      \"posterior_left\": 0.3697397770822487,\n      \"mean_next_position\": 0.2605204458355026,\n      \"entropy_bits\": 0.9504720770468174\n    }\n  ],\n  \"source\": \"analytic Bayesian model, not a trained network\",\n  \"assumptions\": \"current position exactly 0; V in {-1,+1}; repeated errors independent given V\",\n  \"readings_are\": \"chosen illustrative measurements of the same past position\"\n}"
+        },
+        {
+          "entrypoint": "examples/ch01_04/reader_lab_v11.py",
+          "arguments": [
+            "sensor",
+            "--prior",
+            "0.2"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"sigma\": 0.75,\n  \"prior_right\": 0.2,\n  \"stages\": [\n    {\n      \"observations\": 0,\n      \"reading\": null,\n      \"posterior_right\": 0.2,\n      \"posterior_left\": 0.8,\n      \"mean_next_position\": -0.6,\n      \"entropy_bits\": 0.7219280948873623\n    },\n    {\n      \"observations\": 1,\n      \"reading\": -0.6,\n      \"posterior_right\": 0.678533164025287,\n      \"posterior_left\": 0.32146683597471304,\n      \"mean_next_position\": 0.3570663280505739,\n      \"entropy_bits\": 0.9059694604775955\n    }\n  ],\n  \"source\": \"analytic Bayesian model, not a trained network\",\n  \"assumptions\": \"current position exactly 0; V in {-1,+1}; repeated errors independent given V\",\n  \"readings_are\": \"chosen illustrative measurements of the same past position\"\n}"
+        },
+        {
+          "entrypoint": "reader_lab_v13.py",
+          "arguments": [
+            "walk",
+            "--steps",
+            "16"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"updates\": 16,\n  \"starting_sites\": [\n    -4,\n    4\n  ],\n  \"possible_final_sites\": 41,\n  \"position_entropy_bits\": 4.269081938310866,\n  \"mutual_information_bits\": 0.7221119464669927,\n  \"best_accuracy\": 0.918622171273455\n}"
+        },
+        {
+          "entrypoint": "reader_lab_v13.py",
+          "arguments": [
+            "walk",
+            "--steps",
+            "96"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"updates\": 96,\n  \"starting_sites\": [\n    -4,\n    4\n  ],\n  \"possible_final_sites\": 41,\n  \"position_entropy_bits\": 5.011673135544875,\n  \"mutual_information_bits\": 0.184444200296622,\n  \"best_accuracy\": 0.7092692375999154\n}"
+        },
+        {
+          "entrypoint": "reader_lab_v13.py",
+          "arguments": [
+            "walk",
+            "--steps",
+            "96",
+            "--separation",
+            "12"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"updates\": 96,\n  \"starting_sites\": [\n    -6,\n    6\n  ],\n  \"possible_final_sites\": 41,\n  \"position_entropy_bits\": 5.166283358187392,\n  \"mutual_information_bits\": 0.3390544229391379,\n  \"best_accuracy\": 0.7881365241878288\n}"
+        },
+        {
+          "entrypoint": "reader_lab_v13.py",
+          "arguments": [
+            "phase",
+            "--gap",
+            "1.8"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"initial_gap\": 1.8,\n  \"final_gap\": 0.0018816319278985852,\n  \"coupling\": 0.6,\n  \"time\": 6.0,\n  \"alignment\": 0.9999995574326936,\n  \"common_phase_change\": 6.0,\n  \"status\": \"Specified first-order phase rule, omega=1. Not a physical measurement.\"\n}"
+        },
+        {
+          "entrypoint": "reader_lab_v13.py",
+          "arguments": [
+            "phase",
+            "--gap",
+            "3.141592653589793"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"initial_gap\": 3.141592653589793,\n  \"final_gap\": 3.141592653589793,\n  \"coupling\": 0.6,\n  \"time\": 6.0,\n  \"alignment\": 6.123233995736766e-17,\n  \"common_phase_change\": 6.0,\n  \"status\": \"Specified first-order phase rule, omega=1. Not a physical measurement.\"\n}"
+        },
+        {
+          "entrypoint": "reader_lab_v13.py",
+          "arguments": [
+            "phase",
+            "--gap",
+            "1.8",
+            "--coupling",
+            "0"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"initial_gap\": 1.8,\n  \"final_gap\": 1.8,\n  \"coupling\": 0.0,\n  \"time\": 6.0,\n  \"alignment\": 0.6216099682706644,\n  \"common_phase_change\": 6.0,\n  \"status\": \"Specified first-order phase rule, omega=1. Not a physical measurement.\"\n}"
+        },
+        {
+          "entrypoint": "reader_lab_v13.py",
+          "arguments": [
+            "sensor",
+            "--mode",
+            "x"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"mode\": \"x\",\n  \"readings\": 1,\n  \"candidate_angles\": [\n    1.0471975511965976,\n    -1.0471975511965976\n  ],\n  \"mean_readings\": [\n    [\n      0.5000000000000001\n    ],\n    [\n      0.5000000000000001\n    ]\n  ],\n  \"noise_scales\": [\n    0.1\n  ],\n  \"standardized_mean_distance\": 0.0,\n  \"best_accuracy\": 0.5,\n  \"fisher_per_reading\": [\n    74.99999999999997,\n    74.99999999999997\n  ],\n  \"status\": \"Equal-prior fixed Gaussian candidates, independent repeated readings.\"\n}"
+        },
+        {
+          "entrypoint": "reader_lab_v13.py",
+          "arguments": [
+            "sensor",
+            "--mode",
+            "xy"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"mode\": \"xy\",\n  \"readings\": 1,\n  \"candidate_angles\": [\n    1.0471975511965976,\n    -1.0471975511965976\n  ],\n  \"mean_readings\": [\n    [\n      0.5000000000000001,\n      0.8660254037844386\n    ],\n    [\n      0.5000000000000001,\n      -0.8660254037844386\n    ]\n  ],\n  \"noise_scales\": [\n    0.1,\n    0.3\n  ],\n  \"standardized_mean_distance\": 5.773502691896257,\n  \"best_accuracy\": 0.9980537914386107,\n  \"fisher_per_reading\": [\n    77.77777777777776,\n    77.77777777777776\n  ],\n  \"status\": \"Equal-prior fixed Gaussian candidates, independent repeated readings.\"\n}"
+        },
+        {
+          "entrypoint": "reader_lab_v13.py",
+          "arguments": [
+            "sensor",
+            "--mode",
+            "xy",
+            "--sx",
+            "0.2",
+            "--sy",
+            "0.6"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"mode\": \"xy\",\n  \"readings\": 1,\n  \"candidate_angles\": [\n    1.0471975511965976,\n    -1.0471975511965976\n  ],\n  \"mean_readings\": [\n    [\n      0.5000000000000001,\n      0.8660254037844386\n    ],\n    [\n      0.5000000000000001,\n      -0.8660254037844386\n    ]\n  ],\n  \"noise_scales\": [\n    0.2,\n    0.6\n  ],\n  \"standardized_mean_distance\": 2.8867513459481287,\n  \"best_accuracy\": 0.9255426634106172,\n  \"fisher_per_reading\": [\n    19.44444444444444,\n    19.44444444444444\n  ],\n  \"status\": \"Equal-prior fixed Gaussian candidates, independent repeated readings.\"\n}"
+        },
+        {
+          "entrypoint": "reader_lab_v13.py",
+          "arguments": [
+            "sensor",
+            "--angle-a",
+            "0",
+            "--angle-b",
+            "0.12"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"mode\": \"xy\",\n  \"readings\": 1,\n  \"candidate_angles\": [\n    0.0,\n    0.12\n  ],\n  \"mean_readings\": [\n    [\n      1.0,\n      0.0\n    ],\n    [\n      0.9928086358538663,\n      0.11971220728891936\n    ]\n  ],\n  \"noise_scales\": [\n    0.1,\n    0.3\n  ],\n  \"standardized_mean_distance\": 0.40546891973677807,\n  \"best_accuracy\": 0.5803287063206757,\n  \"fisher_per_reading\": [\n    11.11111111111111,\n    12.38497889546535\n  ],\n  \"status\": \"Equal-prior fixed Gaussian candidates, independent repeated readings.\"\n}"
+        },
+        {
+          "entrypoint": "reader_lab_v13.py",
+          "arguments": [
+            "sensor",
+            "--readings",
+            "10"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"mode\": \"xy\",\n  \"readings\": 10,\n  \"candidate_angles\": [\n    1.0471975511965976,\n    -1.0471975511965976\n  ],\n  \"mean_readings\": [\n    [\n      0.5000000000000001,\n      0.8660254037844386\n    ],\n    [\n      0.5000000000000001,\n      -0.8660254037844386\n    ]\n  ],\n  \"noise_scales\": [\n    0.1,\n    0.3\n  ],\n  \"standardized_mean_distance\": 5.773502691896257,\n  \"best_accuracy\": 1.0,\n  \"fisher_per_reading\": [\n    77.77777777777776,\n    77.77777777777776\n  ],\n  \"status\": \"Equal-prior fixed Gaussian candidates, independent repeated readings.\"\n}"
+        },
+        {
+          "entrypoint": "reader_lab_v13.py",
+          "arguments": [
+            "bernoulli",
+            "--p",
+            "0.45",
+            "--q",
+            "0.5",
+            "--readings",
+            "100"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"p\": 0.45,\n  \"q\": 0.5,\n  \"readings\": 100,\n  \"best_accuracy\": 0.6922359155005519,\n  \"fisher_rao_distance\": 0.10016742116155997\n}"
+        },
+        {
+          "entrypoint": "reader_lab_v13.py",
+          "arguments": [
+            "bernoulli",
+            "--p",
+            "0.01",
+            "--q",
+            "0.06",
+            "--readings",
+            "100"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"p\": 0.01,\n  \"q\": 0.06,\n  \"readings\": 100,\n  \"best_accuracy\": 0.9320070105399614,\n  \"fisher_rao_distance\": 0.2945992840177759\n}"
+        },
+        {
+          "entrypoint": "examples/ch05_07/reader_lab_v13.py",
+          "arguments": [
+            "walk",
+            "--steps",
+            "16"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"updates\": 16,\n  \"starting_sites\": [\n    -4,\n    4\n  ],\n  \"possible_final_sites\": 41,\n  \"position_entropy_bits\": 4.269081938310866,\n  \"mutual_information_bits\": 0.7221119464669927,\n  \"best_accuracy\": 0.918622171273455\n}"
+        },
+        {
+          "entrypoint": "outputs/publication-v29/ch10/assignment_check.py",
+          "arguments": [],
+          "exit_code": 0,
+          "stdout": "All 64 conditional rows sum exactly to one.\nSame nucleotide string: 0.2993803913\nAll assignments retained: 0.3710703619"
+        },
+        {
+          "entrypoint": "outputs/publication-v29/ch11/continuation_checks.py",
+          "arguments": [],
+          "exit_code": 0,
+          "stdout": "time=11, m=1.2835, y=0.7165\ntime=16, m=1.8647, y=0.1353\nM(35)=30.1194, M(45)=68.6006"
+        },
+        {
+          "entrypoint": "outputs/publication-v29/ch13/survival_checks.py",
+          "arguments": [],
+          "exit_code": 0,
+          "stdout": "Fixed risk: P100=0.3660323; P1000=0.00004317\nDecreasing-risk limit: 0.904837\nrepair=0.200: 0.334269, 0.033427, 0.632305\nrepair=0.000: 0.000000, 0.367695, 0.632305"
+        },
+        {
+          "entrypoint": "examples/resource_learning_v31.py",
+          "arguments": [],
+          "exit_code": 0,
+          "stdout": "{\n  \"verified\": true,\n  \"writes\": false,\n  \"model\": {\n    \"model_id\": \"v31-learning-resource-continuation\",\n    \"status\": \"new analytic teaching construction, not a historical or biological experiment\",\n    \"environment\": \"Equal stipulated mixture of sensor correctness 0.9 and 0.1. Resource sides iid fair. Correctness draws iid and independent of side within environment. Calibration and deployment independent conditional on environment.\",\n    \"calibration\": \"Five labeled trials, same opportunity for all four strategies. Follow iff at least three sensor reports were correct, otherwise reverse. One retained binary policy; frozen during deployment.\",\n    \"deployment\": {\n      \"start\": 3,\n      \"horizon\": 12,\n      \"update\": \"M(t+1)=M(t)-1+2*X(t)\",\n      \"failure\": \"Absorbing on first update boundary at zero\",\n      \"outcome\": \"Positive at every boundary 1 through 12\"\n    },\n    \"cost_scope\": \"Equal deployment starts after calibration; does not debit separate calibration, sensing, memory or actuator costs; abstract trial accounting only.\",\n    \"boundary\": \"Sensor orientation reverses once after calibration, before deployment; no warning or relearning. Resource-side distribution and all other conditions stay fixed.\",\n    \"calibration_error\": {\n      \"rational\": \"107/12500\",\n      \"decimal\": 0.00856,\n      \"ten_decimals\": \"0.0085600000\"\n    },\n    \"conditional_continuation\": {\n      \"1/10\": {\n        \"rational\": \"18408799/10000000000\",\n        \"decimal\": 0.0018408799,\n        \"ten_decimals\": \"0.0018408799\"\n      },\n      \"1/2\": {\n        \"rational\": \"627/1024\",\n        \"decimal\": 0.6123046875,\n        \"ten_decimals\": \"0.6123046875\"\n      },\n      \"9/10\": {\n        \"rational\": \"9986307831/10000000000\",\n        \"decimal\": 0.9986307831,\n        \"ten_decimals\": \"0.9986307831\"\n      }\n    },\n    \"strategies\": {\n      \"always_follow\": {\n        \"rational\": \"1000471663/2000000000\",\n        \"decimal\": 0.5002358315,\n        \"ten_decimals\": \"0.5002358315\"\n      },\n      \"always_left\": {\n        \"rational\": \"627/1024\",\n        \"decimal\": 0.6123046875,\n        \"ten_decimals\": \"0.6123046875\"\n      },\n      \"learn_five_labels\": {\n        \"rational\": \"30940570672769/31250000000000\",\n        \"decimal\": 0.990098261528608,\n        \"ten_decimals\": \"0.9900982615\"\n      },\n      \"given_deployment_orientation\": {\n        \"rational\": \"9986307831/10000000000\",\n        \"decimal\": 0.9986307831,\n        \"ten_decimals\": \"0.9986307831\"\n      },\n      \"learn_then_unannounced_reversal\": {\n        \"rational\": \"324168795981/31250000000000\",\n        \"decimal\": 0.010373401471392,\n        \"ten_decimals\": \"0.0103734015\"\n      }\n    },\n    \"independent_verification\": {\n      \"calibration_sequences_per_environment\": 32,\n      \"deployment_sequences_per_probability\": 4096,\n      \"probabilities_checked\": [\n        \"1/10\",\n        \"1/2\",\n        \"9/10\"\n      ],\n      \"surviving_sequences_by_number_of_successes\": [\n        0,\n        0,\n        0,\n        0,\n        0,\n        297,\n        704,\n        726,\n        483,\n        219,\n        66,\n        12,\n        1\n      ],\n      \"exact_fraction_agreement\": true\n    },\n    \"wrong_average_probability_result_for_diagnostic_only\": {\n      \"rational\": \"2770817371941511752937204569257368106732571001349/2775557561562891351059079170227050781250000000000\",\n      \"decimal\": 0.9982921667029991,\n      \"ten_decimals\": \"0.9982921667\"\n    },\n    \"source\": \"examples/resource_learning_v31.py\",\n    \"generation_source\": \"examples/publication_v31_late.py\"\n  }\n}"
+        },
+        {
+          "entrypoint": "examples/model_comparison_v31.py",
+          "arguments": [],
+          "exit_code": 0,
+          "stdout": "{\n  \"passive_Y\": {\n    \"A\": [\n      0.5,\n      0.5\n    ],\n    \"B\": [\n      0.5,\n      0.5\n    ],\n    \"total_variation\": 0.0,\n    \"best_equal_prior_single_draw_success\": 0.5\n  },\n  \"force_X_on_then_read_Y\": {\n    \"A\": [\n      0.0,\n      1.0\n    ],\n    \"B\": [\n      0.5,\n      0.5\n    ],\n    \"total_variation\": 0.5,\n    \"best_equal_prior_single_draw_success\": 0.75\n  }\n}"
+        },
+        {
+          "entrypoint": "verify_e3.py",
+          "arguments": [],
+          "exit_code": 0,
+          "stdout": "{\n  \"passed\": true,\n  \"checks\": {\n    \"root\": \"C:\\\\PRACA\\\\NeuroMorph\\\\Aionoesis-learning\\\\books\\\\how-matter-learns-to-continue\\\\tmp\\\\validation-v42-3fmhnzkf\\\\how-matter-learns-to-continue-v40-companion\\\\evidence\\\\e3\",\n    \"manifest_sha256\": \"3750b736c09efd0aaa7bc512a74de06383f4b53458e287b6bfefd348eb81556a\",\n    \"baseline_artifacts_verified\": 8,\n    \"coefficients\": [\n      -0.49414752789909744,\n      0.7191418084524686,\n      0.6260880627343716,\n      0.48161909928328844\n    ],\n    \"coefficient_float64_le_hex\": \"ac74eef31ca0dfbf34ab8fae3503e73f1f863bd5e908e43faf3e23ead8d2de3f\",\n    \"analysis_public_rows_agree\": 30,\n    \"all_256_rule_influence_counts\": {\n      \"0\": 4,\n      \"1/4\": 48,\n      \"1/2\": 152,\n      \"3/4\": 48,\n      \"1\": 4\n    },\n    \"actual_30_class_influence_counts\": {\n      \"1/4\": 7,\n      \"1/2\": 17,\n      \"3/4\": 5,\n      \"1\": 1\n    },\n    \"actual_predictions\": [\n      {\n        \"prediction\": -0.2739692975450531,\n        \"class_count\": 7\n      },\n      {\n        \"prediction\": -0.09418384543193596,\n        \"class_count\": 17\n      },\n      {\n        \"prediction\": 0.08560160668118118,\n        \"class_count\": 5\n      },\n      {\n        \"prediction\": 0.2653870587942983,\n        \"class_count\": 1\n      }\n    ],\n    \"negative_prediction_count\": 24,\n    \"negative_classes\": [\n      3,\n      5,\n      6,\n      8,\n      12,\n      13,\n      14,\n      15,\n      24,\n      32,\n      33,\n      34,\n      38,\n      44,\n      57,\n      58,\n      108,\n      126,\n      128,\n      132,\n      140,\n      142,\n      152,\n      178\n    ],\n    \"worked_collision\": [\n      {\n        \"class_representative\": 24,\n        \"mean_local_influence\": 0.5,\n        \"normalized_neighborhood_size\": 0.06451612903225806,\n        \"determinism_margin\": 0.0,\n        \"law_prediction\": -0.09418384543193596,\n        \"response_changed_count\": 292,\n        \"response_comparison_count\": 7936,\n        \"response\": 0.03679435483870968\n      },\n      {\n        \"class_representative\": 44,\n        \"mean_local_influence\": 0.5,\n        \"normalized_neighborhood_size\": 0.06451612903225806,\n        \"determinism_margin\": 0.0,\n        \"law_prediction\": -0.09418384543193596,\n        \"response_changed_count\": 237,\n        \"response_comparison_count\": 7936,\n        \"response\": 0.029863911290322582\n      }\n    ],\n    \"collision_response_difference_exact\": \"55/7936\",\n    \"recomputed_mse\": {\n      \"mse_law\": 0.04651764075889651,\n      \"mse_floor\": 0.022214819625990624,\n      \"mse_memory\": 0.011103334688740193,\n      \"mse_disjoint_union\": 0.01693321813870276\n    },\n    \"mean_response_exact\": \"157/1984\",\n    \"mean_prediction\": -0.09418384543193596,\n    \"mean_residual\": -0.17331690994806498,\n    \"mean_residual_squared\": 0.030038751273945664,\n    \"centered_residual_mse\": 0.01647888948495083,\n    \"bounding_box_prediction_range\": [\n      -0.49414752789909744,\n      1.0918918929293868\n    ],\n    \"bounding_box_squared_error_upper_bound\": 2.232476835126984,\n    \"scope\": \"Immutable stored outcomes, descriptors and predictions only; no refitting, clipping, new outcomes, bootstrap, or causal attribution.\"\n  },\n  \"outcome\": \"e3_transfer_null\",\n  \"scientific_admission\": false,\n  \"scope\": \"Stored-byte integrity and saved-row arithmetic only; no instrument rerun, refit, new outcomes, or independent replication.\"\n}"
+        },
+        {
+          "entrypoint": "verify_framework_record.py",
+          "arguments": [],
+          "exit_code": 0,
+          "stdout": "{\n  \"passed\": true,\n  \"framework_count\": 4,\n  \"frameworks_executed_in_this_check\": false,\n  \"receipt\": \"reviews/publication-v34/framework-verification.json\",\n  \"receipt_sha256\": \"4d07499cf5d18026eb1d7560d2b164d060b71989454136d77f40a82b8aba381a\",\n  \"archive_sha256\": \"fea8a5d178deb40354ed6c8090f6f5b11d1d0fcc84765d4c6c040864098d8c40\",\n  \"snippets_match_recorded_execution\": true,\n  \"readme_matches_receipt\": true,\n  \"environment_versions_match_receipt\": true,\n  \"scope\": \"Record and source compatibility only; inherited CPU forward-score checks, no fresh framework run or training.\"\n}"
+        },
+        {
+          "entrypoint": "examples/memory_reproduction_v39.py",
+          "arguments": [],
+          "exit_code": 0,
+          "stdout": "{\n  \"passed\": true,\n  \"archive_sha256\": \"7de672bd468830dd1befb74fbc7bb7fbd13e36eecccf1781742eca97ea865e34\",\n  \"source_hashes\": {\n    \"outputs\\\\chapters-three-six\\\\v7\\\\experiments-memory\\\\data.npz\": \"7de672bd468830dd1befb74fbc7bb7fbd13e36eecccf1781742eca97ea865e34\",\n    \"outputs\\\\chapters-three-six\\\\v7\\\\experiments-memory\\\\results.json\": \"bd96e19df1b71c4f2ed745e2d21b8ac7b753486f486d55ac008eb7ba12bd319f\",\n    \"examples\\\\ch03_04\\\\experiment_v7.py\": \"141a4e3b923d6e19f2be0a6fb590f342c03350870dddc39bebff5dedfef608ad\"\n  },\n  \"python_numpy_version\": \"2.4.4\",\n  \"configuration\": {\n    \"train_position_seed\": 7321,\n    \"test_position_seed\": 9248,\n    \"network_seed\": 1701,\n    \"train_base_positions\": 256,\n    \"test_base_positions\": 512,\n    \"current_position_interval\": [\n      -2.0,\n      2.0\n    ],\n    \"velocities\": [\n      -1.0,\n      1.0\n    ],\n    \"time_interval\": 1.0,\n    \"hidden_relu_units\": 8,\n    \"input_divisor\": 3.0,\n    \"full_batch_updates\": 10000,\n    \"learning_rate\": 0.03,\n    \"objective\": \"mean(0.5 * (prediction - target)**2)\",\n    \"selection\": \"one fixed run per architecture; no validation or test selection\",\n    \"noise_sigma\": 0.75,\n    \"observed_previous_position\": -0.6\n  },\n  \"initialization\": {\n    \"generator\": \"numpy.random.default_rng(1701), restarted for each input dimension\",\n    \"W1\": \"normal(0, sqrt(2/d)), shape (d,8), drawn first\",\n    \"b1\": \"eight entries equal 0.3\",\n    \"W2\": \"normal(0, sqrt(2/8)), shape (8,1), drawn after W1\",\n    \"b2\": \"one zero\",\n    \"matches_isolated_historical_initializer\": true\n  },\n  \"generated_data_exactly_matches_archive\": true,\n  \"models\": {\n    \"current_only\": {\n      \"train_rmse\": 1.0000221618253664,\n      \"test_rmse\": 1.0000261452316914,\n      \"saved_prediction_max_error\": 0.0\n    },\n    \"history\": {\n      \"train_rmse\": 0.017397851942331267,\n      \"test_rmse\": 0.017811815614758357,\n      \"saved_prediction_max_error\": 0.0\n    }\n  },\n  \"exact_predictor_test_rmse\": 0.0,\n  \"newly_retrained\": false,\n  \"files_written\": false,\n  \"scope\": \"Frozen-array verification plus optional fresh in-memory reproduction. Not evidence that the historical run used this current environment.\"\n}"
+        },
+        {
+          "entrypoint": "examples/memory_reproduction_v39.py",
+          "arguments": [
+            "--retrain"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"passed\": true,\n  \"archive_sha256\": \"7de672bd468830dd1befb74fbc7bb7fbd13e36eecccf1781742eca97ea865e34\",\n  \"source_hashes\": {\n    \"outputs\\\\chapters-three-six\\\\v7\\\\experiments-memory\\\\data.npz\": \"7de672bd468830dd1befb74fbc7bb7fbd13e36eecccf1781742eca97ea865e34\",\n    \"outputs\\\\chapters-three-six\\\\v7\\\\experiments-memory\\\\results.json\": \"bd96e19df1b71c4f2ed745e2d21b8ac7b753486f486d55ac008eb7ba12bd319f\",\n    \"examples\\\\ch03_04\\\\experiment_v7.py\": \"141a4e3b923d6e19f2be0a6fb590f342c03350870dddc39bebff5dedfef608ad\"\n  },\n  \"python_numpy_version\": \"2.4.4\",\n  \"configuration\": {\n    \"train_position_seed\": 7321,\n    \"test_position_seed\": 9248,\n    \"network_seed\": 1701,\n    \"train_base_positions\": 256,\n    \"test_base_positions\": 512,\n    \"current_position_interval\": [\n      -2.0,\n      2.0\n    ],\n    \"velocities\": [\n      -1.0,\n      1.0\n    ],\n    \"time_interval\": 1.0,\n    \"hidden_relu_units\": 8,\n    \"input_divisor\": 3.0,\n    \"full_batch_updates\": 10000,\n    \"learning_rate\": 0.03,\n    \"objective\": \"mean(0.5 * (prediction - target)**2)\",\n    \"selection\": \"one fixed run per architecture; no validation or test selection\",\n    \"noise_sigma\": 0.75,\n    \"observed_previous_position\": -0.6\n  },\n  \"initialization\": {\n    \"generator\": \"numpy.random.default_rng(1701), restarted for each input dimension\",\n    \"W1\": \"normal(0, sqrt(2/d)), shape (d,8), drawn first\",\n    \"b1\": \"eight entries equal 0.3\",\n    \"W2\": \"normal(0, sqrt(2/8)), shape (8,1), drawn after W1\",\n    \"b2\": \"one zero\",\n    \"matches_isolated_historical_initializer\": true\n  },\n  \"generated_data_exactly_matches_archive\": true,\n  \"models\": {\n    \"current_only\": {\n      \"train_rmse\": 1.0000221618253664,\n      \"new_reproduction\": {\n        \"updates\": 10000,\n        \"final_parameter_max_error\": 0.0,\n        \"learning_curve_max_error\": 0.0,\n        \"absolute_tolerance\": 1e-11\n      },\n      \"test_rmse\": 1.0000261452316914,\n      \"saved_prediction_max_error\": 0.0\n    },\n    \"history\": {\n      \"train_rmse\": 0.017397851942331267,\n      \"new_reproduction\": {\n        \"updates\": 10000,\n        \"final_parameter_max_error\": 0.0,\n        \"learning_curve_max_error\": 0.0,\n        \"absolute_tolerance\": 1e-11\n      },\n      \"test_rmse\": 0.017811815614758357,\n      \"saved_prediction_max_error\": 0.0\n    }\n  },\n  \"exact_predictor_test_rmse\": 0.0,\n  \"newly_retrained\": true,\n  \"files_written\": false,\n  \"scope\": \"Frozen-array verification plus optional fresh in-memory reproduction. Not evidence that the historical run used this current environment.\"\n}"
+        },
+        {
+          "entrypoint": "examples/exploratory/local_rule_profiles_v39.py",
+          "arguments": [],
+          "exit_code": 0,
+          "stdout": "{\n  \"passed\": true,\n  \"status\": \"new exploratory companion exercise, not adopted as a book result\",\n  \"origin\": \"Prompted by the v38 external reviewer after examining the exposed pair. Independently implemented here.\",\n  \"convention\": \"f_r(L,C,R) = (r >> (4L+2C+R)) & 1\",\n  \"context_measure\": \"Uniform over all 8 one-step and all 32 two-step local contexts\",\n  \"horizons\": [\n    1,\n    2\n  ],\n  \"implementations\": \"Bit-table shrinking window and explicit Boolean rules on a padded synchronous array\",\n  \"results\": {\n    \"24\": {\n      \"one_step_left_centre_right\": [\n        \"1/2\",\n        \"1/2\",\n        \"1/2\"\n      ],\n      \"one_step_neighbour_mean\": \"1/2\",\n      \"reflection_invariant_imbalance\": \"0\",\n      \"two_step_minus2_to_plus2\": [\n        \"3/8\",\n        \"3/8\",\n        \"3/8\",\n        \"1/8\",\n        \"1/8\"\n      ],\n      \"two_step_noncentral_mean\": \"1/4\",\n      \"recodings\": [\n        {\n          \"reflected\": false,\n          \"complemented\": false,\n          \"rule\": 24,\n          \"profile\": [\n            \"1/2\",\n            \"1/2\",\n            \"1/2\"\n          ]\n        },\n        {\n          \"reflected\": false,\n          \"complemented\": true,\n          \"rule\": 231,\n          \"profile\": [\n            \"1/2\",\n            \"1/2\",\n            \"1/2\"\n          ]\n        },\n        {\n          \"reflected\": true,\n          \"complemented\": false,\n          \"rule\": 66,\n          \"profile\": [\n            \"1/2\",\n            \"1/2\",\n            \"1/2\"\n          ]\n        },\n        {\n          \"reflected\": true,\n          \"complemented\": true,\n          \"rule\": 189,\n          \"profile\": [\n            \"1/2\",\n            \"1/2\",\n            \"1/2\"\n          ]\n        }\n      ]\n    },\n    \"44\": {\n      \"one_step_left_centre_right\": [\n        \"3/4\",\n        \"3/4\",\n        \"1/4\"\n      ],\n      \"one_step_neighbour_mean\": \"1/2\",\n      \"reflection_invariant_imbalance\": \"1/2\",\n      \"two_step_minus2_to_plus2\": [\n        \"7/16\",\n        \"5/16\",\n        \"7/16\",\n        \"3/16\",\n        \"1/16\"\n      ],\n      \"two_step_noncentral_mean\": \"1/4\",\n      \"recodings\": [\n        {\n          \"reflected\": false,\n          \"complemented\": false,\n          \"rule\": 44,\n          \"profile\": [\n            \"3/4\",\n            \"3/4\",\n            \"1/4\"\n          ]\n        },\n        {\n          \"reflected\": false,\n          \"complemented\": true,\n          \"rule\": 203,\n          \"profile\": [\n            \"3/4\",\n            \"3/4\",\n            \"1/4\"\n          ]\n        },\n        {\n          \"reflected\": true,\n          \"complemented\": false,\n          \"rule\": 100,\n          \"profile\": [\n            \"1/4\",\n            \"3/4\",\n            \"3/4\"\n          ]\n        },\n        {\n          \"reflected\": true,\n          \"complemented\": true,\n          \"rule\": 217,\n          \"profile\": [\n            \"1/4\",\n            \"3/4\",\n            \"3/4\"\n          ]\n        }\n      ]\n    }\n  },\n  \"original_e3_rerun\": false,\n  \"terminal_response_predicted\": false,\n  \"held_out_cases_tested\": false,\n  \"limitations\": [\n    \"Not Conway Game of Life.\",\n    \"Not E3 full-ring preparations or response variable.\",\n    \"Distinguishes this exposed pair only; no causal explanation of their E3 difference.\",\n    \"No fitted replacement, transfer success, general descriptor validation or novelty claim.\"\n  ]\n}"
+        },
+        {
+          "entrypoint": "verify_v39_evidence.py",
+          "arguments": [],
+          "exit_code": 0,
+          "stdout": "{\n  \"passed\": true,\n  \"framework_configurations_recorded\": 12,\n  \"frameworks_executed_by_this_check\": false,\n  \"strict_failures_preserved\": [\n    \"keras-tensorflow-default\",\n    \"keras-tensorflow-float64\",\n    \"keras-jax-default\",\n    \"keras-jax-float64\",\n    \"keras-torch-default\",\n    \"keras-torch-float64\",\n    \"keras-torch-full64\"\n  ],\n  \"all_recorded_classifications_match\": true,\n  \"scope\": \"Evidence/hash consistency only. The companion verifier separately runs the motion and exploratory programs. No human reader results.\"\n}"
+        }
+      ],
+      "frozen_energy_arrays": {
+        "passed": true,
+        "sample_count": 1001,
+        "expected_total_J": 0.75,
+        "max_formula_error": 2.7755575615628914e-17,
+        "max_conservation_error_J": 3.3306690738754696e-16,
+        "source_sha256": "e638584d578c0480ff5e7c737cef0b24878d6e768a37720701e829f79a0cf01f",
+        "arrays_sha256": "63cbe858a61b9975fb2909fe757d5c5f97abf5b2ecdadc657a20d20ab04a1e0f",
+        "producer_imported_or_executed": false,
+        "files_written": false
+      },
+      "glider_deletion": {
+        "deleted_site": [
+          1,
+          2
+        ],
+        "update_three": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "update_four_unchanged": true,
+        "rule_changed": false,
+        "training": false
+      },
+      "extracted_tree_unchanged": true,
+      "tree_files_verified_before_and_after": 53,
+      "scope": "Fresh v40 portable reader runs, two in-memory Chapter 3 training reproductions using the original v39 reader, frozen arithmetic and a retained exploratory diagnostic. Inherited v34/v39 framework record consistency and current snippet bindings only; no fresh framework or E3 execution."
+    },
+    "command_receipts": [
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\examples\\ch01\\investigation_v9.py",
+          "--json"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:40.612487+00:00",
+        "finished_at_utc": "2026-09-17T14:31:40.852767+00:00",
+        "elapsed_seconds": 0.234,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\examples\\ch01\\investigation_v9.py",
+          "--pixel",
+          "5",
+          "0.5",
+          "--json"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:40.852767+00:00",
+        "finished_at_utc": "2026-09-17T14:31:41.122548+00:00",
+        "elapsed_seconds": 0.266,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\examples\\ch01\\investigation_v9.py",
+          "--weight-delta",
+          "0.01",
+          "--json"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:41.122548+00:00",
+        "finished_at_utc": "2026-09-17T14:31:41.482259+00:00",
+        "elapsed_seconds": 0.359,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\examples\\ch01\\investigation_v9.py",
+          "--stage",
+          "300",
+          "--step",
+          "--json"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:41.482259+00:00",
+        "finished_at_utc": "2026-09-17T14:31:41.752771+00:00",
+        "elapsed_seconds": 0.281,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\examples\\ch01_04\\reader_lab_v11.py",
+          "representation",
+          "--index",
+          "50"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:41.752771+00:00",
+        "finished_at_utc": "2026-09-17T14:31:42.174957+00:00",
+        "elapsed_seconds": 0.422,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\examples\\ch01_04\\reader_lab_v11.py",
+          "motion",
+          "--current",
+          "0"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:42.174957+00:00",
+        "finished_at_utc": "2026-09-17T14:31:42.498070+00:00",
+        "elapsed_seconds": 0.313,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\examples\\ch01_04\\reader_lab_v11.py",
+          "motion",
+          "--previous",
+          "-1",
+          "--current",
+          "0"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:42.498070+00:00",
+        "finished_at_utc": "2026-09-17T14:31:42.760810+00:00",
+        "elapsed_seconds": 0.265,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\examples\\ch01_04\\reader_lab_v11.py",
+          "sensor",
+          "--readings",
+          "-0.6",
+          "0.6"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:42.760810+00:00",
+        "finished_at_utc": "2026-09-17T14:31:43.037600+00:00",
+        "elapsed_seconds": 0.282,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\examples\\ch01_04\\reader_lab_v11.py",
+          "sensor",
+          "--sigma",
+          "1.5"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:43.038596+00:00",
+        "finished_at_utc": "2026-09-17T14:31:43.334409+00:00",
+        "elapsed_seconds": 0.296,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\examples\\ch01_04\\reader_lab_v11.py",
+          "sensor",
+          "--prior",
+          "0.2"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:43.334409+00:00",
+        "finished_at_utc": "2026-09-17T14:31:43.640176+00:00",
+        "elapsed_seconds": 0.297,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\reader_lab_v13.py",
+          "walk",
+          "--steps",
+          "16"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:43.640176+00:00",
+        "finished_at_utc": "2026-09-17T14:31:43.891423+00:00",
+        "elapsed_seconds": 0.25,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\reader_lab_v13.py",
+          "walk",
+          "--steps",
+          "96"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:43.891423+00:00",
+        "finished_at_utc": "2026-09-17T14:31:44.146444+00:00",
+        "elapsed_seconds": 0.266,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\reader_lab_v13.py",
+          "walk",
+          "--steps",
+          "96",
+          "--separation",
+          "12"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:44.146444+00:00",
+        "finished_at_utc": "2026-09-17T14:31:44.430791+00:00",
+        "elapsed_seconds": 0.281,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\reader_lab_v13.py",
+          "phase",
+          "--gap",
+          "1.8"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:44.430791+00:00",
+        "finished_at_utc": "2026-09-17T14:31:44.702702+00:00",
+        "elapsed_seconds": 0.266,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\reader_lab_v13.py",
+          "phase",
+          "--gap",
+          "3.141592653589793"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:44.702702+00:00",
+        "finished_at_utc": "2026-09-17T14:31:44.919729+00:00",
+        "elapsed_seconds": 0.219,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\reader_lab_v13.py",
+          "phase",
+          "--gap",
+          "1.8",
+          "--coupling",
+          "0"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:44.919729+00:00",
+        "finished_at_utc": "2026-09-17T14:31:45.125878+00:00",
+        "elapsed_seconds": 0.203,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\reader_lab_v13.py",
+          "sensor",
+          "--mode",
+          "x"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:45.125878+00:00",
+        "finished_at_utc": "2026-09-17T14:31:45.339443+00:00",
+        "elapsed_seconds": 0.218,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\reader_lab_v13.py",
+          "sensor",
+          "--mode",
+          "xy"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:45.339443+00:00",
+        "finished_at_utc": "2026-09-17T14:31:45.540340+00:00",
+        "elapsed_seconds": 0.204,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\reader_lab_v13.py",
+          "sensor",
+          "--mode",
+          "xy",
+          "--sx",
+          "0.2",
+          "--sy",
+          "0.6"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:45.541317+00:00",
+        "finished_at_utc": "2026-09-17T14:31:45.743402+00:00",
+        "elapsed_seconds": 0.203,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\reader_lab_v13.py",
+          "sensor",
+          "--angle-a",
+          "0",
+          "--angle-b",
+          "0.12"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:45.743402+00:00",
+        "finished_at_utc": "2026-09-17T14:31:45.940540+00:00",
+        "elapsed_seconds": 0.203,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\reader_lab_v13.py",
+          "sensor",
+          "--readings",
+          "10"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:45.940540+00:00",
+        "finished_at_utc": "2026-09-17T14:31:46.131833+00:00",
+        "elapsed_seconds": 0.187,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\reader_lab_v13.py",
+          "bernoulli",
+          "--p",
+          "0.45",
+          "--q",
+          "0.5",
+          "--readings",
+          "100"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:46.131833+00:00",
+        "finished_at_utc": "2026-09-17T14:31:46.351655+00:00",
+        "elapsed_seconds": 0.219,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\reader_lab_v13.py",
+          "bernoulli",
+          "--p",
+          "0.01",
+          "--q",
+          "0.06",
+          "--readings",
+          "100"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:46.353665+00:00",
+        "finished_at_utc": "2026-09-17T14:31:46.545740+00:00",
+        "elapsed_seconds": 0.188,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\examples\\ch05_07\\reader_lab_v13.py",
+          "walk",
+          "--steps",
+          "16"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:46.545740+00:00",
+        "finished_at_utc": "2026-09-17T14:31:46.749974+00:00",
+        "elapsed_seconds": 0.203,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\outputs\\publication-v29\\ch10\\assignment_check.py"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:46.749974+00:00",
+        "finished_at_utc": "2026-09-17T14:31:46.847434+00:00",
+        "elapsed_seconds": 0.109,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\outputs\\publication-v29\\ch11\\continuation_checks.py"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:46.847434+00:00",
+        "finished_at_utc": "2026-09-17T14:31:46.908074+00:00",
+        "elapsed_seconds": 0.063,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\outputs\\publication-v29\\ch13\\survival_checks.py"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:46.908074+00:00",
+        "finished_at_utc": "2026-09-17T14:31:46.999394+00:00",
+        "elapsed_seconds": 0.078,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\examples\\resource_learning_v31.py"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:46.999394+00:00",
+        "finished_at_utc": "2026-09-17T14:31:47.127468+00:00",
+        "elapsed_seconds": 0.14,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\examples\\model_comparison_v31.py"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:47.127468+00:00",
+        "finished_at_utc": "2026-09-17T14:31:47.219090+00:00",
+        "elapsed_seconds": 0.078,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\verify_e3.py"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:47.219090+00:00",
+        "finished_at_utc": "2026-09-17T14:31:47.338332+00:00",
+        "elapsed_seconds": 0.125,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\verify_framework_record.py"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:47.338332+00:00",
+        "finished_at_utc": "2026-09-17T14:31:47.443992+00:00",
+        "elapsed_seconds": 0.11,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\examples\\memory_reproduction_v39.py"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:47.443992+00:00",
+        "finished_at_utc": "2026-09-17T14:31:48.075610+00:00",
+        "elapsed_seconds": 0.625,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\examples\\memory_reproduction_v39.py",
+          "--retrain"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:48.075610+00:00",
+        "finished_at_utc": "2026-09-17T14:31:49.216129+00:00",
+        "elapsed_seconds": 1.14,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\examples\\exploratory\\local_rule_profiles_v39.py"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:49.216129+00:00",
+        "finished_at_utc": "2026-09-17T14:31:49.303726+00:00",
+        "elapsed_seconds": 0.094,
+        "exit_code": 0,
+        "stderr": ""
+      },
+      {
+        "command": [
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\venv\\Scripts\\python.exe",
+          "-B",
+          "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion\\verify_v39_evidence.py"
+        ],
+        "cwd": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\tmp\\validation-v42-3fmhnzkf\\how-matter-learns-to-continue-v40-companion",
+        "started_at_utc": "2026-09-17T14:31:49.303726+00:00",
+        "finished_at_utc": "2026-09-17T14:31:49.393551+00:00",
+        "elapsed_seconds": 0.094,
+        "exit_code": 0,
+        "stderr": ""
+      }
+    ]
+  },
+  "framework_availability_in_clean_environment": {
+    "torch": false,
+    "tensorflow": false,
+    "jax": false,
+    "keras": false
+  },
+  "framework_fresh_execution": "pending_dependencies_absent; historical record consistency checked only",
+  "archive_sha256_after": "756495d1a7af290e01779299ce4c87b80677f53c299538bb88607ea3d094b396",
+  "finished_at_utc": "2026-09-17T14:31:49.517087+00:00",
+  "passed": true,
+  "scope": [
+    "Exact archive extraction/integrity and 35 reader commands rerun.",
+    "Two Ch3 fixed training reproductions run in memory by supplied v39 reader; no historical files regenerated.",
+    "E3 frozen arithmetic and inherited framework receipt consistency only; no new E3 or framework execution.",
+    "No book-wide regression rerun, purchaser route, public upload, human trial, blind packet or physical proof."
+  ]
+}

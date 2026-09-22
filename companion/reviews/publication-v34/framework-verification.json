@@ -1,0 +1,81 @@
+{
+  "frameworks": {
+    "torch": {
+      "status": "executed",
+      "version": "2.14.0+cpu",
+      "backend": "CPU",
+      "test_rows": 600,
+      "dtype": "float64",
+      "score_shape": [
+        600,
+        1
+      ],
+      "max_absolute_error_against_numpy": 1.7763568394002505e-15,
+      "snippet_sha256": "cc6141127b3e5593b7414a9b9461c6f9e2a9b42da8a41c0183822496a446b2d3",
+      "setup": "Exact displayed snippet plus explicitly supplied copies of saved parameters and600 archived test inputs.",
+      "scope": "Forward score equivalence only. No training, gradient equivalence or historical framework run claimed."
+    },
+    "tensorflow": {
+      "status": "executed",
+      "version": "2.21.0",
+      "backend": "CPU",
+      "test_rows": 600,
+      "dtype": "float64",
+      "score_shape": [
+        600,
+        1
+      ],
+      "max_absolute_error_against_numpy": 3.552713678800501e-15,
+      "snippet_sha256": "fe3020cb2e9493d636fc954d1a3cecd8b4c9715eed5af91083b5c0709292afac",
+      "setup": "Exact displayed snippet plus explicitly supplied copies of saved parameters and600 archived test inputs.",
+      "scope": "Forward score equivalence only. No training, gradient equivalence or historical framework run claimed."
+    },
+    "jax": {
+      "status": "executed",
+      "version": "0.10.2",
+      "backend": "CPU",
+      "test_rows": 600,
+      "dtype": "float64",
+      "score_shape": [
+        600,
+        1
+      ],
+      "max_absolute_error_against_numpy": 0.0,
+      "snippet_sha256": "6e9102871d0ce93d4f460959d5d0d216642527bea01a03fbad264149bf274593",
+      "setup": "Exact displayed snippet plus explicitly supplied copies of saved parameters and600 archived test inputs.",
+      "scope": "Forward score equivalence only. No training, gradient equivalence or historical framework run claimed."
+    },
+    "keras": {
+      "status": "executed",
+      "version": "3.15.1",
+      "backend": "CPU",
+      "test_rows": 600,
+      "dtype": "float32",
+      "score_shape": [
+        600,
+        1
+      ],
+      "max_absolute_error_against_numpy": 2.1617272860652292e-06,
+      "snippet_sha256": "4fca36b6fd7acdd8ecb6b4fed417047745904be025f860eb6233c98ecc15189c",
+      "setup": "Exact displayed snippet plus explicitly supplied copies of saved parameters and600 archived test inputs.",
+      "scope": "Forward score equivalence only. No training, gradient equivalence or historical framework run claimed."
+    }
+  },
+  "archive_sha256": "fea8a5d178deb40354ed6c8090f6f5b11d1d0fcc84765d4c6c040864098d8c40",
+  "archive_unchanged": true,
+  "installations": "Fresh isolated v34 environment, see environment-lock.txt",
+  "manuscript": "manuscript\\chapters\\v34-01-neural-networks\\notes-v34.tex",
+  "primary_documentation": [
+    "https://docs.pytorch.org/docs/2.14/generated/torch.nn.Linear.html",
+    "https://docs.pytorch.org/docs/2.14/generated/torch.nn.BCEWithLogitsLoss.html",
+    "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
+    "https://keras.io/api/layers/core_layers/dense/",
+    "https://keras.io/keras_3/",
+    "https://keras.io/getting_started/",
+    "https://www.tensorflow.org/api_docs/python/tf/linalg/matmul",
+    "https://www.tensorflow.org/api_docs/python/tf/nn/relu",
+    "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.matmul.html",
+    "https://docs.jax.dev/en/latest/_autosummary/jax.nn.relu.html"
+  ],
+  "documentation_checked": "Documentation review inherited from v31, checked 2026-09-14 via official web pages; no fresh documentation verification claimed by this checker. Shapes, transpose convention, logits-aware loss, backend selection and rectification operations support the printed examples."
+}

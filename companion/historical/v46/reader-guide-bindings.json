@@ -1,0 +1,180 @@
+{
+  "edition": "v46",
+  "question_count": 8,
+  "all_destinations_verified": true,
+  "method": "Final aux labels cross-checked with final object map; physical pages and printed page labels resolved independently in both final PDFs. No offset inferred.",
+  "aux": {
+    "path": "tmp/pdfs/publication-v46/how-matter-learns-to-continue-v46-interior.aux",
+    "sha256": "a75dd05abe22bb6e52b15b9156676000d9be1ec067f15fb5edb242d88c3de5f1"
+  },
+  "object_map": {
+    "path": "reviews/publication-v46/object-map.json",
+    "sha256": "e2cd9fe06c9b0ead5bfe13eab8c06974587e5196a431cf006d2983e145cdd3a1"
+  },
+  "generator": {
+    "path": "scripts/reader-guide-v46.py",
+    "sha256": "6b7f95805fad6e7ca96ecf89f02aa6ccf6b84cd667787b46647aa1de2038d4d8"
+  },
+  "pdfs": {
+    "covered_pdf": {
+      "path": "output/pdf/how-matter-learns-to-continue-v46.pdf",
+      "filename": "how-matter-learns-to-continue-v46.pdf",
+      "sha256": "35ef0b88fc9a7493227d551b4f27e13cef7a3e2e4056bccc17be99dfc8748e1b",
+      "pages": 355
+    },
+    "interior_pdf": {
+      "path": "output/pdf/how-matter-learns-to-continue-v46-interior.pdf",
+      "filename": "how-matter-learns-to-continue-v46-interior.pdf",
+      "sha256": "22d9d7855e54c8707b14fc1fdb6f22ada92275d0b0725d9c02c195517c22584e",
+      "pages": 352
+    }
+  },
+  "targets": {
+    "eq:update": {
+      "number": "1.6",
+      "printed_page": "9",
+      "destination": "equation.13",
+      "label": "eq:update",
+      "title": "Chapter 1: the learning update",
+      "covered_pdf_page": 14,
+      "interior_pdf_page": 11
+    },
+    "fig:v29-recurrent-state": {
+      "number": "3.4",
+      "printed_page": "56",
+      "destination": "figure.143",
+      "label": "fig:v29-recurrent-state",
+      "title": "Chapter 3: a retained frame",
+      "covered_pdf_page": 61,
+      "interior_pdf_page": 58
+    },
+    "fig:v21-coarse": {
+      "number": "23.2",
+      "printed_page": "221",
+      "destination": "figure.477",
+      "label": "fig:v21-coarse",
+      "title": "Chapter 23: one coarse state, different futures",
+      "covered_pdf_page": 226,
+      "interior_pdf_page": 223
+    },
+    "eq:v29-coarse-closure": {
+      "number": "23.1",
+      "printed_page": "224",
+      "destination": "equation.479",
+      "label": "eq:v29-coarse-closure",
+      "title": "Chapter 23 notes: exact closure",
+      "covered_pdf_page": 229,
+      "interior_pdf_page": 226
+    },
+    "fig:v24-existence": {
+      "number": "31.1",
+      "printed_page": "288",
+      "destination": "figure.594",
+      "label": "fig:v24-existence",
+      "title": "Chapter 31: amounts and detector reports",
+      "covered_pdf_page": 293,
+      "interior_pdf_page": 290
+    },
+    "notes:v44-detector-bound": {
+      "number": "31",
+      "printed_page": "292",
+      "destination": "section*.596",
+      "label": "notes:v44-detector-bound",
+      "title": "Chapter 31 notes: the compatible interval",
+      "covered_pdf_page": 297,
+      "interior_pdf_page": 294
+    },
+    "fig:v21-action": {
+      "number": "12.1",
+      "printed_page": "154",
+      "destination": "figure.344",
+      "label": "fig:v21-action",
+      "title": "Chapter 12: information and action",
+      "covered_pdf_page": 159,
+      "interior_pdf_page": 156
+    },
+    "sec:v31-learned-continuation": {
+      "number": "30",
+      "printed_page": "275",
+      "destination": "section*.566",
+      "label": "sec:v31-learned-continuation",
+      "title": "Chapter 30: learn a response",
+      "covered_pdf_page": 280,
+      "interior_pdf_page": 277
+    },
+    "fig:v22-causal": {
+      "number": "14.1",
+      "printed_page": "169",
+      "destination": "figure.379",
+      "label": "fig:v22-causal",
+      "title": "Chapter 14: two causal accounts",
+      "covered_pdf_page": 174,
+      "interior_pdf_page": 171
+    },
+    "fig:v31-model-comparison": {
+      "number": "37.3",
+      "printed_page": "343",
+      "destination": "figure.669",
+      "label": "fig:v31-model-comparison",
+      "title": "Chapter 37: a discriminating operation",
+      "covered_pdf_page": 348,
+      "interior_pdf_page": 345
+    },
+    "fig:v23-region": {
+      "number": "30.1",
+      "printed_page": "272",
+      "destination": "figure.561",
+      "label": "fig:v23-region",
+      "title": "Chapter 30: the monotone pool",
+      "covered_pdf_page": 277,
+      "interior_pdf_page": 274
+    },
+    "notes:v31-learned-continuation": {
+      "number": "30",
+      "printed_page": "283",
+      "destination": "section*.590",
+      "label": "notes:v31-learned-continuation",
+      "title": "Chapter 30 notes: positive at every boundary",
+      "covered_pdf_page": 288,
+      "interior_pdf_page": 285
+    },
+    "fig:v23-coordinate": {
+      "number": "29.1",
+      "printed_page": "263",
+      "destination": "figure.547",
+      "label": "fig:v23-coordinate",
+      "title": "Chapter 29: recoding a description",
+      "covered_pdf_page": 268,
+      "interior_pdf_page": 265
+    },
+    "fig:v23-coupling": {
+      "number": "29.2",
+      "printed_page": "265",
+      "destination": "figure.549",
+      "label": "fig:v23-coupling",
+      "title": "Chapter 29: changing a coupling",
+      "covered_pdf_page": 270,
+      "interior_pdf_page": 267
+    },
+    "fig:v24-worlds": {
+      "number": "37.1",
+      "printed_page": "338",
+      "destination": "figure.665",
+      "label": "fig:v24-worlds",
+      "title": "Chapter 37: same region, different measures",
+      "covered_pdf_page": 343,
+      "interior_pdf_page": 340
+    },
+    "note:v34-meaning-ledger": {
+      "number": "37",
+      "printed_page": "349",
+      "destination": "section*.684",
+      "label": "note:v34-meaning-ledger",
+      "title": "Existing ledger: same word, different object",
+      "covered_pdf_page": 354,
+      "interior_pdf_page": 351
+    }
+  },
+  "human_reader_pilot": "not_run",
+  "public_download_route": "not_established"
+}

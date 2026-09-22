@@ -1,0 +1,95 @@
+{
+  "model_id": "v31-learning-resource-continuation",
+  "status": "new analytic teaching construction, not a historical or biological experiment",
+  "environment": "Equal stipulated mixture of sensor correctness 0.9 and 0.1. Resource sides iid fair. Correctness draws iid and independent of side within environment. Calibration and deployment independent conditional on environment.",
+  "calibration": "Five labeled trials, same opportunity for all four strategies. Follow iff at least three sensor reports were correct, otherwise reverse. One retained binary policy; frozen during deployment.",
+  "deployment": {
+    "start": 3,
+    "horizon": 12,
+    "update": "M(t+1)=M(t)-1+2*X(t)",
+    "failure": "Absorbing on first update boundary at zero",
+    "outcome": "Positive at every boundary 1 through 12"
+  },
+  "cost_scope": "Equal deployment starts after calibration; does not debit separate calibration, sensing, memory or actuator costs; abstract trial accounting only.",
+  "boundary": "Sensor orientation reverses once after calibration, before deployment; no warning or relearning. Resource-side distribution and all other conditions stay fixed.",
+  "calibration_error": {
+    "rational": "107/12500",
+    "decimal": 0.00856,
+    "ten_decimals": "0.0085600000"
+  },
+  "conditional_continuation": {
+    "1/10": {
+      "rational": "18408799/10000000000",
+      "decimal": 0.0018408799,
+      "ten_decimals": "0.0018408799"
+    },
+    "1/2": {
+      "rational": "627/1024",
+      "decimal": 0.6123046875,
+      "ten_decimals": "0.6123046875"
+    },
+    "9/10": {
+      "rational": "9986307831/10000000000",
+      "decimal": 0.9986307831,
+      "ten_decimals": "0.9986307831"
+    }
+  },
+  "strategies": {
+    "always_follow": {
+      "rational": "1000471663/2000000000",
+      "decimal": 0.5002358315,
+      "ten_decimals": "0.5002358315"
+    },
+    "always_left": {
+      "rational": "627/1024",
+      "decimal": 0.6123046875,
+      "ten_decimals": "0.6123046875"
+    },
+    "learn_five_labels": {
+      "rational": "30940570672769/31250000000000",
+      "decimal": 0.990098261528608,
+      "ten_decimals": "0.9900982615"
+    },
+    "given_deployment_orientation": {
+      "rational": "9986307831/10000000000",
+      "decimal": 0.9986307831,
+      "ten_decimals": "0.9986307831"
+    },
+    "learn_then_unannounced_reversal": {
+      "rational": "324168795981/31250000000000",
+      "decimal": 0.010373401471392,
+      "ten_decimals": "0.0103734015"
+    }
+  },
+  "independent_verification": {
+    "calibration_sequences_per_environment": 32,
+    "deployment_sequences_per_probability": 4096,
+    "probabilities_checked": [
+      "1/10",
+      "1/2",
+      "9/10"
+    ],
+    "surviving_sequences_by_number_of_successes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      297,
+      704,
+      726,
+      483,
+      219,
+      66,
+      12,
+      1
+    ],
+    "exact_fraction_agreement": true
+  },
+  "wrong_average_probability_result_for_diagnostic_only": {
+    "rational": "2770817371941511752937204569257368106732571001349/2775557561562891351059079170227050781250000000000",
+    "decimal": 0.9982921667029991,
+    "ten_decimals": "0.9982921667"
+  },
+  "source": "examples/publication_v31_late.py"
+}

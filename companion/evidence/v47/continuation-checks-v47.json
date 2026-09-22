@@ -1,0 +1,223 @@
+{
+  "schema": "v47-constructive-mathematics-checks-v1",
+  "version": "v47",
+  "all_checks_passed": true,
+  "check_group_count": 5,
+  "dependencies": "Python standard library only",
+  "checks": {
+    "original_result": {
+      "status": "passed",
+      "conditional_survival": {
+        "1/10": {
+          "fraction": "18408799/10000000000",
+          "probability": 0.0018408799,
+          "percent": 0.18408799
+        },
+        "1/2": {
+          "fraction": "627/1024",
+          "probability": 0.6123046875,
+          "percent": 61.23046875
+        },
+        "9/10": {
+          "fraction": "9986307831/10000000000",
+          "probability": 0.9986307831,
+          "percent": 99.86307831
+        }
+      },
+      "learned": {
+        "fraction": "30940570672769/31250000000000",
+        "probability": 0.990098261528608,
+        "percent": 99.0098261528608
+      },
+      "reversed": {
+        "fraction": "324168795981/31250000000000",
+        "probability": 0.010373401471392,
+        "percent": 1.0373401471392
+      },
+      "deployment_strings_per_probability": 4096
+    },
+    "F04_rule150": {
+      "status": "passed",
+      "ring_size": 32,
+      "basis_vectors_checked": 32,
+      "independent_implementations": [
+        "truth-table cells",
+        "bitwise XOR"
+      ],
+      "readouts": {
+        "31": {
+          "differing_other_sites": 20,
+          "response": {
+            "fraction": "20/31",
+            "probability": 0.6451612903225806,
+            "percent": 64.51612903225806
+          }
+        },
+        "32": {
+          "differing_other_sites": 0,
+          "response": {
+            "fraction": "0",
+            "probability": 0.0,
+            "percent": 0.0
+          }
+        },
+        "33": {
+          "differing_other_sites": 2,
+          "response": {
+            "fraction": "2/31",
+            "probability": 0.06451612903225806,
+            "percent": 6.451612903225806
+          }
+        }
+      },
+      "proof": "Over F2, F^(16)=S^(-16)+I+S^(16)=I on the 32-ring. The basis checks supplement this operator identity.",
+      "scope": "Later diagnostic, no altered registered endpoint or fitted model."
+    },
+    "F05_infinite_and_capped": {
+      "status": "passed",
+      "finite_barrier_harmonic_rows": 60,
+      "unlimited": {
+        "given_orientation": {
+          "fraction": "728/729",
+          "probability": 0.9986282578875172,
+          "percent": 99.86282578875172
+        },
+        "learned": {
+          "fraction": "3094/3125",
+          "probability": 0.99008,
+          "percent": 99.008
+        },
+        "always_follow": {
+          "fraction": "364/729",
+          "probability": 0.4993141289437586,
+          "percent": 49.93141289437586
+        },
+        "ignore": {
+          "fraction": "0",
+          "probability": 0.0,
+          "percent": 0.0
+        },
+        "certain_reversal": {
+          "fraction": "19474/2278125",
+          "probability": 0.008548257887517147,
+          "percent": 0.8548257887517147
+        }
+      },
+      "capacity_15_preserves_all_twelve_step_paths": true,
+      "capacity_15_path_strings_checked": 4096,
+      "cap_proof": "Any B consecutive failures empty a buffer at most B. Independent disjoint B-trial blocks give the bound [1-(1-p)^B]^k, tending to zero for p<1.",
+      "limit_proof": "Events {tau_0<tau_N} increase to eventual ruin, since every finite-time ruin path has a finite prior maximum.",
+      "scope": "Analytic limit proofs, finite calculations are supporting checks."
+    },
+    "F06_paid_calibration": {
+      "status": "passed",
+      "pre_calibration_budget": 6,
+      "price_per_label": 1,
+      "deployment_horizon": 12,
+      "rows": [
+        {
+          "policy": "ignore",
+          "labels": 0,
+          "deployment_start": 6,
+          "correct_orientation": null,
+          "continuation": {
+            "fraction": "1859/2048",
+            "probability": 0.90771484375,
+            "percent": 90.771484375
+          }
+        },
+        {
+          "policy": "always_follow",
+          "labels": 0,
+          "deployment_start": 6,
+          "correct_orientation": {
+            "fraction": "1/2",
+            "probability": 0.5,
+            "percent": 50.0
+          },
+          "continuation": {
+            "fraction": "51136831031/100000000000",
+            "probability": 0.51136831031,
+            "percent": 51.136831031
+          }
+        },
+        {
+          "policy": "learn_1",
+          "labels": 1,
+          "deployment_start": 5,
+          "correct_orientation": {
+            "fraction": "9/10",
+            "probability": 0.9,
+            "percent": 90.0
+          },
+          "continuation": {
+            "fraction": "18031390157/20000000000",
+            "probability": 0.90156950785,
+            "percent": 90.156950785
+          }
+        },
+        {
+          "policy": "learn_3",
+          "labels": 3,
+          "deployment_start": 3,
+          "correct_orientation": {
+            "fraction": "243/250",
+            "probability": 0.972,
+            "percent": 97.2
+          },
+          "continuation": {
+            "fraction": "1213400832263/1250000000000",
+            "probability": 0.9707206658104,
+            "percent": 97.07206658104
+          }
+        },
+        {
+          "policy": "learn_5",
+          "labels": 5,
+          "deployment_start": 1,
+          "correct_orientation": {
+            "fraction": "12393/12500",
+            "probability": 0.99144,
+            "percent": 99.144
+          },
+          "continuation": {
+            "fraction": "137701662242869/156250000000000",
+            "probability": 0.8812906383543616,
+            "percent": 88.12906383543616
+          }
+        }
+      ],
+      "scope": "Stipulated cost, fixed label counts, no apparatus or adaptive optimum."
+    },
+    "F07_natural_gradient_bridge": {
+      "status": "passed",
+      "calibration_records_checked": 32,
+      "bridge": "p(tau)-1/2=((2K-5)/10)*(1-exp(-tau)). For tau>0 this has the sign of 2K-5, giving the original majority setting.",
+      "tau_zero": "Tie for every record, not covered by strict-threshold equivalence.",
+      "same_deployment_continuation": {
+        "fraction": "30940570672769/31250000000000",
+        "probability": 0.990098261528608,
+        "percent": 99.0098261528608
+      },
+      "example_at_tau_log_2": {
+        "K": 3,
+        "fitted_p": {
+          "fraction": "11/20",
+          "probability": 0.55,
+          "percent": 55.0
+        },
+        "posterior_q_equals_0_9": {
+          "fraction": "9/10",
+          "probability": 0.9,
+          "percent": 90.0
+        }
+      },
+      "euler_counterexample": {
+        "p_coordinate_step": 0.5,
+        "logit_coordinate_step_mapped_back": 0.6198014665730237
+      },
+      "scope": "Standard natural-gradient method with a chosen loss and optimization clock. Fitted p is not posterior orientation probability. No architecture validation or physical implementation."
+    }
+  },
+  "evidence_status": "Analytic teaching extensions and later diagnostics. Not historical reruns, physical experiments or human-reader tests."
+}

@@ -1,0 +1,12 @@
+{
+  "archive": "how-matter-learns-to-continue-v48-companion.zip",
+  "sha256": "117eaa8c640f1a60b8e4810812413f3698858993081bb8b8663960a9ca67a00d",
+  "bytes": 1138604,
+  "files": 152,
+  "manifest_entries_verified": 151,
+  "all_public_companion_files_byte_identical_to_archive": true,
+  "payload_scope": "Reader programs, frozen experiment data, selected technical-note evidence, selected figures and validation records. No full book PDF or chapter drafts.",
+  "secret_pattern_matches": 0,
+  "secret_scan_limit": "Bounded pattern scan, not a guarantee that arbitrary text cannot contain confidential material.",
+  "edition_binding": "v48, as documented by companion/evidence/v48-compatibility.json"
+}

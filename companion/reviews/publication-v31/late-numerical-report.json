@@ -1,0 +1,239 @@
+{
+  "learning_resource": {
+    "model_id": "v31-learning-resource-continuation",
+    "status": "new analytic teaching construction, not a historical or biological experiment",
+    "environment": "Equal stipulated mixture of sensor correctness 0.9 and 0.1. Resource sides iid fair. Correctness draws iid and independent of side within environment. Calibration and deployment independent conditional on environment.",
+    "calibration": "Five labeled trials, same opportunity for all four strategies. Follow iff at least three sensor reports were correct, otherwise reverse. One retained binary policy; frozen during deployment.",
+    "deployment": {
+      "start": 3,
+      "horizon": 12,
+      "update": "M(t+1)=M(t)-1+2*X(t)",
+      "failure": "Absorbing on first update boundary at zero",
+      "outcome": "Positive at every boundary 1 through 12"
+    },
+    "cost_scope": "Equal deployment starts after calibration; does not debit separate calibration, sensing, memory or actuator costs; abstract trial accounting only.",
+    "boundary": "Sensor orientation reverses once after calibration, before deployment; no warning or relearning. Resource-side distribution and all other conditions stay fixed.",
+    "calibration_error": {
+      "rational": "107/12500",
+      "decimal": 0.00856,
+      "ten_decimals": "0.0085600000"
+    },
+    "conditional_continuation": {
+      "1/10": {
+        "rational": "18408799/10000000000",
+        "decimal": 0.0018408799,
+        "ten_decimals": "0.0018408799"
+      },
+      "1/2": {
+        "rational": "627/1024",
+        "decimal": 0.6123046875,
+        "ten_decimals": "0.6123046875"
+      },
+      "9/10": {
+        "rational": "9986307831/10000000000",
+        "decimal": 0.9986307831,
+        "ten_decimals": "0.9986307831"
+      }
+    },
+    "strategies": {
+      "always_follow": {
+        "rational": "1000471663/2000000000",
+        "decimal": 0.5002358315,
+        "ten_decimals": "0.5002358315"
+      },
+      "always_left": {
+        "rational": "627/1024",
+        "decimal": 0.6123046875,
+        "ten_decimals": "0.6123046875"
+      },
+      "learn_five_labels": {
+        "rational": "30940570672769/31250000000000",
+        "decimal": 0.990098261528608,
+        "ten_decimals": "0.9900982615"
+      },
+      "given_deployment_orientation": {
+        "rational": "9986307831/10000000000",
+        "decimal": 0.9986307831,
+        "ten_decimals": "0.9986307831"
+      },
+      "learn_then_unannounced_reversal": {
+        "rational": "324168795981/31250000000000",
+        "decimal": 0.010373401471392,
+        "ten_decimals": "0.0103734015"
+      }
+    },
+    "independent_verification": {
+      "calibration_sequences_per_environment": 32,
+      "deployment_sequences_per_probability": 4096,
+      "probabilities_checked": [
+        "1/10",
+        "1/2",
+        "9/10"
+      ],
+      "surviving_sequences_by_number_of_successes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        297,
+        704,
+        726,
+        483,
+        219,
+        66,
+        12,
+        1
+      ],
+      "exact_fraction_agreement": true
+    },
+    "wrong_average_probability_result_for_diagnostic_only": {
+      "rational": "2770817371941511752937204569257368106732571001349/2775557561562891351059079170227050781250000000000",
+      "decimal": 0.9982921667029991,
+      "ten_decimals": "0.9982921667"
+    },
+    "source": "examples/publication_v31_late.py"
+  },
+  "equal_pool": {
+    "start": 50,
+    "pairs": [
+      [
+        0.1,
+        5
+      ],
+      [
+        0.2,
+        10
+      ]
+    ],
+    "duration": 5,
+    "terminal_amounts": [
+      30.326532985631673,
+      18.393972058572118
+    ],
+    "threshold": 20
+  },
+  "common_limits": "Exact convolutions; normalization, mean and variance verified for both laws at 1, 8, 64; original scales retained; one-step stems are discrete.",
+  "clocks": {
+    "reference_events": [
+      2,
+      5,
+      8
+    ],
+    "B_events": [
+      4.4,
+      8.0,
+      6.6
+    ],
+    "bad_map_from_first_two_rate": 1.2,
+    "bad_map_without_reset_predicts_E3": 11.6,
+    "observed_E3": 6.6,
+    "pool_amount_ratio": 0.6703200460356393
+  },
+  "quantum": {
+    "overlaps": [
+      1,
+      0.5,
+      0
+    ],
+    "quarter_turn_probabilities": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "zero_phase_output_zero": [
+      1,
+      0.75,
+      0.5
+    ],
+    "normalization": "pass"
+  },
+  "tail_plot": {
+    "domain": [
+      1,
+      10000
+    ],
+    "laws": "unchanged exact Borel and normalized Zipf; title layout repair only"
+  },
+  "additional_checks": {
+    "four_step_center": 0.375,
+    "four_step_rightmost": 0.0625,
+    "independent_variance_32": 32,
+    "persistent_variance_32": 1024,
+    "diffusion_interval_3_3point5": 0.0011172689525945634
+  },
+  "assets": [
+    {
+      "path": "outputs\\publication-v31\\figures\\v31-late-learning-continuation.pdf",
+      "sha256": "87e62278746ce5db4402612f062bedea1bcf9c87e87cc98913d24a937e3ad63e"
+    },
+    {
+      "path": "outputs\\publication-v31\\figures\\v31-late-learning-continuation.svg",
+      "sha256": "cc1ebb520944bae13257cfdcc319f067b9fd7d49dc496035d5a37de4563e96d3"
+    },
+    {
+      "path": "outputs\\publication-v31\\figures\\v31-late-learning-continuation.png",
+      "sha256": "5be14870ac521e07052e3736d759c039ae0adf9cde42118fbb7f7ae18d0e19fa"
+    },
+    {
+      "path": "outputs\\publication-v31\\figures\\v31-late-equal-pool-decay.pdf",
+      "sha256": "963cbd7cf436db8c87feda89274fc8f309a8ee76703a4ab48ea8cf35e94b2f45"
+    },
+    {
+      "path": "outputs\\publication-v31\\figures\\v31-late-equal-pool-decay.svg",
+      "sha256": "07e51bef21422d24be38ab6df4bc850d0bfec64660c0495662b760365969a05c"
+    },
+    {
+      "path": "outputs\\publication-v31\\figures\\v31-late-equal-pool-decay.png",
+      "sha256": "a4fb6c54a6d5656e7a0df9cd1c1fc2799fb9e2b8286d33459c225ba5fc25e9cc"
+    },
+    {
+      "path": "outputs\\publication-v31\\figures\\v31-late-common-limit-stems.pdf",
+      "sha256": "6e881bd9f8fd15eee1bdfafc209a3086fd6efe5b172b3e99ebd0853c65972494"
+    },
+    {
+      "path": "outputs\\publication-v31\\figures\\v31-late-common-limit-stems.svg",
+      "sha256": "3b1ed3bfcc150919de92f931188b6e2fecaf869a15e41e50f3bfdcb627565324"
+    },
+    {
+      "path": "outputs\\publication-v31\\figures\\v31-late-common-limit-stems.png",
+      "sha256": "94989593e54c37cdba01766692825be16d388c27551647dcd3dee60f7eb46ce2"
+    },
+    {
+      "path": "outputs\\publication-v31\\figures\\v31-late-clock-reset.pdf",
+      "sha256": "3ddfb854b8057731c6f731b5bedb78bd110a1c7a9b7eeadcb7740da2a8ab7cc4"
+    },
+    {
+      "path": "outputs\\publication-v31\\figures\\v31-late-clock-reset.svg",
+      "sha256": "e42270cc8cf59a9f614ebfc3981e306776164568e949b7c884e249908c03a558"
+    },
+    {
+      "path": "outputs\\publication-v31\\figures\\v31-late-clock-reset.png",
+      "sha256": "0a188207bbf062c234cc4482f1aa08ae397918f7907b69f22d4977cf10565b39"
+    },
+    {
+      "path": "outputs\\publication-v31\\figures\\v31-late-quantum-quarter-turn.pdf",
+      "sha256": "a973a8697b5bc542e22bd49aee6ae440cd3903c136124f0d8cf1d091adc441b5"
+    },
+    {
+      "path": "outputs\\publication-v31\\figures\\v31-late-quantum-quarter-turn.svg",
+      "sha256": "6c2f1c25ca0df2a9d1cb594d7f0929637cd8abc2cf034eb350254767abe66cba"
+    },
+    {
+      "path": "outputs\\publication-v31\\figures\\v31-late-quantum-quarter-turn.png",
+      "sha256": "0eaa5573d9e718f4808d0e58b2758797f79ea0d46f0ae20cf375ccd4866e00f1"
+    },
+    {
+      "path": "outputs\\publication-v31\\figures\\v31-late-tail-comparison.pdf",
+      "sha256": "22cdd69e6b9d665c5d8b173e8d48a0db0731eccb75a14107c094542e6d00bb51"
+    },
+    {
+      "path": "outputs\\publication-v31\\figures\\v31-late-tail-comparison.svg",
+      "sha256": "ad9c3156e14fffaa0600ec0a03072c5ebc483a78e27ed09a4877a54196c49ee4"
+    },
+    {
+      "path": "outputs\\publication-v31\\figures\\v31-late-tail-comparison.png",
+      "sha256": "02dd8460e58c5a10a006ded59ebe7444bb77a6b09858ea61789481800f0eb2e1"
+    }
+  ]
+}

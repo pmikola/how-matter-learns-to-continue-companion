@@ -1,0 +1,5 @@
+# Preserve checked payload bytes, including the original line endings.
+companion/** -text
+*.md text eol=lf
+*.json text eol=lf
+companion/** -text

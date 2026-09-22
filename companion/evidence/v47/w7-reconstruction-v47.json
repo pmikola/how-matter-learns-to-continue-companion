@@ -1,0 +1,1100 @@
+{
+  "schema": "hmltc.w7_reconstruction.v47.1",
+  "status": "passed",
+  "evidence": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\output\\companion\\how-matter-learns-to-continue-v46-companion.zip",
+  "script_sha256": "6562505be2f085f260d69c8de7e6dbeed26a15149193925f74cae4c809de6b1f",
+  "historical_outcome": "e3_transfer_null",
+  "scientific_admission": false,
+  "historical_manifest_sha256": "3750b736c09efd0aaa7bc512a74de06383f4b53458e287b6bfefd348eb81556a",
+  "artifact_checks": [
+    {
+      "byte_count": 1656,
+      "relative_path": "analysis/aggregate.json",
+      "sha256": "d0d37e3a0016ad2225829070a2c7fa6c3f0e0c06b11ada4624899cc0101af5ed",
+      "pass": true
+    },
+    {
+      "byte_count": 21024,
+      "relative_path": "analysis/per_class.jsonl",
+      "sha256": "a3df4ef9eceb693f821cf1886bd76d7db6e2d3170ea3702f1309fad6f73106b6",
+      "pass": true
+    },
+    {
+      "byte_count": 7496,
+      "relative_path": "controls/coefficient_freeze.json",
+      "sha256": "50c889e01d6a0edb8bbfa9addc2b8d6fcef864d427ed1fae8f77ff69ff8e78b5",
+      "pass": true
+    },
+    {
+      "byte_count": 377,
+      "relative_path": "controls/controls.json",
+      "sha256": "a0a8621f67da976d825d9467c58cfcfea874858d83c932a75cdfcfe2eee24800",
+      "pass": true
+    },
+    {
+      "byte_count": 10408,
+      "relative_path": "controls/development_receipt.json",
+      "sha256": "90539577e88942d328a44061008c26923cd2f328f80eaf74132b6c6fef36a4a7",
+      "pass": true
+    },
+    {
+      "byte_count": 4169,
+      "relative_path": "controls/post_coefficient_pilot_receipt.json",
+      "sha256": "6ad93e3947f89d3fbcf854dc9be6826bdab878d9d56410913bf348b2405eadd0",
+      "pass": true
+    },
+    {
+      "byte_count": 185,
+      "relative_path": "controls/probe_commitment.json",
+      "sha256": "5a2e90dccdcfa694615a3347d4169f52310dd3caed90b942680649dab858c800",
+      "pass": true
+    },
+    {
+      "byte_count": 7565,
+      "relative_path": "public/classes.jsonl",
+      "sha256": "4b6257109681f051e8871f2730a80b87487c5069aa8c8bf312367b1334e523cf",
+      "pass": true
+    }
+  ],
+  "source_specification": {
+    "commit": "cb0de6317622aa66813801d8534d6d9373536a92",
+    "protocol_id": "omega.xfam.e3.shared_response_law.v0_1",
+    "source_bindings": {
+      "config": {
+        "path": "configs/experiments/xfam_e3_shared_response_law_v0_1.json",
+        "sha256": "ad3923b5438c3bf17e70a9d72d9044e3db32d10191c73bb301b3299d7317ba69"
+      },
+      "implementation": {
+        "path": "src/omega_protocol/experiments/xfam_e3_shared_response_law_v1.py",
+        "sha256": "b8ae2db507509e915f202414f22073ee0e7c5a8231dd30ab9123b93d5216a146",
+        "functions": [
+          "balanced_recoding_closed_probes",
+          "_reflect_state",
+          "_w7_response_count",
+          "_fit_matrix",
+          "_fit_disjoint_intercepts"
+        ]
+      },
+      "experiment_common": {
+        "path": "src/omega_protocol/experiments/universe_targets_common_v1.py",
+        "sha256": "f35bcfcde063ecc626aae3fd4c141bb304d0bb6edaaa7385780e448931f2e0fa",
+        "functions": [
+          "canonical_json_bytes",
+          "stable_uint64"
+        ]
+      }
+    },
+    "source_check_scope": "Embedded source hashes agree with the archived freeze; upstream source bytes are not fetched by this reader command.",
+    "probe_seed": 2026082621,
+    "ring_size": 32,
+    "horizon": 32,
+    "class_order": [
+      140,
+      24,
+      44,
+      73,
+      34,
+      8,
+      6,
+      13,
+      128,
+      178,
+      5,
+      142,
+      32,
+      57,
+      74,
+      15,
+      150,
+      164,
+      38,
+      14,
+      58,
+      106,
+      132,
+      152,
+      33,
+      12,
+      126,
+      108,
+      146,
+      3
+    ],
+    "stable_key": "SHA256 of null-separated ASCII canonical JSON parts; first eight digest bytes as big-endian unsigned integer",
+    "key_parts": [
+      "protocol_id",
+      "probe_seed",
+      "candidate_index",
+      "site",
+      "balanced_probe"
+    ],
+    "probe_generator": "Rank sites by (stable_key,site); set first sixteen; reflect site i to -i mod32; form complement/reflection orbit; skip non-four or intersecting orbits; stop at eight; sort integers.",
+    "candidate_indices": "0 upwards; historical finite rejection bound 128",
+    "perturbation": "Flip each of all32 initial sites in each probe; synchronous periodic updates; exclude that site's terminal disagreement."
+  },
+  "probes": [
+    933770067,
+    1390568821,
+    1565298325,
+    1785189414,
+    2509777881,
+    2729668970,
+    2904398474,
+    3361197228
+  ],
+  "probe_set_sha256": "3257eb5367a28cf681c64296b46ce2948b0ab9398230f586aa43e2ceb43cb421",
+  "original_probe_commitment_matched": true,
+  "probes_balanced_and_recoding_closed": true,
+  "frozen_models": {
+    "adapter_shuffle_diagnostics": {
+      "W1": {
+        "descriptor_group_count": 5,
+        "effective_descriptor_changes": 256,
+        "largest_descriptor_group": 96,
+        "unavoidable_unchanged_descriptors": 0,
+        "unit_count": 256
+      },
+      "W2_branching": {
+        "descriptor_group_count": 34,
+        "effective_descriptor_changes": 40,
+        "largest_descriptor_group": 2,
+        "unavoidable_unchanged_descriptors": 0,
+        "unit_count": 40
+      },
+      "W6": {
+        "descriptor_group_count": 8,
+        "effective_descriptor_changes": 24,
+        "largest_descriptor_group": 4,
+        "unavoidable_unchanged_descriptors": 0,
+        "unit_count": 24
+      }
+    },
+    "adapter_shuffle_law": {
+      "byte_count": 32,
+      "coefficients": [
+        -0.04849741513127557,
+        -0.019374423186632794,
+        0.5386514119213927,
+        -0.03637112666308376
+      ],
+      "coefficients_identified": true,
+      "condition_number": 22.77426583504523,
+      "float64_le_hex": "9dd5db37a7d4a8bf709fdc87e3d693bfffb0c4e2a13ce13fa4bf127f3c9fa2bf",
+      "rank": 4,
+      "singular_values": [
+        1.2044369616445663,
+        0.3966262178941123,
+        0.1805263057493811,
+        0.0528858743622448
+      ],
+      "weighted_training_mse": 0.024074657980753967
+    },
+    "adapter_shuffle_mapping_sha256": "b86578258a6a496b379312237657c41fef2a605b3b252ef83b8ad07c3e05fa50",
+    "constant_floor": {
+      "family_means": {
+        "W1": 0.5,
+        "W2_branching": 0.033303571428571425,
+        "W6": 0.03125
+      },
+      "prediction": 0.1881845238095238,
+      "weighting": "equal_family_then_equal_row"
+    },
+    "disjoint_family_intercepts": {
+      "byte_count": 48,
+      "coefficients": [
+        -0.23292177495796088,
+        0.6869063151602721,
+        0.10727672240998276,
+        0.45611816817201034,
+        0.2821918949678426,
+        -0.17221432542952914
+      ],
+      "coefficients_identified": false,
+      "condition_number": null,
+      "float64_le_hex": "5940fc7661d0cdbf84efe0f322fbe53f68795fbe7c76bb3fec40da410a31dd3f585205986e0fd23f06afcf771e0bc6bf",
+      "rank": 5,
+      "singular_values": [
+        1.2105622232797584,
+        1.0037893510190894,
+        0.6848797906185511,
+        0.17683900523646673,
+        0.05757107244443091,
+        1.0478779732984034e-16
+      ],
+      "weighted_training_mse": 0.006251683441935627
+    },
+    "model_bundle_sha256": "4a8bb830e8b1d36043a9afcdb08acd095c100a40b6f4cac1c5cde7f725ee06a8",
+    "per_family_laws": {
+      "W1": {
+        "byte_count": 32,
+        "coefficients": [
+          -1.238416607722524e-16,
+          0.9999999999999991,
+          1.2212453270876722e-15,
+          0.0
+        ],
+        "coefficients_identified": false,
+        "condition_number": null,
+        "float64_le_hex": "d1c8806af3d8a1bcf8ffffffffffef3f000000000000d63c0000000000000000",
+        "rank": 2,
+        "singular_values": [
+          1.502371353764783,
+          0.23533022625019182,
+          1.9119182723063816e-15,
+          0.0
+        ],
+        "weighted_training_mse": 4.912692934153008e-31
+      },
+      "W2_branching": {
+        "byte_count": 32,
+        "coefficients": [
+          0.03488772550366808,
+          0.049589986802798865,
+          0.011213911769036189,
+          -0.07512084907192891
+        ],
+        "coefficients_identified": false,
+        "condition_number": null,
+        "float64_le_hex": "77e123d0cddca13f19df0dd7db63a93f804677c251f7863fe5fd02b61e3bb3bf",
+        "rank": 3,
+        "singular_values": [
+          1.1308066442257443,
+          0.11054950433159326,
+          0.046554970941043806,
+          6.757019954558424e-17
+        ],
+        "weighted_training_mse": 0.0005455741858850465
+      },
+      "W6": {
+        "byte_count": 32,
+        "coefficients": [
+          -7.058010613705674e-18,
+          0.0833333333333334,
+          -5.204170427930421e-18,
+          -4.85722573273506e-17
+        ],
+        "coefficients_identified": false,
+        "condition_number": null,
+        "float64_le_hex": "6c428368504660bc5a5555555555b53f00000000000058bc0000000000008cbc",
+        "rank": 3,
+        "singular_values": [
+          1.1353480611228284,
+          0.18726243098554196,
+          0.020188595967291653,
+          3.054925846625118e-17
+        ],
+        "weighted_training_mse": 2.3033938986033087e-34
+      }
+    },
+    "primary_law": {
+      "byte_count": 32,
+      "coefficients": [
+        -0.49414752789909744,
+        0.7191418084524686,
+        0.6260880627343716,
+        0.48161909928328844
+      ],
+      "coefficients_identified": true,
+      "condition_number": 22.774265835045238,
+      "float64_le_hex": "ac74eef31ca0dfbf34ab8fae3503e73f1f863bd5e908e43faf3e23ead8d2de3f",
+      "rank": 4,
+      "singular_values": [
+        1.2044369616445665,
+        0.396626217894112,
+        0.18052630574938117,
+        0.052885874362244796
+      ],
+      "weighted_training_mse": 0.0068594494375810115
+    },
+    "quantized_centroid_memory": {
+      "byte_count": 64,
+      "centroid_count": 4,
+      "centroids": [
+        [
+          0.266535222530365,
+          0.23639455437660217,
+          0.3324761986732483,
+          0.02584325335919857
+        ],
+        [
+          0.6363636255264282,
+          1.0,
+          0.0,
+          0.6363636255264282
+        ],
+        [
+          0.20000000298023224,
+          1.0,
+          0.0,
+          0.20000000298023224
+        ],
+        [
+          0.5263888835906982,
+          0.1230158731341362,
+          0.3054513931274414,
+          0.047288358211517334
+        ]
+      ],
+      "dtype": "float32_little_endian",
+      "iterations": 5,
+      "payload_hex": "4e77883e6a11723e523aaa3e3bb5d33cbae8223f0000803f00000000bae8223fcdcc4c3e0000803f00000000cdcc4c3e6cc1063fbfeffb3d20649c3e70b1413d",
+      "stabilized": true
+    },
+    "sealed_descriptor_permutation": {
+      "106": 108,
+      "108": 57,
+      "12": 6,
+      "126": 34,
+      "128": 58,
+      "13": 3,
+      "132": 128,
+      "14": 13,
+      "140": 5,
+      "142": 150,
+      "146": 14,
+      "15": 132,
+      "150": 33,
+      "152": 146,
+      "164": 142,
+      "178": 73,
+      "24": 12,
+      "3": 24,
+      "32": 126,
+      "33": 38,
+      "34": 44,
+      "38": 140,
+      "44": 164,
+      "5": 74,
+      "57": 32,
+      "58": 8,
+      "6": 106,
+      "73": 15,
+      "74": 178,
+      "8": 152
+    },
+    "sealed_descriptor_permutation_diagnostics": {
+      "descriptor_group_count": 4,
+      "effective_descriptor_changes": 26,
+      "largest_descriptor_group": 17,
+      "unavoidable_unchanged_descriptors": 4,
+      "unit_count": 30
+    }
+  },
+  "mse": {
+    "primary": 0.04651764075889651,
+    "constant": 0.022214819625990624,
+    "memory": 0.011103334688740193,
+    "family_aware": 0.01693321813870276
+  },
+  "reconstructed_rows": [
+    {
+      "class_representative": 140,
+      "array_changed_count": 128,
+      "bit_parallel_changed_count": 128,
+      "archived_changed_count": 128,
+      "comparison_count": 7936,
+      "response": 0.016129032258064516,
+      "descriptors": [
+        0.25,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.2739692975450531,
+        "constant": 0.1881845238095238,
+        "memory": 0.02584325335919857,
+        "family_aware": -0.05427411730273267
+      }
+    },
+    {
+      "class_representative": 24,
+      "array_changed_count": 292,
+      "bit_parallel_changed_count": 292,
+      "archived_changed_count": 292,
+      "comparison_count": 7936,
+      "response": 0.03679435483870968,
+      "descriptors": [
+        0.5,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.09418384543193596,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.11745246148733536
+      }
+    },
+    {
+      "class_representative": 44,
+      "array_changed_count": 237,
+      "bit_parallel_changed_count": 237,
+      "archived_changed_count": 237,
+      "comparison_count": 7936,
+      "response": 0.029863911290322582,
+      "descriptors": [
+        0.5,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.09418384543193596,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.11745246148733536
+      }
+    },
+    {
+      "class_representative": 73,
+      "array_changed_count": 1278,
+      "bit_parallel_changed_count": 1278,
+      "archived_changed_count": 1278,
+      "comparison_count": 7936,
+      "response": 0.1610383064516129,
+      "descriptors": [
+        0.75,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": 0.08560160668118118,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.2891790402774034
+      }
+    },
+    {
+      "class_representative": 34,
+      "array_changed_count": 128,
+      "bit_parallel_changed_count": 128,
+      "archived_changed_count": 128,
+      "comparison_count": 7936,
+      "response": 0.016129032258064516,
+      "descriptors": [
+        0.25,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.2739692975450531,
+        "constant": 0.1881845238095238,
+        "memory": 0.02584325335919857,
+        "family_aware": -0.05427411730273267
+      }
+    },
+    {
+      "class_representative": 8,
+      "array_changed_count": 0,
+      "bit_parallel_changed_count": 0,
+      "archived_changed_count": 0,
+      "comparison_count": 7936,
+      "response": 0.0,
+      "descriptors": [
+        0.25,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.2739692975450531,
+        "constant": 0.1881845238095238,
+        "memory": 0.02584325335919857,
+        "family_aware": -0.05427411730273267
+      }
+    },
+    {
+      "class_representative": 6,
+      "array_changed_count": 978,
+      "bit_parallel_changed_count": 978,
+      "archived_changed_count": 978,
+      "comparison_count": 7936,
+      "response": 0.12323588709677419,
+      "descriptors": [
+        0.5,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.09418384543193596,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.11745246148733536
+      }
+    },
+    {
+      "class_representative": 13,
+      "array_changed_count": 247,
+      "bit_parallel_changed_count": 247,
+      "archived_changed_count": 247,
+      "comparison_count": 7936,
+      "response": 0.03112399193548387,
+      "descriptors": [
+        0.5,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.09418384543193596,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.11745246148733536
+      }
+    },
+    {
+      "class_representative": 128,
+      "array_changed_count": 0,
+      "bit_parallel_changed_count": 0,
+      "archived_changed_count": 0,
+      "comparison_count": 7936,
+      "response": 0.0,
+      "descriptors": [
+        0.25,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.2739692975450531,
+        "constant": 0.1881845238095238,
+        "memory": 0.02584325335919857,
+        "family_aware": -0.05427411730273267
+      }
+    },
+    {
+      "class_representative": 178,
+      "array_changed_count": 180,
+      "bit_parallel_changed_count": 180,
+      "archived_changed_count": 180,
+      "comparison_count": 7936,
+      "response": 0.022681451612903226,
+      "descriptors": [
+        0.5,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.09418384543193596,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.11745246148733536
+      }
+    },
+    {
+      "class_representative": 5,
+      "array_changed_count": 128,
+      "bit_parallel_changed_count": 128,
+      "archived_changed_count": 128,
+      "comparison_count": 7936,
+      "response": 0.016129032258064516,
+      "descriptors": [
+        0.5,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.09418384543193596,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.11745246148733536
+      }
+    },
+    {
+      "class_representative": 142,
+      "array_changed_count": 930,
+      "bit_parallel_changed_count": 930,
+      "archived_changed_count": 930,
+      "comparison_count": 7936,
+      "response": 0.1171875,
+      "descriptors": [
+        0.5,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.09418384543193596,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.11745246148733536
+      }
+    },
+    {
+      "class_representative": 32,
+      "array_changed_count": 0,
+      "bit_parallel_changed_count": 0,
+      "archived_changed_count": 0,
+      "comparison_count": 7936,
+      "response": 0.0,
+      "descriptors": [
+        0.25,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.2739692975450531,
+        "constant": 0.1881845238095238,
+        "memory": 0.02584325335919857,
+        "family_aware": -0.05427411730273267
+      }
+    },
+    {
+      "class_representative": 57,
+      "array_changed_count": 1652,
+      "bit_parallel_changed_count": 1652,
+      "archived_changed_count": 1652,
+      "comparison_count": 7936,
+      "response": 0.20816532258064516,
+      "descriptors": [
+        0.5,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.09418384543193596,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.11745246148733536
+      }
+    },
+    {
+      "class_representative": 74,
+      "array_changed_count": 535,
+      "bit_parallel_changed_count": 535,
+      "archived_changed_count": 535,
+      "comparison_count": 7936,
+      "response": 0.06741431451612903,
+      "descriptors": [
+        0.75,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": 0.08560160668118118,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.2891790402774034
+      }
+    },
+    {
+      "class_representative": 15,
+      "array_changed_count": 0,
+      "bit_parallel_changed_count": 0,
+      "archived_changed_count": 0,
+      "comparison_count": 7936,
+      "response": 0.0,
+      "descriptors": [
+        0.5,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.09418384543193596,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.11745246148733536
+      }
+    },
+    {
+      "class_representative": 150,
+      "array_changed_count": 0,
+      "bit_parallel_changed_count": 0,
+      "archived_changed_count": 0,
+      "comparison_count": 7936,
+      "response": 0.0,
+      "descriptors": [
+        1.0,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": 0.2653870587942983,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.4609056190674714
+      }
+    },
+    {
+      "class_representative": 164,
+      "array_changed_count": 248,
+      "bit_parallel_changed_count": 248,
+      "archived_changed_count": 248,
+      "comparison_count": 7936,
+      "response": 0.03125,
+      "descriptors": [
+        0.75,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": 0.08560160668118118,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.2891790402774034
+      }
+    },
+    {
+      "class_representative": 38,
+      "array_changed_count": 190,
+      "bit_parallel_changed_count": 190,
+      "archived_changed_count": 190,
+      "comparison_count": 7936,
+      "response": 0.023941532258064516,
+      "descriptors": [
+        0.5,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.09418384543193596,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.11745246148733536
+      }
+    },
+    {
+      "class_representative": 14,
+      "array_changed_count": 930,
+      "bit_parallel_changed_count": 930,
+      "archived_changed_count": 930,
+      "comparison_count": 7936,
+      "response": 0.1171875,
+      "descriptors": [
+        0.5,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.09418384543193596,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.11745246148733536
+      }
+    },
+    {
+      "class_representative": 58,
+      "array_changed_count": 660,
+      "bit_parallel_changed_count": 660,
+      "archived_changed_count": 660,
+      "comparison_count": 7936,
+      "response": 0.08316532258064516,
+      "descriptors": [
+        0.5,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.09418384543193596,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.11745246148733536
+      }
+    },
+    {
+      "class_representative": 106,
+      "array_changed_count": 3437,
+      "bit_parallel_changed_count": 3437,
+      "archived_changed_count": 3437,
+      "comparison_count": 7936,
+      "response": 0.4330897177419355,
+      "descriptors": [
+        0.75,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": 0.08560160668118118,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.2891790402774034
+      }
+    },
+    {
+      "class_representative": 132,
+      "array_changed_count": 244,
+      "bit_parallel_changed_count": 244,
+      "archived_changed_count": 244,
+      "comparison_count": 7936,
+      "response": 0.030745967741935484,
+      "descriptors": [
+        0.5,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.09418384543193596,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.11745246148733536
+      }
+    },
+    {
+      "class_representative": 152,
+      "array_changed_count": 376,
+      "bit_parallel_changed_count": 376,
+      "archived_changed_count": 376,
+      "comparison_count": 7936,
+      "response": 0.047379032258064516,
+      "descriptors": [
+        0.5,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.09418384543193596,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.11745246148733536
+      }
+    },
+    {
+      "class_representative": 33,
+      "array_changed_count": 770,
+      "bit_parallel_changed_count": 770,
+      "archived_changed_count": 770,
+      "comparison_count": 7936,
+      "response": 0.09702620967741936,
+      "descriptors": [
+        0.5,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.09418384543193596,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.11745246148733536
+      }
+    },
+    {
+      "class_representative": 12,
+      "array_changed_count": 128,
+      "bit_parallel_changed_count": 128,
+      "archived_changed_count": 128,
+      "comparison_count": 7936,
+      "response": 0.016129032258064516,
+      "descriptors": [
+        0.25,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.2739692975450531,
+        "constant": 0.1881845238095238,
+        "memory": 0.02584325335919857,
+        "family_aware": -0.05427411730273267
+      }
+    },
+    {
+      "class_representative": 126,
+      "array_changed_count": 1928,
+      "bit_parallel_changed_count": 1928,
+      "archived_changed_count": 1928,
+      "comparison_count": 7936,
+      "response": 0.24294354838709678,
+      "descriptors": [
+        0.5,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.09418384543193596,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.11745246148733536
+      }
+    },
+    {
+      "class_representative": 108,
+      "array_changed_count": 288,
+      "bit_parallel_changed_count": 288,
+      "archived_changed_count": 288,
+      "comparison_count": 7936,
+      "response": 0.036290322580645164,
+      "descriptors": [
+        0.5,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.09418384543193596,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.11745246148733536
+      }
+    },
+    {
+      "class_representative": 146,
+      "array_changed_count": 2576,
+      "bit_parallel_changed_count": 2576,
+      "archived_changed_count": 2576,
+      "comparison_count": 7936,
+      "response": 0.3245967741935484,
+      "descriptors": [
+        0.75,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": 0.08560160668118118,
+        "constant": 0.1881845238095238,
+        "memory": 0.047288358211517334,
+        "family_aware": 0.2891790402774034
+      }
+    },
+    {
+      "class_representative": 3,
+      "array_changed_count": 352,
+      "bit_parallel_changed_count": 352,
+      "archived_changed_count": 352,
+      "comparison_count": 7936,
+      "response": 0.04435483870967742,
+      "descriptors": [
+        0.25,
+        0.06451612903225806,
+        0.0
+      ],
+      "predictions": {
+        "primary": -0.2739692975450531,
+        "constant": 0.1881845238095238,
+        "memory": 0.02584325335919857,
+        "family_aware": -0.05427411730273267
+      }
+    }
+  ],
+  "family_aware_disclosure": {
+    "coefficient_count": 6,
+    "rank": 5,
+    "coefficients_identified": false,
+    "selection_convention": "numpy.linalg.lstsq(weighted_matrix, weighted_response, rcond=None); minimum Euclidean coefficient norm",
+    "training_family_neighborhood_support": {
+      "W1": {
+        "determinism_margin": {
+          "maximum": 0.0,
+          "minimum": 0.0,
+          "unique_value_count": 1
+        },
+        "mean_local_influence": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "unique_value_count": 5
+        },
+        "normalized_neighborhood_size": {
+          "maximum": 1.0,
+          "minimum": 1.0,
+          "unique_value_count": 1
+        }
+      },
+      "W2_branching": {
+        "determinism_margin": {
+          "maximum": 0.4766666666666667,
+          "minimum": 0.05,
+          "unique_value_count": 21
+        },
+        "mean_local_influence": {
+          "maximum": 0.45,
+          "minimum": 0.22166666666666668,
+          "unique_value_count": 20
+        },
+        "normalized_neighborhood_size": {
+          "maximum": 0.32142857142857145,
+          "minimum": 0.32142857142857145,
+          "unique_value_count": 1
+        }
+      },
+      "W6": {
+        "determinism_margin": {
+          "maximum": 0.4375,
+          "minimum": 0.3125,
+          "unique_value_count": 5
+        },
+        "mean_local_influence": {
+          "maximum": 0.75,
+          "minimum": 0.0,
+          "unique_value_count": 4
+        },
+        "normalized_neighborhood_size": {
+          "maximum": 0.08333333333333333,
+          "minimum": 0.08333333333333333,
+          "unique_value_count": 1
+        }
+      }
+    },
+    "primary_rank": 4,
+    "primary_coefficients_identified": true
+  },
+  "rule150_diagnostic": {
+    "status": "later_exposed_rule_diagnostic",
+    "ring_size": 32,
+    "rule": 150,
+    "initial_difference_site": 0,
+    "truth_table_is_xor": true,
+    "both_implementations_F16_identity_on_32_basis": true,
+    "algebra": "F=S^-1+I+S over F2; F^16=S^-16+I+S^16=I on a 32-ring; all state periods divide 16.",
+    "records": [
+      {
+        "update": 31,
+        "difference_mask_site0_lsb": 1840700269,
+        "different_sites": [
+          0,
+          2,
+          3,
+          5,
+          6,
+          8,
+          9,
+          11,
+          12,
+          14,
+          15,
+          17,
+          18,
+          20,
+          21,
+          23,
+          24,
+          26,
+          27,
+          29,
+          30
+        ],
+        "different_other_sites": 20,
+        "response_fraction": "20/31",
+        "response": 0.6451612903225806
+      },
+      {
+        "update": 32,
+        "difference_mask_site0_lsb": 1,
+        "different_sites": [
+          0
+        ],
+        "different_other_sites": 0,
+        "response_fraction": "0/31",
+        "response": 0.0
+      },
+      {
+        "update": 33,
+        "difference_mask_site0_lsb": 2147483651,
+        "different_sites": [
+          0,
+          1,
+          31
+        ],
+        "different_other_sites": 2,
+        "response_fraction": "2/31",
+        "response": 0.06451612903225806
+      }
+    ],
+    "registered_endpoint_unchanged": 32,
+    "pass": true
+  },
+  "checks": {
+    "all_pass": true,
+    "all_30_counts_match_both_implementations_and_archive": true,
+    "all_frozen_predictions_match": true,
+    "all_eight_frozen_artifacts_match": true
+  },
+  "limits": [
+    "No original training materialization or fitting run reproduced.",
+    "No bootstrap, descriptor-sham or full recoding-control campaign rerun.",
+    "Class-selection derivation remains unrecoverable; no random population coverage claimed.",
+    "This reconstructs already exposed cases and is not a new confirmatory result.",
+    "Frozen files are read unchanged; a matching probe digest binds probes, not all historical execution bytes."
+  ]
+}

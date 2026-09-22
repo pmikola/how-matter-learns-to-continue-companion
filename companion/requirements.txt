@@ -1,0 +1,3 @@
+# Reader smoke checks passed with Python 3.11 and this NumPy version.
+# No plotting or neural-network framework is needed for these reader modes.
+numpy==2.4.4

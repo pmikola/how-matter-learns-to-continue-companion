@@ -1,0 +1,271 @@
+{
+  "edition": "v48",
+  "binding_status": "explicit_pdf_and_source_hash_binding",
+  "source_base_commit": "66d3885811e0a195655c2480920df4966453e6fb",
+  "source_manifest": {
+    "path": "reviews/publication-v48/manifest.json",
+    "sha256": "b8782af140d86a152af20c63b07d18a98644d879e7080321b63e8c8b7e12d04f",
+    "bytes": 18068
+  },
+  "baseline_pdf": {
+    "path": "output/pdf/how-matter-learns-to-continue-v47.pdf",
+    "sha256": "aa4cd10a26303dd6477bd6225851c1ef26c656c4c0a4454a4ddd59de0e5f2fb6"
+  },
+  "working_tree_delta_bound_by_source_inventory": true,
+  "inherited_edition": "v47",
+  "inherited_archive_sha256": "50e608370390aca502d0b68d860541f059923bdac97364fffbbc8d1be3532edc",
+  "inherited_delivery_receipt": {
+    "path": "reviews/publication-v47/validation-companion-v47.json",
+    "sha256": "a0faa45fd0e880c6bda964acb1c0fd7f6d5f532480ac30468c2bf31a786b8b8d",
+    "embedded_path": "evidence/v47-companion-delivery-inherited.json",
+    "status": "historical_v47_evidence_not_a_fresh_v48_run"
+  },
+  "historical_replaced_metadata": {
+    "README.md": {
+      "preserved_as": "historical/v47/README.md",
+      "sha256": "74998f327c64cd791898c3b9b8f46b32bd8d1621ee16fec1720ed89296279c4f"
+    },
+    "bundle-manifest.json": {
+      "preserved_as": "historical/v47/bundle-manifest.json",
+      "sha256": "b50399d6e9e2fe85e74526486524dca6143c47d6ec85bb78e4b70b723c43ea50"
+    },
+    "reader-exercise-key.html": {
+      "preserved_as": "historical/v47/reader-exercise-key.html",
+      "sha256": "c397359b198a692a72cf4b99a8b6ac575ebe377a23c41700343cd14e15deeffd"
+    },
+    "reader-exercise-key.md": {
+      "preserved_as": "historical/v47/reader-exercise-key.md",
+      "sha256": "9cfb384605bb1e629e705cc7f93baece00568c61c7353ad8162d55c44112206e"
+    },
+    "reader-exercise.html": {
+      "preserved_as": "historical/v47/reader-exercise.html",
+      "sha256": "350eccb8b281d456c77bb105b52aae3606142a218461a13836f6730db853993a"
+    },
+    "reader-exercise.md": {
+      "preserved_as": "historical/v47/reader-exercise.md",
+      "sha256": "61c815af6820e9b7337c54cef7c9f26436347d1aa79f6ad19bc86a1ad1d370b8"
+    },
+    "reader-guide-bindings.json": {
+      "preserved_as": "historical/v47/reader-guide-bindings.json",
+      "sha256": "6a3d6b3e13546cf4fb662d870f6102d227236ba4cfdb2e703b205644d920ea0a"
+    },
+    "reader-pilot-card-a.html": {
+      "preserved_as": "historical/v47/reader-pilot-card-a.html",
+      "sha256": "7b7b0ac47abf455f9200a8b60447fc6769d382dc651e956343365bb7b2e50a31"
+    },
+    "reader-pilot-card-a.md": {
+      "preserved_as": "historical/v47/reader-pilot-card-a.md",
+      "sha256": "24930ba36112d46b4bdbe4eeea13b1901be8db0a0c8b56c56173f5f72897733f"
+    },
+    "reader-pilot-card-b.html": {
+      "preserved_as": "historical/v47/reader-pilot-card-b.html",
+      "sha256": "78005a4fe11746b715087fd1b72f0a00412e238253f750ccf34c6b2d21492633"
+    },
+    "reader-pilot-card-b.md": {
+      "preserved_as": "historical/v47/reader-pilot-card-b.md",
+      "sha256": "8ef9a7f11c3f26664cddc9d65fe9d5c1a4fe42e28a6cced160c4b57570b1d9b3"
+    },
+    "reader-pilot-facilitator.html": {
+      "preserved_as": "historical/v47/reader-pilot-facilitator.html",
+      "sha256": "c38e6ab731077323697a79ceb19831b6d4ca7f960f0ee5322c7648583251ac69"
+    },
+    "reader-pilot-facilitator.md": {
+      "preserved_as": "historical/v47/reader-pilot-facilitator.md",
+      "sha256": "e1848db2b0a5649cc938649adcd96491756393b3e70c0f9d5693b44ff1c8f47f"
+    },
+    "reader-pilot.html": {
+      "preserved_as": "historical/v47/reader-pilot.html",
+      "sha256": "ad132a479238fc04846e0bad4bb5ae2705b8081bebe38ed8f68af57baa1cb0fe"
+    },
+    "reader-pilot.md": {
+      "preserved_as": "historical/v47/reader-pilot.md",
+      "sha256": "37d7cb144b7a728832f922f1dd32f8a177b59ebb9ad574d48e7a63c9c4f8788d"
+    },
+    "reader-response-form.html": {
+      "preserved_as": "historical/v47/reader-response-form.html",
+      "sha256": "593fcca4e95a30034c3cf4e5caa7bc69c0e8be445be4c339b7723ca6acbbd1a2"
+    },
+    "reader-response-form.md": {
+      "preserved_as": "historical/v47/reader-response-form.md",
+      "sha256": "e72470fdf81ba95072ac21b3cb7a51e6da97a7fc2ae315e17cbbebe83465456f"
+    },
+    "reader-variations-key.html": {
+      "preserved_as": "historical/v47/reader-variations-key.html",
+      "sha256": "326b2e48c9e88fdec1a67ef82737d22d5448deaa499a9b8c344bcbf7bf716b8c"
+    },
+    "reader-variations-key.md": {
+      "preserved_as": "historical/v47/reader-variations-key.md",
+      "sha256": "c70fd7d012e22ab500cfb8410268302297b25bed5dbe1e113137c5b75af7fd5a"
+    },
+    "reader-variations.html": {
+      "preserved_as": "historical/v47/reader-variations.html",
+      "sha256": "b11b67718043d26375ef1c100f4e65d70bc016e63a7113175230b25e1df4d2d9"
+    },
+    "reader-variations.md": {
+      "preserved_as": "historical/v47/reader-variations.md",
+      "sha256": "b107c820675e23e85b6e1f430d5aec5b518d8746b06f6a51e0b7dae709061d2b"
+    },
+    "where-to-return.html": {
+      "preserved_as": "historical/v47/where-to-return.html",
+      "sha256": "05b0dd71a5db1c49e78a4e93bf15d264542666a690db4ed97d6a92ee7511a8ec"
+    },
+    "where-to-return.md": {
+      "preserved_as": "historical/v47/where-to-return.md",
+      "sha256": "370746bdc0fb9e853cc16cdfa62fb09f77f22aeb18b10b84d60e137e3c7d1df6"
+    }
+  },
+  "additive_sources": {
+    "where-to-return.md": {
+      "source": "companion-v48/where-to-return.md",
+      "bytes": 7270,
+      "sha256": "28c7a6346e2cc56ac0f8dab9eb965f9dd1911ae57c539be30095c0369567e4f2"
+    },
+    "where-to-return.html": {
+      "source": "companion-v48/where-to-return.html",
+      "bytes": 12022,
+      "sha256": "fcc23d35d034ceaca134bfbf07e6c4934c0efbf3e10f66dafeb410c79fbbdc59"
+    },
+    "reader-guide-bindings.json": {
+      "source": "companion-v48/reader-guide-bindings.json",
+      "bytes": 8889,
+      "sha256": "9d91828cf5e9c17b2f6f841fd10a34244ba605088f2263143869a7c9140da22d"
+    },
+    "reader-exercise.md": {
+      "source": "companion-v48/reader-exercise.md",
+      "bytes": 2093,
+      "sha256": "61c815af6820e9b7337c54cef7c9f26436347d1aa79f6ad19bc86a1ad1d370b8"
+    },
+    "reader-exercise.html": {
+      "source": "companion-v48/reader-exercise.html",
+      "bytes": 3758,
+      "sha256": "350eccb8b281d456c77bb105b52aae3606142a218461a13836f6730db853993a"
+    },
+    "reader-exercise-key.md": {
+      "source": "companion-v48/reader-exercise-key.md",
+      "bytes": 2839,
+      "sha256": "9cfb384605bb1e629e705cc7f93baece00568c61c7353ad8162d55c44112206e"
+    },
+    "reader-exercise-key.html": {
+      "source": "companion-v48/reader-exercise-key.html",
+      "bytes": 4776,
+      "sha256": "c397359b198a692a72cf4b99a8b6ac575ebe377a23c41700343cd14e15deeffd"
+    },
+    "reader-pilot.md": {
+      "source": "companion-v48/reader-pilot.md",
+      "bytes": 4300,
+      "sha256": "37d7cb144b7a728832f922f1dd32f8a177b59ebb9ad574d48e7a63c9c4f8788d"
+    },
+    "reader-pilot.html": {
+      "source": "companion-v48/reader-pilot.html",
+      "bytes": 6002,
+      "sha256": "ad132a479238fc04846e0bad4bb5ae2705b8081bebe38ed8f68af57baa1cb0fe"
+    },
+    "reader-pilot-facilitator.md": {
+      "source": "companion-v48/reader-pilot-facilitator.md",
+      "bytes": 5068,
+      "sha256": "95b29be7b9894884b50b30de7abc8384cac20d09273e925db81642137d82d6e0"
+    },
+    "reader-pilot-facilitator.html": {
+      "source": "companion-v48/reader-pilot-facilitator.html",
+      "bytes": 6771,
+      "sha256": "a19fe601e44628686948e30fad466d33d7f8178b431c6d88e3634972d3ae1383"
+    },
+    "reader-pilot-card-a.md": {
+      "source": "companion-v48/reader-pilot-card-a.md",
+      "bytes": 1632,
+      "sha256": "24930ba36112d46b4bdbe4eeea13b1901be8db0a0c8b56c56173f5f72897733f"
+    },
+    "reader-pilot-card-a.html": {
+      "source": "companion-v48/reader-pilot-card-a.html",
+      "bytes": 3012,
+      "sha256": "7b7b0ac47abf455f9200a8b60447fc6769d382dc651e956343365bb7b2e50a31"
+    },
+    "reader-pilot-card-b.md": {
+      "source": "companion-v48/reader-pilot-card-b.md",
+      "bytes": 1784,
+      "sha256": "8ef9a7f11c3f26664cddc9d65fe9d5c1a4fe42e28a6cced160c4b57570b1d9b3"
+    },
+    "reader-pilot-card-b.html": {
+      "source": "companion-v48/reader-pilot-card-b.html",
+      "bytes": 3184,
+      "sha256": "78005a4fe11746b715087fd1b72f0a00412e238253f750ccf34c6b2d21492633"
+    },
+    "reader-response-form.md": {
+      "source": "companion-v48/reader-response-form.md",
+      "bytes": 1044,
+      "sha256": "e72470fdf81ba95072ac21b3cb7a51e6da97a7fc2ae315e17cbbebe83465456f"
+    },
+    "reader-response-form.html": {
+      "source": "companion-v48/reader-response-form.html",
+      "bytes": 2700,
+      "sha256": "593fcca4e95a30034c3cf4e5caa7bc69c0e8be445be4c339b7723ca6acbbd1a2"
+    },
+    "reader-variations.md": {
+      "source": "companion-v48/reader-variations.md",
+      "bytes": 3596,
+      "sha256": "65175971e22aa0440fc9d5766b4c3392c270410ec3821baa5ee92b7871ec3fc6"
+    },
+    "reader-variations.html": {
+      "source": "companion-v48/reader-variations.html",
+      "bytes": 5260,
+      "sha256": "d18447ed10a194d87223c9fe4abe5df5e305053e0db0746c65618c313100c34d"
+    },
+    "reader-variations-key.md": {
+      "source": "companion-v48/reader-variations-key.md",
+      "bytes": 4963,
+      "sha256": "b8b2b9e075ec8b0e95f1c5915050d9fcb003115c3ffe02be64a2855450094f6d"
+    },
+    "reader-variations-key.html": {
+      "source": "companion-v48/reader-variations-key.html",
+      "bytes": 6621,
+      "sha256": "b311f87cf40517bd36e221c1b1e6e10b0a5d2f67cbab3d87ad9efe603eb10161"
+    },
+    "README.md": {
+      "source": "companion-v48/README.md",
+      "bytes": 12641,
+      "sha256": "4df7b3d7fd3fb2e92432b39cdfa0ed7a36cb63c8e4604c2ee62238264d567a1a"
+    }
+  },
+  "reader_guide_binding_sha256": "9d91828cf5e9c17b2f6f841fd10a34244ba605088f2263143869a7c9140da22d",
+  "public_release_claimed": false,
+  "purchaser_access_route": "not_established",
+  "frameworks_executed_by_this_packager": false,
+  "e3_original_campaign_executed": false,
+  "scope": "Fresh legacy35 + v44lab9 + v45lab11 and saved E3 rows + v46reader4 + retained v47 deterministic reconstruction and analytic checks. No original fit/bootstrap/control campaign or human-reader pilot.",
+  "covered_pdf": {
+    "path": "output/pdf/how-matter-learns-to-continue-v48.pdf",
+    "sha256": "349906adf8ad62ce732c1b0e68b0c8a8d3435a59e808e27c79cfcde40b003526",
+    "bytes": 6902923
+  },
+  "interior_pdf": {
+    "path": "output/pdf/how-matter-learns-to-continue-v48-interior.pdf",
+    "sha256": "fb2715cb7a23dd071eab2c397878156fb0714e1c44dc26383d1df42c565e7d21",
+    "bytes": 4274074
+  },
+  "current_notes": {
+    "path": "manuscript/chapters/v48-01-neural-networks/notes-v48.tex",
+    "sha256": "0c904b92f971f6606aab9ab9333e289ac19b0b45737bf1a8ef58dd44713abce5",
+    "snippets": {
+      "torch": {
+        "sha256": "cc6141127b3e5593b7414a9b9461c6f9e2a9b42da8a41c0183822496a446b2d3",
+        "byte_equal_to_inherited_v40": true,
+        "fresh_execution": false
+      },
+      "tensorflow": {
+        "sha256": "fe3020cb2e9493d636fc954d1a3cecd8b4c9715eed5af91083b5c0709292afac",
+        "byte_equal_to_inherited_v40": true,
+        "fresh_execution": false
+      },
+      "jax": {
+        "sha256": "6e9102871d0ce93d4f460959d5d0d216642527bea01a03fbad264149bf274593",
+        "byte_equal_to_inherited_v40": true,
+        "fresh_execution": false
+      },
+      "keras": {
+        "sha256": "4fca36b6fd7acdd8ecb6b4fed417047745904be025f860eb6233c98ecc15189c",
+        "byte_equal_to_inherited_v40": true,
+        "fresh_execution": false
+      }
+    }
+  }
+}

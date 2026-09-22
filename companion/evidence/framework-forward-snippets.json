@@ -1,0 +1,16 @@
+{
+  "edition": "v40",
+  "source": "manuscript/chapters/v40-01-neural-networks/notes-v40.tex",
+  "source_sha256": "0d7257bfe213eaf1680abbfe21081b631a3d0eb68c8fe10b19c68f3b22579a12",
+  "execution_receipt": "reviews/publication-v34/framework-verification.json",
+  "execution_receipt_sha256": "4d07499cf5d18026eb1d7560d2b164d060b71989454136d77f40a82b8aba381a",
+  "environment_lock_sha256": "98e452eb9c2772783a0eec04683ed4c9785966f783897947ab4f8b52c2811412",
+  "frameworks_executed_by_v40_builder": false,
+  "snippets": {
+    "torch": "import torch\n\nmodel = torch.nn.Sequential(\n    torch.nn.Linear(9, 6),\n    torch.nn.ReLU(),\n    torch.nn.Linear(6, 1),\n)\n",
+    "tensorflow": "import tensorflow as tf\n\ndef tensorflow_score(x, params):\n    W, b, V, c = params\n    h = tf.nn.relu(tf.linalg.matmul(x, W) + b)\n    return tf.linalg.matmul(h, V) + c\n",
+    "jax": "import jax\nimport jax.numpy as jnp\n\ndef jax_score(params, x):\n    W, b, V, c = params\n    h = jax.nn.relu(jnp.matmul(x, W) + b)\n    return jnp.matmul(h, V) + c\n",
+    "keras": "import os\nos.environ[\"KERAS_BACKEND\"] = \"tensorflow\"\nimport keras\n\nmodel = keras.Sequential([\n    keras.Input(shape=(9,)),\n    keras.layers.Dense(6, activation=\"relu\"),\n    keras.layers.Dense(1),\n])\n"
+  },
+  "scope": "Exact v40 snippet and saved-array compatibility with an unchanged historical forward-only execution receipt."
+}

@@ -1,0 +1,1163 @@
+{
+  "tex_files": {
+    "manuscript/how-matter-learns-to-continue-v48.tex": {
+      "bytes": 10812,
+      "sha256": "eff86046df688cd0d6001a2013652ae449a3039b6a937bf439d75037502785c9"
+    },
+    "manuscript/chapters/v48-01-neural-networks/draft-v48.tex": {
+      "bytes": 37453,
+      "sha256": "18b51dcf8b36e6d887154aa06ca686c57205d60d93895762c102ed1f602c72cb"
+    },
+    "manuscript/chapters/v48-01-neural-networks/notes-v48.tex": {
+      "bytes": 14233,
+      "sha256": "0c904b92f971f6606aab9ab9333e289ac19b0b45737bf1a8ef58dd44713abce5"
+    },
+    "manuscript/chapters/v48-02-spaces/draft-v48.tex": {
+      "bytes": 16561,
+      "sha256": "6c4079d5d8fe5f17774381fd5e288c797ca78a906c99e4bc17f196ab32597782"
+    },
+    "manuscript/chapters/v48-02-spaces/notes-v48.tex": {
+      "bytes": 2932,
+      "sha256": "562b64360974d7f02f26f6d31af7a0b4d3dc4c0c24cd1c0927a33cd8b77e901f"
+    },
+    "manuscript/chapters/v48-03-memory/draft-v48.tex": {
+      "bytes": 14709,
+      "sha256": "3a633d6bc3a6c12515c8a55e9eb69b3e7fca03a2bfd0baec87f2b9a084229294"
+    },
+    "manuscript/chapters/v48-03-memory/notes-v48.tex": {
+      "bytes": 6801,
+      "sha256": "35f4c568258017fd94d3a7ac2ad24bdfac763b485b3a2de50106c7cb2ec1cf33"
+    },
+    "manuscript/chapters/v48-04-uncertainty/draft-v48.tex": {
+      "bytes": 16617,
+      "sha256": "3102488a61c1198497a85b6003eaad8f59bcb90c06ae8a7c262149ded75b162e"
+    },
+    "manuscript/chapters/v48-04-uncertainty/notes-v48.tex": {
+      "bytes": 6965,
+      "sha256": "e5e2b581c28a3885836cbdf04cd6a2a14b45c5a1be61b97e355236ee3eb0e219"
+    },
+    "manuscript/chapters/v48-05-propagation/draft-v48.tex": {
+      "bytes": 14855,
+      "sha256": "c6b01106d197b3d5c9dcd5a34ef52cde51b084dcdc58b54aa3305f8041772075"
+    },
+    "manuscript/chapters/v48-05-propagation/notes-v48.tex": {
+      "bytes": 4829,
+      "sha256": "2c13208c1998e067903e011f501215a9567a515f2b80e61a8014090dd3982de3"
+    },
+    "manuscript/chapters/v48-06-manifolds/draft-v48.tex": {
+      "bytes": 15914,
+      "sha256": "de36cb2753e832e716e7c69f3b83443caf7b58223164b0b0c325f747a3b8256a"
+    },
+    "manuscript/chapters/v48-06-manifolds/notes-v48.tex": {
+      "bytes": 4758,
+      "sha256": "45306265123f94658a416af6c1f00f296c48c80d5b3ea272cc7c60c9f53d9767"
+    },
+    "manuscript/chapters/v48-07-distinguishability/draft-v48.tex": {
+      "bytes": 15894,
+      "sha256": "4724418ac4f635056e26e0b15c943c12076dde171dd080e7dd7cf458afd4c28d"
+    },
+    "manuscript/chapters/v48-07-distinguishability/notes-v48.tex": {
+      "bytes": 8909,
+      "sha256": "0a8b5cc3e4dc62e6b3aa3b98c5eecabc3b942e0f25c4cbb9628fad6618768da4"
+    },
+    "manuscript/chapters/v48-08-patterns/draft-v48.tex": {
+      "bytes": 14458,
+      "sha256": "d540ea2947e03244215ab007e90974fd732b146d68ba574f5ae788023f8c8766"
+    },
+    "manuscript/chapters/v48-08-patterns/notes-v48.tex": {
+      "bytes": 9087,
+      "sha256": "3262288597fc9cb12723b5ca999a9a0becd9f00d127a1e94f734f1e9c8a7ad47"
+    },
+    "manuscript/chapters/v48-09-maintenance/draft-v48.tex": {
+      "bytes": 12630,
+      "sha256": "92c450d25b7cb65b0546910b661f64fb58910406c08410712b62468d3d33a3f3"
+    },
+    "manuscript/chapters/v48-09-maintenance/notes-v48.tex": {
+      "bytes": 3991,
+      "sha256": "93ed9a8d15c8b904b11472259cf27d856fca74db67b4ebbf78a40d1c082a7f34"
+    },
+    "manuscript/chapters/v48-10-interpretation/draft-v48.tex": {
+      "bytes": 12136,
+      "sha256": "56f56cf095625ba3ee4689184877c45db80d94a50acfd6b77cc0ae5929736fab"
+    },
+    "manuscript/chapters/v48-10-interpretation/notes-v48.tex": {
+      "bytes": 5320,
+      "sha256": "79004659a1b31a3ef195d7cc67d19a6a230c8354bee863c0af4d4e3f1f875236"
+    },
+    "manuscript/chapters/v48-12-living-organization/draft-v48.tex": {
+      "bytes": 12056,
+      "sha256": "040f636237ae382efd8a2a3aafd983d0ae27ad32c8db01b910ef67551ac80862"
+    },
+    "manuscript/chapters/v48-12-living-organization/notes-v48.tex": {
+      "bytes": 4852,
+      "sha256": "c157e5f87998e3d0b599cc2d3889e390420207ef7fd787ddd02cfb65207a5473"
+    },
+    "manuscript/chapters/v48-13-information-action/draft-v48.tex": {
+      "bytes": 10597,
+      "sha256": "fc3e42c474ecd469ce5f8a9eb2e3f5754a6422e7aa0f65ea356c2f715eb74849"
+    },
+    "manuscript/chapters/v48-13-information-action/notes-v48.tex": {
+      "bytes": 2355,
+      "sha256": "eccf54ddc3c95e3cf26759de83828743c8eeb3715783d93c959e6f811a75933f"
+    },
+    "manuscript/chapters/v48-11-life/draft-v48.tex": {
+      "bytes": 9965,
+      "sha256": "7da1bc58162fdd277d0ba030049113e0f801eb9628804b8c55bd9b3ece2a619a"
+    },
+    "manuscript/chapters/v48-11-life/notes-v48.tex": {
+      "bytes": 5655,
+      "sha256": "3ab1d2775a89e7f0547445d54db07ac7a005bc0c401cdd38c5c72542bea8ca43"
+    },
+    "manuscript/chapters/v48-14-causality/draft-v48.tex": {
+      "bytes": 8711,
+      "sha256": "ffd847d0272a769c2500d1ab162d7c2e7c30dae920b3b09d5e9e838f2c9f9f93"
+    },
+    "manuscript/chapters/v48-14-causality/notes-v48.tex": {
+      "bytes": 2166,
+      "sha256": "3801ccab2a3f7f259e9e8ec6a7b5cdcc68f2fabf44062fe46bae40eb97b956a4"
+    },
+    "manuscript/chapters/v48-15-explanation/draft-v48.tex": {
+      "bytes": 7302,
+      "sha256": "8a7b3f310e268c29c7386f7966023c706d389dada392a42e01d15f113a4f44f3"
+    },
+    "manuscript/chapters/v48-15-explanation/notes-v48.tex": {
+      "bytes": 2498,
+      "sha256": "17f46916323d56da77dc0e9f184fed54c390104bb1e807cf90f9b3b534b56445"
+    },
+    "manuscript/chapters/v48-16-fields/draft-v48.tex": {
+      "bytes": 9547,
+      "sha256": "3b9163eb8b1fa8398e453c852d6430507afd70cfc167c9cc2dfb18705c0c018b"
+    },
+    "manuscript/chapters/v48-16-fields/notes-v48.tex": {
+      "bytes": 2956,
+      "sha256": "dcaee8e0db7add3f5a5e1caa21abcea0fa9dd97fe39ad6b622af09150d7224df"
+    },
+    "manuscript/chapters/v48-17-symmetry/draft-v48.tex": {
+      "bytes": 8104,
+      "sha256": "e582e0dfa027b85db8253ab88647a9770f7490167d51d1e8fe029b6fb682df38"
+    },
+    "manuscript/chapters/v48-17-symmetry/notes-v48.tex": {
+      "bytes": 2958,
+      "sha256": "e591b3ff796ba6f096d267c6d7061babb432baf6e5436950143716460d82885c"
+    },
+    "manuscript/chapters/v48-18-clocks/draft-v48.tex": {
+      "bytes": 9372,
+      "sha256": "3f47077f6d848910a6df70d7659218d5c9d82b3acc3a7a0554ff9a11b94d9bb2"
+    },
+    "manuscript/chapters/v48-18-clocks/notes-v48.tex": {
+      "bytes": 2138,
+      "sha256": "059307adc0dd6f78944e6cd0703616f6da03e835cd0dddaf701f9d2d2890cc0a"
+    },
+    "manuscript/chapters/v48-19-spacetime/draft-v48.tex": {
+      "bytes": 7327,
+      "sha256": "4709c01c88d3549fa8426a22ecd1dbab5f346f8939820e883e2ec83703c56c93"
+    },
+    "manuscript/chapters/v48-19-spacetime/notes-v48.tex": {
+      "bytes": 2294,
+      "sha256": "800586578837fe601f2e1e1a400e97bb396cb4f376601d8bb9f0e927da549f5e"
+    },
+    "manuscript/chapters/v48-20-geometry/draft-v48.tex": {
+      "bytes": 8001,
+      "sha256": "30f63d116a2efdaf249607cbc0cd5354fb8f948cd39d786675848a4ee433e5a3"
+    },
+    "manuscript/chapters/v48-20-geometry/notes-v48.tex": {
+      "bytes": 2455,
+      "sha256": "7b58d6c3bebd1643ab5315d586504b5391c77be4b3e2a9e1300de01b000ac429"
+    },
+    "manuscript/chapters/v48-30-histories/draft-v48.tex": {
+      "bytes": 6981,
+      "sha256": "26772c7383c1b13ac1ce016a60d747a838e9782076f1c6646bc1356cb04a7f98"
+    },
+    "manuscript/chapters/v48-30-histories/notes-v48.tex": {
+      "bytes": 4693,
+      "sha256": "70f211f5bcd6f6683086554c6bc8dd2bb14068ed8f7077a5ad18ebd4130a1572"
+    },
+    "manuscript/chapters/v48-21-arrow/draft-v48.tex": {
+      "bytes": 8569,
+      "sha256": "982aa9b4faf75bad4b3e03706943e609f3fb072b5cf99c18855d5c2f3de2ea1a"
+    },
+    "manuscript/chapters/v48-21-arrow/notes-v48.tex": {
+      "bytes": 2287,
+      "sha256": "8bf4cb3ffeded2fde9a79da7cd02f14f0279408f8beea9cbcd9733bc1b952195"
+    },
+    "manuscript/chapters/v48-23a-coarse-graining/draft-v48.tex": {
+      "bytes": 10033,
+      "sha256": "f153715608798c9d130259ecf3cde571716b90899b5fbd085108d637e9e806d2"
+    },
+    "manuscript/chapters/v48-23a-coarse-graining/notes-v48.tex": {
+      "bytes": 6707,
+      "sha256": "c2a6b14c7d6d5702a38c33fcf550f9cf8424835a8374eb200a69455298612404"
+    },
+    "manuscript/chapters/v48-24-closure/draft-v48.tex": {
+      "bytes": 10201,
+      "sha256": "7b0c500fbd60add49d4e23b6db50cd4be9093934ed842ca54fbf274e7319a5e0"
+    },
+    "manuscript/chapters/v48-24-closure/notes-v48.tex": {
+      "bytes": 2736,
+      "sha256": "8cb49f30d231b1ba4026a47b71d7b85928f8daa90cfbd99cd0c35cbec4d31d85"
+    },
+    "manuscript/chapters/v48-25-statistical-laws/draft-v48.tex": {
+      "bytes": 7297,
+      "sha256": "92f98bf1b0563e18163b821aa70691f9a95c4d5cef42439d7c9f162d3bf92242"
+    },
+    "manuscript/chapters/v48-25-statistical-laws/notes-v48.tex": {
+      "bytes": 2230,
+      "sha256": "2dacf669a00667fea63d33db2b29bfa0c4c8affbff372a8bd315385eac62ec40"
+    },
+    "manuscript/chapters/v48-22-criticality/draft-v48.tex": {
+      "bytes": 12585,
+      "sha256": "73550f195876a368966dfd9d59cb3c0803a667951d3145dd2a1a48e15504f63c"
+    },
+    "manuscript/chapters/v48-22-criticality/notes-v48.tex": {
+      "bytes": 4872,
+      "sha256": "28b88276a4841332133c26045bf1ef68ecd7b5d94afd5a640bf40482c3c496d0"
+    },
+    "manuscript/chapters/v48-23b-common-limits/draft-v48.tex": {
+      "bytes": 7468,
+      "sha256": "7d3dae9c92a67f7d893ac9e799cbd6b234710ecb4b8197e1ff99e7f9427bbbe2"
+    },
+    "manuscript/chapters/v48-23b-common-limits/notes-v48.tex": {
+      "bytes": 2765,
+      "sha256": "0fbe54ab321c8fd5f0f8de010e9fed009a1935355f95f83668f85ff08b5aa024"
+    },
+    "manuscript/chapters/v48-26-effective-laws/draft-v48.tex": {
+      "bytes": 10114,
+      "sha256": "0bc27328e3e7dab579e0202e77c7a871e49130e1797b9b7d38a46458e6fd4719"
+    },
+    "manuscript/chapters/v48-26-effective-laws/notes-v48.tex": {
+      "bytes": 3485,
+      "sha256": "9b3be1dde01991a79addd55ffd800a725cece04e97b9e7f5112e78f3e23a56dc"
+    },
+    "manuscript/chapters/v48-27-equivalence/draft-v48.tex": {
+      "bytes": 10075,
+      "sha256": "e0ca2977e0b87f052e63b08c7d50c71fdd340ad3bc3526d98371b4bb92d91a60"
+    },
+    "manuscript/chapters/v48-27-equivalence/notes-v48.tex": {
+      "bytes": 3489,
+      "sha256": "02bdc94f98931206a99f67bf8304070dcf46146a5bfa71314fbd718a982fca80"
+    },
+    "manuscript/chapters/v48-28-compatibility/draft-v48.tex": {
+      "bytes": 21708,
+      "sha256": "bad6eedb9a5fe9c4350ec34049baf4f78e12ed24964181c8dade4f75581369a1"
+    },
+    "manuscript/chapters/v48-28-compatibility/notes-v48.tex": {
+      "bytes": 21702,
+      "sha256": "199245b4a22778a54c3b304c20c8ae484ebecb75cc85443296fea2e484e752bd"
+    },
+    "manuscript/chapters/v48-33-existence/draft-v48.tex": {
+      "bytes": 6548,
+      "sha256": "f71646ede8743f944e508b0a590fd9ff4db130b469f93b9a2491badd84f58732"
+    },
+    "manuscript/chapters/v48-33-existence/notes-v48.tex": {
+      "bytes": 3657,
+      "sha256": "5321f5e54682f0479fce6646d3bbccab51f3b1c768dee296356bcd2fd0c9f395"
+    },
+    "manuscript/chapters/v48-34-multi-time/draft-v48.tex": {
+      "bytes": 7150,
+      "sha256": "096665b4ebadbb0d4f8c1f31cb0ab91b31f6d7d4e7cff9caa25a43fef2b32a30"
+    },
+    "manuscript/chapters/v48-34-multi-time/notes-v48.tex": {
+      "bytes": 2959,
+      "sha256": "29f53482cd4c17b27b510222db289808ff57154b94b2e86f299e913a43ba373d"
+    },
+    "manuscript/chapters/v48-29-quantum/draft-v48.tex": {
+      "bytes": 7438,
+      "sha256": "34500464517a5432ea5aef6e7c5e1cf5cad1437b4df4ed77c470d49c954d6a61"
+    },
+    "manuscript/chapters/v48-29-quantum/notes-v48.tex": {
+      "bytes": 2226,
+      "sha256": "3e1f5f4f482b07c87546dd3e7e1ecb6b5e27c6ce45437a274e4b81cbc9ef0d18"
+    },
+    "manuscript/chapters/v48-31-fit/draft-v48.tex": {
+      "bytes": 8181,
+      "sha256": "aa976f43bbd0e402e55bde8372ef54aeaebb794486900588e5ee1770f4c4e4df"
+    },
+    "manuscript/chapters/v48-31-fit/notes-v48.tex": {
+      "bytes": 13795,
+      "sha256": "d20a050394a5e799ca40ee0a365f2e0295725ed68c04685164b7efb6be7f8db6"
+    },
+    "manuscript/chapters/v48-32-selection/draft-v48.tex": {
+      "bytes": 6600,
+      "sha256": "4a7fa23df95148fcb10072cab3f230a7f19949b3d4b0c5d67761f754e15bfc65"
+    },
+    "manuscript/chapters/v48-32-selection/notes-v48.tex": {
+      "bytes": 3278,
+      "sha256": "3c960e8004eb99beaa6f5a88817a454f77b115d007e6d9a70014583671b9ada5"
+    },
+    "manuscript/chapters/v48-35-transfer/draft-v48.tex": {
+      "bytes": 17064,
+      "sha256": "d1dc21b91b56f8474beef75b9cb73f66613911fb53b18683c3e266feeb109948"
+    },
+    "manuscript/chapters/v48-35-transfer/notes-v48.tex": {
+      "bytes": 20820,
+      "sha256": "9ac5ab77eca13893ba1d656ef536d56ba9319444fccda985d0f341d1fd2cbacc"
+    },
+    "manuscript/chapters/v48-36-possibilities/draft-v48.tex": {
+      "bytes": 20407,
+      "sha256": "e6fd9b0ebc129525efa2a4ab4fb435989c66acdb2352939421e11beccf17c074"
+    },
+    "manuscript/chapters/v48-36-possibilities/notes-v48.tex": {
+      "bytes": 7322,
+      "sha256": "8fb358ac94dd3a2ec0e8a97494e76d427a7f61431f8233539490de723b0479ce"
+    },
+    "manuscript/reading-shell-v8.tex": {
+      "bytes": 1372,
+      "sha256": "fc9c672e4fdeb5c274f8d3989b3553beb20dfa7e2f9e20f01de9eddcef8d7f51"
+    },
+    "manuscript/dialogue-layout-v48.tex": {
+      "bytes": 6440,
+      "sha256": "07f11c6c5998cea5fac09ad2427ce5836b63599f634a29da87034452bacba699"
+    },
+    "manuscript/publication-layout-v48.tex": {
+      "bytes": 1289,
+      "sha256": "cf6b12e1ba09314ce5b8f2cb212a28bd59f0a008790bc186aad1a98d39da42be"
+    },
+    "manuscript/preface-v48.tex": {
+      "bytes": 4747,
+      "sha256": "b01fff37c92073bf00e28848ed2e6f04b6b8dc9b2d0c0abfe58b56eff1bef1e7"
+    },
+    "manuscript/about-making-v48.tex": {
+      "bytes": 808,
+      "sha256": "ec7415ea0719666a6c54d012200069c2746a12a3ae93251caa270ab359536ea5"
+    },
+    "figures/source/ch01/forward-visual-v29.tex": {
+      "bytes": 915,
+      "sha256": "83e09c84a6fd113ed63234816d484fab279fed598fd8cd3870d9d44acb6c4a8b"
+    },
+    "figures/source/ch01/pixel-contributions-v48.tex": {
+      "bytes": 2559,
+      "sha256": "4ee3a826c6442ef806be0658df7427c139ceeef10d03f2b9869913c6c62e3df0"
+    },
+    "figures/source/v40/backprop-paths.tex": {
+      "bytes": 2009,
+      "sha256": "ee7fcad111b90bbf7dc450957304b22e5aa16d2d9fd79178515e0fac66fa053b"
+    },
+    "manuscript/chapters/v48-01-neural-networks/reader-lab-v48.tex": {
+      "bytes": 3252,
+      "sha256": "bd5e37da549d818de73ce1ccbbf5203abce21e32f7e0c7d4dfc212853351a9b6"
+    },
+    "manuscript/chapters/v48-01-neural-networks/ring-technical-v48.tex": {
+      "bytes": 5884,
+      "sha256": "21fed056a354d7fdc4edbf516f2094340a333e3a15d8c6eb0d7e5932e69a397d"
+    },
+    "figures/source/ch02/radius-handoff-v29.tex": {
+      "bytes": 1342,
+      "sha256": "2079a2d42d88a0837a01d7deb7ee6b6cad5ef78665eb8ef9bfb015348d4f85e2"
+    },
+    "figures/source/ch02/radius-conflict-v29.tex": {
+      "bytes": 1315,
+      "sha256": "0ef8fcd53ab85ed37cf365eff69f3069137ce06025ba9e9c041a1d7f5bfa50d2"
+    },
+    "figures/source/ch02/two-pixel-space-v6.tex": {
+      "bytes": 1115,
+      "sha256": "f839d8650db2ae55b50f5c4a8242470513fe93925ddeb1641055fb8f05ef10d0"
+    },
+    "manuscript/chapters/v48-02-spaces/representation-notes-v48.tex": {
+      "bytes": 2445,
+      "sha256": "4d698184671d89cb5ff3edac12ec0b23b7611efe2cac39ab7e850f838e30454d"
+    },
+    "figures/source/ch02/pixel-distance-v6.tex": {
+      "bytes": 447,
+      "sha256": "d627eb058a42af6dc36476c820caae1c138bd2222f7ac667dbdd53a0704fba74"
+    },
+    "manuscript/chapters/v48-02-spaces/radial-notes-v48.tex": {
+      "bytes": 3734,
+      "sha256": "e2e5c93f48b471443ce522a4887fcf8b840ffdf7a3b37abe478cc81149ba96ca"
+    },
+    "manuscript/chapters/v48-02-spaces/update-notes-v48.tex": {
+      "bytes": 1689,
+      "sha256": "a5d215a19cb672e8fac0169769a9dbfbaa0e6ff07bcc6fb84b7bb1baf9709cbc"
+    },
+    "figures/source/v40/recurrent-state.tex": {
+      "bytes": 1191,
+      "sha256": "62be9b98bcb3e830aad6eb5e019716210abff2bbbf1b93d4ca18af6d8c087b29"
+    },
+    "figures/source/v29/branching-counts.tex": {
+      "bytes": 910,
+      "sha256": "b240366ddd444e0779f84120cbe010e22d8610f2df45d60a57e8aa69f96a294e"
+    },
+    "figures/source/v29/interferometer-paths.tex": {
+      "bytes": 1066,
+      "sha256": "3faa2b2e64fef34f6738820d37950f964a41cb04dade7f8d7fff1782cdc8605e"
+    },
+    "manuscript/meaning-ledger-v48.tex": {
+      "bytes": 3360,
+      "sha256": "b1a5f3bc2d1c1ed5bbfe4722c795bf2a5a935c1293e5e593977e76c2278a15fe"
+    },
+    "manuscript/reading-shell-v7.tex": {
+      "bytes": 1541,
+      "sha256": "065a764b23263f6fd445b1197801adef1cfe71c0f1613274b0bd9804e6474036"
+    },
+    "manuscript/dialogue-layout-v16.tex": {
+      "bytes": 2434,
+      "sha256": "0a36112bed23fdde9ea117137aee4953fcc55442dc99bce999b890d166b6fac7"
+    },
+    "manuscript/dialogue-colours-v48.tex": {
+      "bytes": 5940,
+      "sha256": "9655eb16ad5d5de6c8a37cef74d0b42ba7b9c61ab6c6ea271b70c4210944dd72"
+    },
+    "outputs/investigation-v17/figures/forward-visual-v17.tex": {
+      "bytes": 4323,
+      "sha256": "4b8cb819bea0687bbe8d25385f6d270866854dd1e3e21488975b92559f2b59b1"
+    },
+    "manuscript/preamble.tex": {
+      "bytes": 3076,
+      "sha256": "3672f7050a71c3dfe878513bf53f750e4a8c2d9a0100f5c53b6214d1a27f4304"
+    },
+    "manuscript/identity-v4.tex": {
+      "bytes": 3022,
+      "sha256": "14f50fe65dfabff8dfae2499eaf8e3c91e52bceee8ddae09f39606c8795b05ea"
+    },
+    "manuscript/dialogue-layout-v15.tex": {
+      "bytes": 2894,
+      "sha256": "a6d8d80e46a956c3cac598aae00939c384385ca0ec73d0d6e3c36a3e15604245"
+    }
+  },
+  "routes": [
+    {
+      "source": "manuscript/chapters/v48-01-neural-networks/notes-v48.tex",
+      "line": 90,
+      "reference": "examples/ch01/strokes_v3.py",
+      "resolved": "examples/ch01/strokes_v3.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-01-neural-networks/notes-v48.tex",
+      "line": 90,
+      "reference": "investigation_v9.py",
+      "resolved": "examples/ch01/investigation_v9.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-02-spaces/notes-v48.tex",
+      "line": 20,
+      "reference": "examples/ch01_04/reader_lab_v11.py",
+      "resolved": "examples/ch01_04/reader_lab_v11.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-02-spaces/notes-v48.tex",
+      "line": 25,
+      "reference": "scripts/figures-opening-v29.py",
+      "resolved": "scripts/figures-opening-v29.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-03-memory/notes-v48.tex",
+      "line": 6,
+      "reference": "examples/ch01_04/reader_lab_v11.py",
+      "resolved": "examples/ch01_04/reader_lab_v11.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-03-memory/notes-v48.tex",
+      "line": 7,
+      "reference": "examples/ch01_04/reader_lab_v11.py",
+      "resolved": "examples/ch01_04/reader_lab_v11.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-03-memory/notes-v48.tex",
+      "line": 79,
+      "reference": "examples/ch03_04/experiment_v7.py",
+      "resolved": "examples/ch03_04/experiment_v7.py",
+      "classification": "frozen_provenance_do_not_execute",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-04-uncertainty/notes-v48.tex",
+      "line": 56,
+      "reference": "examples/ch01_04/reader_lab_v11.py",
+      "resolved": "examples/ch01_04/reader_lab_v11.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-04-uncertainty/notes-v48.tex",
+      "line": 57,
+      "reference": "examples/ch01_04/reader_lab_v11.py",
+      "resolved": "examples/ch01_04/reader_lab_v11.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-04-uncertainty/notes-v48.tex",
+      "line": 58,
+      "reference": "examples/ch01_04/reader_lab_v11.py",
+      "resolved": "examples/ch01_04/reader_lab_v11.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-04-uncertainty/notes-v48.tex",
+      "line": 98,
+      "reference": "scripts/figure-evidence-v11.py",
+      "resolved": "scripts/figure-evidence-v11.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-04-uncertainty/notes-v48.tex",
+      "line": 98,
+      "reference": "scripts/correct-science-v17.py",
+      "resolved": "scripts/correct-science-v17.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-05-propagation/notes-v48.tex",
+      "line": 67,
+      "reference": "reader_lab_v13.py",
+      "resolved": "reader_lab_v13.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-05-propagation/notes-v48.tex",
+      "line": 68,
+      "reference": "reader_lab_v13.py",
+      "resolved": "reader_lab_v13.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-05-propagation/notes-v48.tex",
+      "line": 69,
+      "reference": "reader_lab_v13.py",
+      "resolved": "reader_lab_v13.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-06-manifolds/notes-v48.tex",
+      "line": 79,
+      "reference": "reader_lab_v13.py",
+      "resolved": "reader_lab_v13.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-06-manifolds/notes-v48.tex",
+      "line": 80,
+      "reference": "reader_lab_v13.py",
+      "resolved": "reader_lab_v13.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-06-manifolds/notes-v48.tex",
+      "line": 81,
+      "reference": "reader_lab_v13.py",
+      "resolved": "reader_lab_v13.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-07-distinguishability/notes-v48.tex",
+      "line": 122,
+      "reference": "reader_lab_v13.py",
+      "resolved": "reader_lab_v13.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-07-distinguishability/notes-v48.tex",
+      "line": 123,
+      "reference": "reader_lab_v13.py",
+      "resolved": "reader_lab_v13.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-07-distinguishability/notes-v48.tex",
+      "line": 124,
+      "reference": "reader_lab_v13.py",
+      "resolved": "reader_lab_v13.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-07-distinguishability/notes-v48.tex",
+      "line": 125,
+      "reference": "reader_lab_v13.py",
+      "resolved": "reader_lab_v13.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-07-distinguishability/notes-v48.tex",
+      "line": 126,
+      "reference": "reader_lab_v13.py",
+      "resolved": "reader_lab_v13.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-07-distinguishability/notes-v48.tex",
+      "line": 127,
+      "reference": "reader_lab_v13.py",
+      "resolved": "reader_lab_v13.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-07-distinguishability/notes-v48.tex",
+      "line": 128,
+      "reference": "reader_lab_v13.py",
+      "resolved": "reader_lab_v13.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-08-patterns/notes-v48.tex",
+      "line": 71,
+      "reference": "examples/ch08_11/glider_v20.py",
+      "resolved": "examples/ch08_11/glider_v20.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-08-patterns/notes-v48.tex",
+      "line": 107,
+      "reference": "examples/ch08_11/figures_v18.py",
+      "resolved": "examples/ch08_11/figures_v18.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-08-patterns/notes-v48.tex",
+      "line": 107,
+      "reference": "examples/ch08_11/glider_v20.py",
+      "resolved": "examples/ch08_11/glider_v20.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-10-interpretation/notes-v48.tex",
+      "line": 33,
+      "reference": "outputs/publication-v29/ch10/assignment_check.py",
+      "resolved": "outputs/publication-v29/ch10/assignment_check.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-12-living-organization/notes-v48.tex",
+      "line": 19,
+      "reference": "scripts/figure-ch11-v31.py",
+      "resolved": "scripts/figure-ch11-v31.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-12-living-organization/notes-v48.tex",
+      "line": 52,
+      "reference": "outputs/publication-v29/ch11/continuation_checks.py",
+      "resolved": "outputs/publication-v29/ch11/continuation_checks.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-11-life/notes-v48.tex",
+      "line": 74,
+      "reference": "outputs/publication-v29/ch13/survival_checks.py",
+      "resolved": "outputs/publication-v29/ch13/survival_checks.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-14-causality/notes-v48.tex",
+      "line": 30,
+      "reference": "examples/investigation_v23.py",
+      "resolved": "examples/investigation_v23.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-15-explanation/notes-v48.tex",
+      "line": 25,
+      "reference": "examples/investigation_v24.py",
+      "resolved": "examples/investigation_v24.py",
+      "classification": "frozen_provenance_do_not_execute",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-16-fields/notes-v48.tex",
+      "line": 34,
+      "reference": "examples/investigation_v24.py",
+      "resolved": "examples/investigation_v24.py",
+      "classification": "frozen_provenance_do_not_execute",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-17-symmetry/notes-v48.tex",
+      "line": 26,
+      "reference": "examples/investigation_v24.py",
+      "resolved": "examples/investigation_v24.py",
+      "classification": "frozen_provenance_do_not_execute",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-18-clocks/notes-v48.tex",
+      "line": 29,
+      "reference": "examples/investigation_v23.py",
+      "resolved": "examples/investigation_v23.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-20-geometry/notes-v48.tex",
+      "line": 20,
+      "reference": "examples/investigation_v24.py",
+      "resolved": "examples/investigation_v24.py",
+      "classification": "frozen_provenance_do_not_execute",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-21-arrow/notes-v48.tex",
+      "line": 13,
+      "reference": "examples/publication_middle_v31.py",
+      "resolved": "examples/publication_middle_v31.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-23a-coarse-graining/notes-v48.tex",
+      "line": 19,
+      "reference": "examples/publication_middle_v31.py",
+      "resolved": "examples/publication_middle_v31.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-23a-coarse-graining/notes-v48.tex",
+      "line": 71,
+      "reference": "examples/ch12_15/investigation_v21.py",
+      "resolved": "examples/ch12_15/investigation_v21.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-24-closure/notes-v48.tex",
+      "line": 41,
+      "reference": "examples/investigation_v24.py",
+      "resolved": "examples/investigation_v24.py",
+      "classification": "frozen_provenance_do_not_execute",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-25-statistical-laws/notes-v48.tex",
+      "line": 22,
+      "reference": "examples/investigation_v24.py",
+      "resolved": "examples/investigation_v24.py",
+      "classification": "frozen_provenance_do_not_execute",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-25-statistical-laws/notes-v48.tex",
+      "line": 22,
+      "reference": "examples/publication_figures_v27.py",
+      "resolved": "examples/publication_figures_v27.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-22-criticality/notes-v48.tex",
+      "line": 42,
+      "reference": "examples/ch12_15/investigation_v21.py",
+      "resolved": "examples/ch12_15/investigation_v21.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-22-criticality/notes-v48.tex",
+      "line": 42,
+      "reference": "examples/publication_v31_late.py",
+      "resolved": "examples/publication_v31_late.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-22-criticality/notes-v48.tex",
+      "line": 47,
+      "reference": "examples/investigation_v23.py",
+      "resolved": "examples/investigation_v23.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-23b-common-limits/notes-v48.tex",
+      "line": 41,
+      "reference": "examples/ch12_15/investigation_v21.py",
+      "resolved": "examples/ch12_15/investigation_v21.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-23b-common-limits/notes-v48.tex",
+      "line": 41,
+      "reference": "examples/publication_v31_late.py",
+      "resolved": "examples/publication_v31_late.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-26-effective-laws/notes-v48.tex",
+      "line": 13,
+      "reference": "examples/publication_v31_late.py",
+      "resolved": "examples/publication_v31_late.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-26-effective-laws/notes-v48.tex",
+      "line": 46,
+      "reference": "examples/investigation_v23.py",
+      "resolved": "examples/investigation_v23.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-27-equivalence/notes-v48.tex",
+      "line": 27,
+      "reference": "examples/investigation_v23.py",
+      "resolved": "examples/investigation_v23.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-28-compatibility/notes-v48.tex",
+      "line": 91,
+      "reference": "examples/investigation_v23.py",
+      "resolved": "examples/investigation_v23.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-28-compatibility/notes-v48.tex",
+      "line": 91,
+      "reference": "examples/publication_figures_v27.py",
+      "resolved": "examples/publication_figures_v27.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-28-compatibility/notes-v48.tex",
+      "line": 152,
+      "reference": "examples/resource_learning_v31.py",
+      "resolved": "examples/resource_learning_v31.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-28-compatibility/notes-v48.tex",
+      "line": 152,
+      "reference": "examples/publication_v32_late.py",
+      "resolved": "examples/publication_v32_late.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-28-compatibility/notes-v48.tex",
+      "line": 249,
+      "reference": "continuation-checks-v47.py",
+      "resolved": "continuation-checks-v47.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-34-multi-time/notes-v48.tex",
+      "line": 17,
+      "reference": "examples/publication_v31_late.py",
+      "resolved": "examples/publication_v31_late.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-29-quantum/notes-v48.tex",
+      "line": 30,
+      "reference": "examples/publication_v31_late.py",
+      "resolved": "examples/publication_v31_late.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-31-fit/notes-v48.tex",
+      "line": 126,
+      "reference": "scripts/figures-ending-v33.py",
+      "resolved": "scripts/figures-ending-v33.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-31-fit/notes-v48.tex",
+      "line": 126,
+      "reference": "examples/publication_figures_v28.py",
+      "resolved": "examples/publication_figures_v28.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-31-fit/notes-v48.tex",
+      "line": 130,
+      "reference": "continuation-checks-v47.py",
+      "resolved": "continuation-checks-v47.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-32-selection/notes-v48.tex",
+      "line": 38,
+      "reference": "examples/publication_figures_v28.py",
+      "resolved": "examples/publication_figures_v28.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-32-selection/notes-v48.tex",
+      "line": 38,
+      "reference": "scripts/figures-root-v31.py",
+      "resolved": "scripts/figures-root-v31.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-35-transfer/notes-v48.tex",
+      "line": 3,
+      "reference": "verify_e3.py",
+      "resolved": "verify_e3.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-35-transfer/notes-v48.tex",
+      "line": 96,
+      "reference": "scripts/figures-root-v31.py",
+      "resolved": "scripts/figures-root-v31.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-35-transfer/notes-v48.tex",
+      "line": 96,
+      "reference": "scripts/figure-transfer-v32.py",
+      "resolved": "scripts/figure-transfer-v32.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-35-transfer/notes-v48.tex",
+      "line": 172,
+      "reference": "reconstruct-w7-v47.py",
+      "resolved": "reconstruct-w7-v47.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-35-transfer/notes-v48.tex",
+      "line": 173,
+      "reference": "orthogonal-checks-v44.py",
+      "resolved": "orthogonal-checks-v44.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-36-possibilities/notes-v48.tex",
+      "line": 56,
+      "reference": "examples/publication_figures_v28.py",
+      "resolved": "examples/publication_figures_v28.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-36-possibilities/notes-v48.tex",
+      "line": 78,
+      "reference": "examples/model_comparison_v31.py",
+      "resolved": "examples/model_comparison_v31.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-36-possibilities/notes-v48.tex",
+      "line": 82,
+      "reference": "scripts/figures-native-v36.py",
+      "resolved": "scripts/figures-native-v36.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-36-possibilities/notes-v48.tex",
+      "line": 83,
+      "reference": "scripts/figures-root-v31.py",
+      "resolved": "scripts/figures-root-v31.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-01-neural-networks/reader-lab-v48.tex",
+      "line": 9,
+      "reference": "reader_lab_v13.py",
+      "resolved": "reader_lab_v13.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": false
+    },
+    {
+      "source": "manuscript/chapters/v48-01-neural-networks/reader-lab-v48.tex",
+      "line": 11,
+      "reference": "examples/ch01/investigation_v9.py",
+      "resolved": "examples/ch01/investigation_v9.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-01-neural-networks/reader-lab-v48.tex",
+      "line": 17,
+      "reference": "examples/ch01/investigation_v9.py",
+      "resolved": "examples/ch01/investigation_v9.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-01-neural-networks/reader-lab-v48.tex",
+      "line": 24,
+      "reference": "examples/ch01/investigation_v9.py",
+      "resolved": "examples/ch01/investigation_v9.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-01-neural-networks/reader-lab-v48.tex",
+      "line": 31,
+      "reference": "examples/ch01/investigation_v9.py",
+      "resolved": "examples/ch01/investigation_v9.py",
+      "classification": "portable_reader_route",
+      "included": true,
+      "source_exists": true
+    },
+    {
+      "source": "manuscript/chapters/v48-01-neural-networks/ring-technical-v48.tex",
+      "line": 64,
+      "reference": "examples/ch01/ring_v5.py",
+      "resolved": "examples/ch01/ring_v5.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    },
+    {
+      "source": "outputs/investigation-v17/figures/forward-visual-v17.tex",
+      "line": 1,
+      "reference": "strokes_v3.py",
+      "resolved": "examples/ch01/strokes_v3.py",
+      "classification": "full_repository_producer_excluded",
+      "included": false,
+      "source_exists": true
+    }
+  ],
+  "tex_files_inspected": 103,
+  "dynamic_inputs": [
+    {
+      "source": "manuscript/how-matter-learns-to-continue-v48.tex",
+      "input": "chapters/#5/draft-v48",
+      "resolution": "Current chapter paths supplied by v48 manifest."
+    },
+    {
+      "source": "manuscript/how-matter-learns-to-continue-v48.tex",
+      "input": "chapters/#3/notes-v48",
+      "resolution": "Current chapter paths supplied by v48 manifest."
+    },
+    {
+      "source": "manuscript/reading-shell-v8.tex",
+      "input": "chapters/#5/draft-v8",
+      "resolution": "Current chapter paths supplied by v48 manifest."
+    },
+    {
+      "source": "manuscript/reading-shell-v8.tex",
+      "input": "chapters/#2/#3",
+      "resolution": "Current chapter paths supplied by v48 manifest."
+    }
+  ],
+  "source_scope": "v48 master, all manifest chapters/notes, and recursively linked static TeX inputs; source hashes, not bundled complete sources or assets.",
+  "classification_limit": "Default documented reader modes only. survival_checks.py --figure requires full repository assets. A copied historical producer is provenance, not executable reader permission."
+}

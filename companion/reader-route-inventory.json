@@ -1,0 +1,692 @@
+{
+  "tex_files_inspected": 91,
+  "references": [
+    {
+      "manuscript": "manuscript/chapters/v40-01-neural-networks/notes-v40.tex",
+      "line": 90,
+      "reference": "examples/ch01/strokes_v3.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/ch01/strokes_v3.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-01-neural-networks/notes-v40.tex",
+      "line": 90,
+      "reference": "investigation_v9.py",
+      "classification": "read_only_reader_abbreviation_full_path_in_bundle",
+      "source_path": "examples/ch01/investigation_v9.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-02-spaces/notes-v40.tex",
+      "line": 20,
+      "reference": "examples/ch01_04/reader_lab_v11.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": "examples/ch01_04/reader_lab_v11.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-02-spaces/notes-v40.tex",
+      "line": 25,
+      "reference": "scripts/figures-opening-v29.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "scripts/figures-opening-v29.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-03-memory/notes-v40.tex",
+      "line": 6,
+      "reference": "examples/ch01_04/reader_lab_v11.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": "examples/ch01_04/reader_lab_v11.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-03-memory/notes-v40.tex",
+      "line": 7,
+      "reference": "examples/ch01_04/reader_lab_v11.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": "examples/ch01_04/reader_lab_v11.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-03-memory/notes-v40.tex",
+      "line": 77,
+      "reference": "examples/ch03_04/experiment_v7.py",
+      "classification": "frozen_provenance_in_bundle_do_not_execute",
+      "source_path": "examples/ch03_04/experiment_v7.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-04-uncertainty/notes-v40.tex",
+      "line": 56,
+      "reference": "examples/ch01_04/reader_lab_v11.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": "examples/ch01_04/reader_lab_v11.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-04-uncertainty/notes-v40.tex",
+      "line": 57,
+      "reference": "examples/ch01_04/reader_lab_v11.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": "examples/ch01_04/reader_lab_v11.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-04-uncertainty/notes-v40.tex",
+      "line": 58,
+      "reference": "examples/ch01_04/reader_lab_v11.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": "examples/ch01_04/reader_lab_v11.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-04-uncertainty/notes-v40.tex",
+      "line": 98,
+      "reference": "scripts/figure-evidence-v11.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "scripts/figure-evidence-v11.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-04-uncertainty/notes-v40.tex",
+      "line": 98,
+      "reference": "scripts/correct-science-v17.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "scripts/correct-science-v17.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-05-propagation/notes-v40.tex",
+      "line": 67,
+      "reference": "reader_lab_v13.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": null,
+      "source_exists": false,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-05-propagation/notes-v40.tex",
+      "line": 68,
+      "reference": "reader_lab_v13.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": null,
+      "source_exists": false,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-05-propagation/notes-v40.tex",
+      "line": 69,
+      "reference": "reader_lab_v13.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": null,
+      "source_exists": false,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-06-manifolds/notes-v40.tex",
+      "line": 79,
+      "reference": "reader_lab_v13.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": null,
+      "source_exists": false,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-06-manifolds/notes-v40.tex",
+      "line": 80,
+      "reference": "reader_lab_v13.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": null,
+      "source_exists": false,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-06-manifolds/notes-v40.tex",
+      "line": 81,
+      "reference": "reader_lab_v13.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": null,
+      "source_exists": false,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-07-distinguishability/notes-v40.tex",
+      "line": 122,
+      "reference": "reader_lab_v13.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": null,
+      "source_exists": false,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-07-distinguishability/notes-v40.tex",
+      "line": 123,
+      "reference": "reader_lab_v13.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": null,
+      "source_exists": false,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-07-distinguishability/notes-v40.tex",
+      "line": 124,
+      "reference": "reader_lab_v13.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": null,
+      "source_exists": false,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-07-distinguishability/notes-v40.tex",
+      "line": 125,
+      "reference": "reader_lab_v13.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": null,
+      "source_exists": false,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-07-distinguishability/notes-v40.tex",
+      "line": 126,
+      "reference": "reader_lab_v13.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": null,
+      "source_exists": false,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-07-distinguishability/notes-v40.tex",
+      "line": 127,
+      "reference": "reader_lab_v13.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": null,
+      "source_exists": false,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-07-distinguishability/notes-v40.tex",
+      "line": 128,
+      "reference": "reader_lab_v13.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": null,
+      "source_exists": false,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-08-patterns/notes-v40.tex",
+      "line": 71,
+      "reference": "examples/ch08_11/glider_v20.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/ch08_11/glider_v20.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-08-patterns/notes-v40.tex",
+      "line": 107,
+      "reference": "examples/ch08_11/figures_v18.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/ch08_11/figures_v18.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-08-patterns/notes-v40.tex",
+      "line": 107,
+      "reference": "examples/ch08_11/glider_v20.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/ch08_11/glider_v20.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-10-interpretation/notes-v40.tex",
+      "line": 33,
+      "reference": "outputs/publication-v29/ch10/assignment_check.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": "outputs/publication-v29/ch10/assignment_check.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-12-living-organization/notes-v40.tex",
+      "line": 19,
+      "reference": "scripts/figure-ch11-v31.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "scripts/figure-ch11-v31.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-12-living-organization/notes-v40.tex",
+      "line": 52,
+      "reference": "outputs/publication-v29/ch11/continuation_checks.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": "outputs/publication-v29/ch11/continuation_checks.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-11-life/notes-v40.tex",
+      "line": 74,
+      "reference": "outputs/publication-v29/ch13/survival_checks.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": "outputs/publication-v29/ch13/survival_checks.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-14-causality/notes-v40.tex",
+      "line": 30,
+      "reference": "examples/investigation_v23.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/investigation_v23.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-15-explanation/notes-v40.tex",
+      "line": 25,
+      "reference": "examples/investigation_v24.py",
+      "classification": "frozen_provenance_in_bundle_do_not_execute",
+      "source_path": "examples/investigation_v24.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-16-fields/notes-v40.tex",
+      "line": 34,
+      "reference": "examples/investigation_v24.py",
+      "classification": "frozen_provenance_in_bundle_do_not_execute",
+      "source_path": "examples/investigation_v24.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-17-symmetry/notes-v40.tex",
+      "line": 26,
+      "reference": "examples/investigation_v24.py",
+      "classification": "frozen_provenance_in_bundle_do_not_execute",
+      "source_path": "examples/investigation_v24.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-18-clocks/notes-v40.tex",
+      "line": 29,
+      "reference": "examples/investigation_v23.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/investigation_v23.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-20-geometry/notes-v40.tex",
+      "line": 20,
+      "reference": "examples/investigation_v24.py",
+      "classification": "frozen_provenance_in_bundle_do_not_execute",
+      "source_path": "examples/investigation_v24.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-21-arrow/notes-v40.tex",
+      "line": 13,
+      "reference": "examples/publication_middle_v31.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/publication_middle_v31.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-23a-coarse-graining/notes-v40.tex",
+      "line": 19,
+      "reference": "examples/publication_middle_v31.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/publication_middle_v31.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-23a-coarse-graining/notes-v40.tex",
+      "line": 64,
+      "reference": "examples/ch12_15/investigation_v21.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/ch12_15/investigation_v21.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-24-closure/notes-v40.tex",
+      "line": 41,
+      "reference": "examples/investigation_v24.py",
+      "classification": "frozen_provenance_in_bundle_do_not_execute",
+      "source_path": "examples/investigation_v24.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-25-statistical-laws/notes-v40.tex",
+      "line": 22,
+      "reference": "examples/investigation_v24.py",
+      "classification": "frozen_provenance_in_bundle_do_not_execute",
+      "source_path": "examples/investigation_v24.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-25-statistical-laws/notes-v40.tex",
+      "line": 22,
+      "reference": "examples/publication_figures_v27.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/publication_figures_v27.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-22-criticality/notes-v40.tex",
+      "line": 42,
+      "reference": "examples/ch12_15/investigation_v21.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/ch12_15/investigation_v21.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-22-criticality/notes-v40.tex",
+      "line": 42,
+      "reference": "examples/publication_v31_late.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/publication_v31_late.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-22-criticality/notes-v40.tex",
+      "line": 47,
+      "reference": "examples/investigation_v23.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/investigation_v23.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-23b-common-limits/notes-v40.tex",
+      "line": 41,
+      "reference": "examples/ch12_15/investigation_v21.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/ch12_15/investigation_v21.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-23b-common-limits/notes-v40.tex",
+      "line": 41,
+      "reference": "examples/publication_v31_late.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/publication_v31_late.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-26-effective-laws/notes-v40.tex",
+      "line": 13,
+      "reference": "examples/publication_v31_late.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/publication_v31_late.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-26-effective-laws/notes-v40.tex",
+      "line": 46,
+      "reference": "examples/investigation_v23.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/investigation_v23.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-27-equivalence/notes-v40.tex",
+      "line": 27,
+      "reference": "examples/investigation_v23.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/investigation_v23.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-28-compatibility/notes-v40.tex",
+      "line": 91,
+      "reference": "examples/investigation_v23.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/investigation_v23.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-28-compatibility/notes-v40.tex",
+      "line": 91,
+      "reference": "examples/publication_figures_v27.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/publication_figures_v27.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-28-compatibility/notes-v40.tex",
+      "line": 144,
+      "reference": "examples/resource_learning_v31.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": "examples/resource_learning_v31.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-28-compatibility/notes-v40.tex",
+      "line": 144,
+      "reference": "examples/publication_v32_late.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/publication_v32_late.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-34-multi-time/notes-v40.tex",
+      "line": 17,
+      "reference": "examples/publication_v31_late.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/publication_v31_late.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-29-quantum/notes-v40.tex",
+      "line": 30,
+      "reference": "examples/publication_v31_late.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/publication_v31_late.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-31-fit/notes-v40.tex",
+      "line": 85,
+      "reference": "scripts/figures-ending-v33.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "scripts/figures-ending-v33.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-31-fit/notes-v40.tex",
+      "line": 85,
+      "reference": "examples/publication_figures_v28.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/publication_figures_v28.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-32-selection/notes-v40.tex",
+      "line": 38,
+      "reference": "examples/publication_figures_v28.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/publication_figures_v28.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-32-selection/notes-v40.tex",
+      "line": 38,
+      "reference": "scripts/figures-root-v31.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "scripts/figures-root-v31.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-35-transfer/notes-v40.tex",
+      "line": 3,
+      "reference": "verify_e3.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": null,
+      "source_exists": false,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-35-transfer/notes-v40.tex",
+      "line": 94,
+      "reference": "scripts/figures-root-v31.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "scripts/figures-root-v31.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-35-transfer/notes-v40.tex",
+      "line": 94,
+      "reference": "scripts/figure-transfer-v32.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "scripts/figure-transfer-v32.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-36-possibilities/notes-v40.tex",
+      "line": 56,
+      "reference": "examples/publication_figures_v28.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/publication_figures_v28.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-36-possibilities/notes-v40.tex",
+      "line": 78,
+      "reference": "examples/model_comparison_v31.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": "examples/model_comparison_v31.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-36-possibilities/notes-v40.tex",
+      "line": 82,
+      "reference": "scripts/figures-native-v36.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "scripts/figures-native-v36.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-36-possibilities/notes-v40.tex",
+      "line": 83,
+      "reference": "scripts/figures-root-v31.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "scripts/figures-root-v31.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-01-neural-networks/reader-lab-v40.tex",
+      "line": 9,
+      "reference": "reader_lab_v13.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": null,
+      "source_exists": false,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-01-neural-networks/reader-lab-v40.tex",
+      "line": 11,
+      "reference": "examples/ch01/investigation_v9.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": "examples/ch01/investigation_v9.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-01-neural-networks/reader-lab-v40.tex",
+      "line": 17,
+      "reference": "examples/ch01/investigation_v9.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": "examples/ch01/investigation_v9.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-01-neural-networks/reader-lab-v40.tex",
+      "line": 24,
+      "reference": "examples/ch01/investigation_v9.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": "examples/ch01/investigation_v9.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-01-neural-networks/reader-lab-v40.tex",
+      "line": 31,
+      "reference": "examples/ch01/investigation_v9.py",
+      "classification": "read_only_reader_mode_in_bundle",
+      "source_path": "examples/ch01/investigation_v9.py",
+      "source_exists": true,
+      "included": true
+    },
+    {
+      "manuscript": "manuscript/chapters/v40-01-neural-networks/ring-technical-v40.tex",
+      "line": 64,
+      "reference": "examples/ch01/ring_v5.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/ch01/ring_v5.py",
+      "source_exists": true,
+      "included": false
+    },
+    {
+      "manuscript": "outputs/investigation-v17/figures/forward-visual-v17.tex",
+      "line": 1,
+      "reference": "strokes_v3.py",
+      "classification": "full_repository_producer_or_provenance",
+      "source_path": "examples/ch01/strokes_v3.py",
+      "source_exists": true,
+      "included": false
+    }
+  ],
+  "unresolved": [],
+  "short_alias_note": "Chapters 5\u20137 explicitly cd examples/ch05_07 before short commands, so their original route is valid. The packaged byte-identical root alias is a convenience, not a correction of a broken source route.",
+  "reader_modes_only": "survival_checks.py default mode is supported; its --figure option and historical producer routes are outside bundle scope."
+}

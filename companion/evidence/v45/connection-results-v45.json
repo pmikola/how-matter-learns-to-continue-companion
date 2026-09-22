@@ -1,0 +1,681 @@
+{
+  "schema": "how-matter-learns-to-continue.v45.connections.v1",
+  "status": "passed",
+  "check_groups": 11,
+  "generated_at_utc": "2026-09-19T09:58:41.656857+00:00",
+  "source": {
+    "script": "connection-checks-v45.py",
+    "script_sha256": "a17252b55a76f6e96335202c5faa5e8591e62732af738ed0285656781b48c868",
+    "review": "how-matter-learns-to-continue-v44-graph-validation-R2.md",
+    "review_sha256": "7ca9215df96f942a75af01097dc4ce26979139f32f33363c6d518032cf74a923"
+  },
+  "runtime": {
+    "python": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+    "dependencies": "standard library only"
+  },
+  "checks": {
+    "M01_optimizer_closure": {
+      "status": "passed",
+      "assertion_count": 5,
+      "rows": [
+        {
+          "parameters": [
+            "1",
+            "1"
+          ],
+          "updated_parameters": [
+            "9/10",
+            "9/10"
+          ],
+          "next_function_coefficient": {
+            "exact": "81/100",
+            "decimal": 0.81
+          }
+        },
+        {
+          "parameters": [
+            "2",
+            "1/2"
+          ],
+          "updated_parameters": [
+            "39/20",
+            "3/10"
+          ],
+          "next_function_coefficient": {
+            "exact": "117/200",
+            "decimal": 0.585
+          }
+        }
+      ],
+      "factorization": "H(U(theta))=G(H(theta)) cannot hold on this domain",
+      "scope": "H is the entire score function, not a contribution summary or one input score. Fixed example x=1,y=0; half-squared loss; eta=1/10. No claim about every optimizer."
+    },
+    "M02_calibration_bayes": {
+      "status": "passed",
+      "assertion_count": 97,
+      "records_checked": 32,
+      "error": {
+        "exact": "107/12500",
+        "decimal": 0.00856
+      },
+      "posterior_high_by_count": {
+        "0": {
+          "exact": "1/59050",
+          "decimal": 1.693480101608806e-05
+        },
+        "1": {
+          "exact": "1/730",
+          "decimal": 0.0013698630136986301
+        },
+        "2": {
+          "exact": "1/10",
+          "decimal": 0.1
+        },
+        "3": {
+          "exact": "9/10",
+          "decimal": 0.9
+        },
+        "4": {
+          "exact": "729/730",
+          "decimal": 0.9986301369863013
+        },
+        "5": {
+          "exact": "59049/59050",
+          "decimal": 0.999983065198984
+        }
+      },
+      "scope": "Two Bernoulli candidates, equal priors, independent labels conditional on one fixed environment."
+    },
+    "M03_path_not_endpoint": {
+      "status": "passed",
+      "assertion_count": 9,
+      "paths_checked": 4096,
+      "survival": {
+        "1/10": {
+          "exact": "18408799/10000000000",
+          "decimal": 0.0018408799
+        },
+        "1/2": {
+          "exact": "627/1024",
+          "decimal": 0.6123046875
+        },
+        "9/10": {
+          "exact": "9986307831/10000000000",
+          "decimal": 0.9986307831
+        }
+      },
+      "free_endpoint_fair": {
+        "exact": "1651/2048",
+        "decimal": 0.80615234375
+      },
+      "free_sum_examples": [
+        [
+          3,
+          2,
+          1,
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          5,
+          4,
+          3
+        ]
+      ],
+      "prefix_counts_by_successes": {
+        "5": 297,
+        "6": 704,
+        "7": 726,
+        "8": 483,
+        "9": 219,
+        "10": 66,
+        "11": 12,
+        "12": 1
+      },
+      "scope": "Free sums are arithmetic comparisons, never resurrected absorbing trajectories. Pool endpoint sufficiency follows from monotonicity; the discrete process needs every positive prefix."
+    },
+    "M04_policy_composition": {
+      "status": "passed",
+      "assertion_count": 68,
+      "stationary": {
+        "exact": "30940570672769/31250000000000",
+        "decimal": 0.990098261528608
+      },
+      "reversed": {
+        "exact": "324168795981/31250000000000",
+        "decimal": 0.010373401471392
+      },
+      "first_integer_crossover": 19,
+      "horizon_rows": [
+        {
+          "horizon": 0,
+          "ignore": {
+            "exact": "1",
+            "decimal": 1.0
+          },
+          "follow": {
+            "exact": "1",
+            "decimal": 1.0
+          }
+        },
+        {
+          "horizon": 1,
+          "ignore": {
+            "exact": "1",
+            "decimal": 1.0
+          },
+          "follow": {
+            "exact": "1",
+            "decimal": 1.0
+          }
+        },
+        {
+          "horizon": 2,
+          "ignore": {
+            "exact": "1",
+            "decimal": 1.0
+          },
+          "follow": {
+            "exact": "1",
+            "decimal": 1.0
+          }
+        },
+        {
+          "horizon": 3,
+          "ignore": {
+            "exact": "7/8",
+            "decimal": 0.875
+          },
+          "follow": {
+            "exact": "127/200",
+            "decimal": 0.635
+          }
+        },
+        {
+          "horizon": 4,
+          "ignore": {
+            "exact": "7/8",
+            "decimal": 0.875
+          },
+          "follow": {
+            "exact": "127/200",
+            "decimal": 0.635
+          }
+        },
+        {
+          "horizon": 5,
+          "ignore": {
+            "exact": "25/32",
+            "decimal": 0.78125
+          },
+          "follow": {
+            "exact": "10729/20000",
+            "decimal": 0.53645
+          }
+        },
+        {
+          "horizon": 6,
+          "ignore": {
+            "exact": "25/32",
+            "decimal": 0.78125
+          },
+          "follow": {
+            "exact": "10729/20000",
+            "decimal": 0.53645
+          }
+        },
+        {
+          "horizon": 7,
+          "ignore": {
+            "exact": "91/128",
+            "decimal": 0.7109375
+          },
+          "follow": {
+            "exact": "1019683/2000000",
+            "decimal": 0.5098415
+          }
+        },
+        {
+          "horizon": 8,
+          "ignore": {
+            "exact": "91/128",
+            "decimal": 0.7109375
+          },
+          "follow": {
+            "exact": "1019683/2000000",
+            "decimal": 0.5098415
+          }
+        },
+        {
+          "horizon": 9,
+          "ignore": {
+            "exact": "21/32",
+            "decimal": 0.65625
+          },
+          "follow": {
+            "exact": "6279889/12500000",
+            "decimal": 0.50239112
+          }
+        },
+        {
+          "horizon": 10,
+          "ignore": {
+            "exact": "21/32",
+            "decimal": 0.65625
+          },
+          "follow": {
+            "exact": "6279889/12500000",
+            "decimal": 0.50239112
+          }
+        },
+        {
+          "horizon": 11,
+          "ignore": {
+            "exact": "627/1024",
+            "decimal": 0.6123046875
+          },
+          "follow": {
+            "exact": "1000471663/2000000000",
+            "decimal": 0.5002358315
+          }
+        },
+        {
+          "horizon": 12,
+          "ignore": {
+            "exact": "627/1024",
+            "decimal": 0.6123046875
+          },
+          "follow": {
+            "exact": "1000471663/2000000000",
+            "decimal": 0.5002358315
+          }
+        },
+        {
+          "horizon": 13,
+          "ignore": {
+            "exact": "4719/8192",
+            "decimal": 0.5760498046875
+          },
+          "follow": {
+            "exact": "999191421631/2000000000000",
+            "decimal": 0.4995957108155
+          }
+        },
+        {
+          "horizon": 14,
+          "ignore": {
+            "exact": "4719/8192",
+            "decimal": 0.5760498046875
+          },
+          "follow": {
+            "exact": "999191421631/2000000000000",
+            "decimal": 0.4995957108155
+          }
+        },
+        {
+          "horizon": 15,
+          "ignore": {
+            "exact": "17875/32768",
+            "decimal": 0.545501708984375
+          },
+          "follow": {
+            "exact": "99880308174907/200000000000000",
+            "decimal": 0.499401540874535
+          }
+        },
+        {
+          "horizon": 16,
+          "ignore": {
+            "exact": "17875/32768",
+            "decimal": 0.545501708984375
+          },
+          "follow": {
+            "exact": "99880308174907/200000000000000",
+            "decimal": 0.499401540874535
+          }
+        },
+        {
+          "horizon": 17,
+          "ignore": {
+            "exact": "17017/32768",
+            "decimal": 0.519317626953125
+          },
+          "follow": {
+            "exact": "2496708127892329/5000000000000000",
+            "decimal": 0.4993416255784658
+          }
+        },
+        {
+          "horizon": 18,
+          "ignore": {
+            "exact": "17017/32768",
+            "decimal": 0.519317626953125
+          },
+          "follow": {
+            "exact": "2496708127892329/5000000000000000",
+            "decimal": 0.4993416255784658
+          }
+        },
+        {
+          "horizon": 19,
+          "ignore": {
+            "exact": "130169/262144",
+            "decimal": 0.4965553283691406
+          },
+          "follow": {
+            "exact": "499322874814218689/1000000000000000000",
+            "decimal": 0.49932287481421866
+          }
+        },
+        {
+          "horizon": 20,
+          "ignore": {
+            "exact": "130169/262144",
+            "decimal": 0.4965553283691406
+          },
+          "follow": {
+            "exact": "499322874814218689/1000000000000000000",
+            "decimal": 0.49932287481421866
+          }
+        },
+        {
+          "horizon": 21,
+          "ignore": {
+            "exact": "499681/1048576",
+            "decimal": 0.4765329360961914
+          },
+          "follow": {
+            "exact": "9986338741444142077/20000000000000000000",
+            "decimal": 0.4993169370722071
+          }
+        },
+        {
+          "horizon": 22,
+          "ignore": {
+            "exact": "499681/1048576",
+            "decimal": 0.4765329360961914
+          },
+          "follow": {
+            "exact": "9986338741444142077/20000000000000000000",
+            "decimal": 0.4993169370722071
+          }
+        },
+        {
+          "horizon": 23,
+          "ignore": {
+            "exact": "1924111/4194304",
+            "decimal": 0.4587438106536865
+          },
+          "follow": {
+            "exact": "4993150379082621676151/10000000000000000000000",
+            "decimal": 0.49931503790826215
+          }
+        },
+        {
+          "horizon": 24,
+          "ignore": {
+            "exact": "1924111/4194304",
+            "decimal": 0.4587438106536865
+          },
+          "follow": {
+            "exact": "4993150379082621676151/10000000000000000000000",
+            "decimal": 0.49931503790826215
+          }
+        }
+      ],
+      "scope": "Conditional optimality only among two frozen follow/reverse policies, given the specified prior, five labels, twelve updates and no apparatus or calibration cost."
+    },
+    "M05_stage_marginals": {
+      "status": "passed",
+      "assertion_count": 43,
+      "calibration_bits": 5,
+      "deployment_bits": 3,
+      "cells_per_joint_table": 256,
+      "maximum_joint_cell_difference": {
+        "exact": "671671/3125000",
+        "decimal": 0.21493472
+      },
+      "scope": "Finite exact stage-law check. Swapping the equal-prior alternatives proves marginal invariance at any finite length. This does not change the twelve-update resource result."
+    },
+    "M06_conway_closure": {
+      "status": "passed",
+      "assertion_count": 4,
+      "present_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "successor_counts": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "scope": "Declared five-cell closure witness only; independent dense enumeration, no E3 historical trajectories."
+    },
+    "M07_linear_propagator": {
+      "status": "passed",
+      "assertion_count": 147,
+      "identity": "r(t)=exp(-2t)r0+integral_0^t exp(-2(t-s))q(s) ds",
+      "scope": "Forced hidden equation only. A supplied probe input need not solve the full feedback pair, which also requires qdot=-q+r."
+    },
+    "M08_curvature": {
+      "status": "passed",
+      "assertion_count": 27,
+      "normalized_expansion": [
+        {
+          "component": "matter",
+          "value": "1",
+          "first_derivative": "1",
+          "second_derivative": "-1/2"
+        },
+        {
+          "component": "radiation",
+          "value": "1",
+          "first_derivative": "1",
+          "second_derivative": "-1"
+        },
+        {
+          "component": "positive cosmological constant",
+          "value": "1",
+          "first_derivative": "1",
+          "second_derivative": "1"
+        }
+      ],
+      "scope": "Same scale and rate, different specified contents and hence different model equations. Not nonuniqueness for identical complete data under one fixed cosmology; the motion comparison is not a derivation of cosmology."
+    },
+    "M09_clock_interval": {
+      "status": "passed",
+      "assertion_count": 405,
+      "interval_reference": "log(2)/10 < k <= log(2)/5",
+      "interval_B": "log(2)/12 < k_B <= log(2)/6",
+      "scope": "Known reset-free map B=1.2t-3; exponent and interval preserved, with lower endpoint open and upper closed. No unique rate is identified."
+    },
+    "M10_constraint_not_accuracy": {
+      "status": "passed",
+      "assertion_count": 2,
+      "loss_before": 0,
+      "loss_after": 0.013932022500210311,
+      "scope": "Explicit reviewer target equal to the unnormalized column; demonstrates no generic task-loss guarantee, without disputing norm preservation."
+    },
+    "M11_metric_transport": {
+      "status": "passed",
+      "assertion_count": 2,
+      "original_squared_distances": [
+        "1",
+        "4"
+      ],
+      "raw_rescaled_squared_distances": [
+        "1",
+        "1/25"
+      ],
+      "transported_squared_distances": [
+        "1",
+        "4"
+      ],
+      "scope": "Reviewer toy only, not an E3 memorizer rerun or claim of improved E3 accuracy."
+    }
+  },
+  "supplemental_P06": {
+    "synthetic_identity": {
+      "total": {
+        "exact": "73/250",
+        "decimal": 0.292
+      },
+      "within": {
+        "exact": "61/750",
+        "decimal": 0.08133333333333333
+      },
+      "between": {
+        "exact": "79/375",
+        "decimal": 0.21066666666666667
+      }
+    },
+    "frozen_rows": {
+      "status": "passed",
+      "path": "C:\\PRACA\\NeuroMorph\\Aionoesis-learning\\books\\how-matter-learns-to-continue\\output\\companion\\how-matter-learns-to-continue-v44-companion.zip",
+      "sha256": "a3df4ef9eceb693f821cf1886bd76d7db6e2d3170ea3702f1309fad6f73106b6",
+      "original": {
+        "total": {
+          "exact": "1117586319232488409276084065310359851/24025000000000000000000000000000000000",
+          "decimal": 0.0465176407588965
+        },
+        "within": {
+          "exact": "35881089/5510758400",
+          "decimal": 0.006511098182057845
+        },
+        "between": {
+          "exact": "6728100297859840739932588457172518957/168175000000000000000000000000000000000",
+          "decimal": 0.04000654257683865
+        }
+      },
+      "projected": {
+        "total": {
+          "exact": "34470061229421708247922774677550981/2402500000000000000000000000000000000",
+          "decimal": 0.014347580116304562
+        },
+        "within": {
+          "exact": "35881089/5510758400",
+          "decimal": 0.006511098182057845
+        },
+        "between": {
+          "exact": "131790034929194145235459422742856867/16817500000000000000000000000000000000",
+          "decimal": 0.007836481934246716
+        }
+      },
+      "interpretation": "Saved decimal predictions and integer response counts, with exact rational decomposition; no model fitting or trajectory reproduction."
+    },
+    "scope": "Algebra plus optional post-test arithmetic on exposed saved rows. Group floor is an empirical property of those rows, not a population bound or a newly validated predictor."
+  },
+  "assertions": {
+    "total": 1405,
+    "by_label": {
+      "Chapter 3 exact balanced-pair identity": 9,
+      "Conway current coarse arrays agree": 1,
+      "Conway successor unaffected by window boundary": 2,
+      "P06 clipped MSE retained": 1,
+      "P06 descriptor group counts retained": 1,
+      "P06 has all thirty saved rows": 1,
+      "P06 input exactly matches pinned frozen 30-row artifact": 1,
+      "P06 original MSE retained": 1,
+      "P06 sample floor retained": 1,
+      "bounded scalar projection cannot worsen squared error": 561,
+      "calibration marginal preserved": 32,
+      "collision still shares negative prediction": 1,
+      "companion contains exactly one E3 saved-row artifact": 1,
+      "cosmological-constant ODE agrees with exponential curvature": 1,
+      "count retains all two-source evidence": 32,
+      "cross-stage coupling changed": 1,
+      "deployment marginal preserved": 8,
+      "different next functions after the specified simultaneous gradient step": 1,
+      "equal-prior Bayes decision is majority": 32,
+      "exact within-plus-assigned-prediction identity": 3,
+      "exponential probe satisfies hidden equation": 12,
+      "fair survival fraction": 1,
+      "forced solution retains initial state": 27,
+      "forward absorbing transport equals exhaustive path counting": 3,
+      "free endpoint positivity fraction": 1,
+      "global present ReLU function equality": 2,
+      "group residual cross term vanishes exactly": 10,
+      "higher success has higher checked continuation": 1,
+      "joint stage law normalized": 2,
+      "legacy first integer crossover retained": 1,
+      "majority maximizes posterior two-policy continuation": 32,
+      "normalization worsens chosen target loss from zero": 1,
+      "offset cancels in first clock duration": 1,
+      "offset cancels in second clock duration": 1,
+      "one saved prediction per identical-input group": 4,
+      "only named successor block differs": 1,
+      "open/closed detector interval transported exactly": 403,
+      "policy-value difference factorization": 32,
+      "polynomial forced solution satisfies hidden equation": 108,
+      "pool boundary endpoint equals threshold": 1,
+      "pool boundary separates stated candidates": 1,
+      "power-law Taylor coefficients agree with Friedmann ODE": 2,
+      "raw rescaling changes nearest centre": 1,
+      "reversed composition exact": 1,
+      "same free endpoint but distinct survival": 1,
+      "saved collision response difference retained": 1,
+      "sequence likelihood ratio equals count likelihood ratio": 32,
+      "stationary composition exact": 1,
+      "symmetric exact five-label error": 1,
+      "the two events differ": 1,
+      "transported metric restores all distances exactly": 1,
+      "two-frame constant-velocity forecast misses acceleration term": 24,
+      "unit normalization restores length constraint": 1,
+      "updated ReLU coefficient describes the entire function": 2
+    }
+  },
+  "evidence_limit": "Independent calculations of declared teaching models and explicitly labelled reviewer examples. No E3 experiment or training rerun, missing trajectory regeneration, new natural evidence, or reader test."
+}

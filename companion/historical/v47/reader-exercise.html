@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Exercise: enough for which question?</title><style>body{margin:0;background:#f6f5f0;color:#182b32;font:18px/1.6 Georgia,serif}
+main{max-width:820px;margin:auto;padding:38px 24px 64px}h1{font-size:2.05em;line-height:1.15}
+h2{font-size:1.35em;line-height:1.3;margin:1.6em 0 .45em}h3{font-size:1.08em}
+a{color:#075b74;text-underline-offset:3px}a:focus-visible,input:focus-visible{outline:3px solid #b14c17;outline-offset:4px}
+p{margin:.65em 0 1em}li{margin:.7em 0}nav,.context{font:15px/1.55 system-ui,sans-serif}
+nav{padding-bottom:1em;border-bottom:1px solid #9ba9a5}.context{background:#e9eeeb;padding:16px;border-left:4px solid #456e6e}
+code{font-size:.88em;overflow-wrap:anywhere}table{border-collapse:collapse;width:100%;font-size:.9em}th,td{text-align:left;padding:8px;border-bottom:1px solid #b7c1bd}
+.table-wrap{overflow:auto}blockquote{border-left:3px solid #73968f;padding-left:18px;margin-left:0}
+small{font:14px/1.5 system-ui,sans-serif}input{max-width:100%}@media(max-width:550px){main{padding:22px 17px}h1{font-size:1.65em}}
+@media print{body{background:white}main{padding:0;max-width:none}nav,.picker{display:none}h2{break-after:avoid}p,li{orphans:3;widows:3}}
+</style></head><body><main><nav aria-label="Companion"><a href="where-to-return.html">Where to return</a> · <a href="reader-exercise.html">Exercise</a> · <a href="reader-pilot.html">Reader pilot</a></nav><h1>Exercise: enough for which question?</h1>
+<p>This companion-only exercise uses the analytic model in Chapter 30. Write an answer before opening the separate key. No empirical observation is added.</p>
+<h2>Conditions</h2>
+<p>The sensor is correct with probability q = 0.9 or q = 0.1, with equal prior weights. That orientation stays fixed through calibration and deployment. Five correctness labels are independent given the orientation; deployment draws are independent of calibration given that same orientation. Retain FOLLOW when at least three labels are correct and REVERSE otherwise. The retained policy stays frozen for twelve deployment updates.</p>
+<p>Deployment starts at three units. A successful choice adds one net unit; an unsuccessful choice subtracts one. Zero ends the episode. Continuation requires a positive amount at every update boundary. The hidden resource side scores the choice but is not supplied to the chooser.</p>
+<h2>Before looking at the answer</h2>
+<ul>
+<li>One calibration record has three correct reports out of five; another has five. What policy does each retain?</li>
+<li>Given the same next RIGHT report, what action does each choose? Would knowing only the retained bit distinguish the two original counts?</li>
+<li>Can the bit reproduce the original probability that q = 0.9 conditional on each count? Explain without calculating first.</li>
+<li>Optional calculation: use the likelihood ratio 9^(2K−5) and equal prior weights to compute the posterior for K = 3 and K = 5. Are the twelve-update probabilities conditional on these counts necessarily equal?</li>
+<li>If the count is discarded, does a posterior conditional only on FOLLOW still exist? Is that the same as recovering the posterior conditional on the original count?</li>
+<li>Explain why a difference between these conditional values does not contradict the book&#x27;s aggregate 99.01% result or make the bit inadequate for its declared two-policy decision.</li>
+</ul>
+<p>Record your explanation and confidence in it. Then open the <a href="reader-exercise-key.html">separate answer key</a>. For orientation, use <a href="where-to-return.html">Where to return</a>, questions 2 and 4.</p></main></body></html>

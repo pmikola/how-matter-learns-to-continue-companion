@@ -1,0 +1,1 @@
+{"canonical_response_oracle_equal":true,"maximum_descriptor_oracle_error":0.0,"maximum_recoding_prediction_difference":0.0,"orbit_descriptors_equal":true,"orbit_implementations_equal":true,"orbit_response_counts_equal":true,"pass":true,"public_leakage":{"pass":true,"row_count":30,"scientific_admission":false,"violation_count":0,"violations":[]},"scientific_admission":false}

@@ -1,0 +1,254 @@
+{
+  "edition": "v46",
+  "binding_status": "explicit_pdf_and_source_hash_binding",
+  "source_base_commit": "66d3885811e0a195655c2480920df4966453e6fb",
+  "source_manifest": {
+    "path": "reviews/publication-v46/manifest.json",
+    "sha256": "f8b54b97ae88cc0023bf4efb751a1feecb251f8e39869c336f12deb9da383a7f",
+    "bytes": 18078
+  },
+  "baseline_pdf": {
+    "path": "output/pdf/how-matter-learns-to-continue-v45.pdf",
+    "sha256": "538541091858a1fbb214967779862ee206b63144b934d5d3468a19898968ad65"
+  },
+  "working_tree_delta_bound_by_source_inventory": true,
+  "inherited_archive_sha256": "756495d1a7af290e01779299ce4c87b80677f53c299538bb88607ea3d094b396",
+  "inherited_edition": "v40",
+  "inherited_replay_evidence": {
+    "status": "inherited_evidence_not_rerun_for_v46",
+    "evidence_edition": "v42",
+    "payload_edition": "v40",
+    "source_path": "reviews/publication-v42/validation-companion-replay.json",
+    "embedded_path": "evidence/v42-companion-replay-inherited.json",
+    "sha256": "c7564224910264f6c494fe3eb385ed7d95df2718e44681670b54a25d196823bf",
+    "bytes": 146925,
+    "original_started_at": "2026-09-17T14:31:06.393155+00:00",
+    "original_finished_at": "2026-09-17T14:31:49.517087+00:00",
+    "timestamp_note": "Original recorded timestamps retained verbatim, including their UTC offsets.",
+    "source_commit": "66d3885811e0a195655c2480920df4966453e6fb",
+    "archive_sha256": "756495d1a7af290e01779299ce4c87b80677f53c299538bb88607ea3d094b396",
+    "scope": "Historical v42 validation of the immutable v40 archive. The fresh v46 run below tests the new v46 delivery."
+  },
+  "inherited_v44_delivery": {
+    "status": "inherited_v44_delivery_evidence_not_a_new_experiment",
+    "archive_path": "output/companion/how-matter-learns-to-continue-v44-companion.zip",
+    "archive_sha256": "9f0653012973c2eeaf8a14009a5f4995ba64ebd3d2fd79ce742dedd8d38d5379",
+    "receipt_path": "reviews/publication-v44/validation-companion-v44.json",
+    "receipt_sha256": "4afdcaf7d9e61c9372b290fe65bad4e79a31b3b44089b0a1f293dbbc733ed066",
+    "embedded_receipt": "evidence/v44-companion-delivery-inherited.json",
+    "preserved_additions": [
+      "deep-dive.md",
+      "evidence/v44/orthogonal-lab-report-v44.md",
+      "evidence/v44/orthogonal-results-v44.json",
+      "orthogonal-checks-v44.py"
+    ],
+    "scope": "The original v44 additions retain their bytes and attribution. Their default lab is freshly executed against the new v46 extraction below."
+  },
+  "inherited_v45_delivery": {
+    "status": "inherited_v45_delivery_evidence_not_a_new_experiment",
+    "archive_path": "output/companion/how-matter-learns-to-continue-v45-companion.zip",
+    "archive_sha256": "14027071dd278b69192e2bea69dd322493cc23fdf400bd8214204001eff39fbd",
+    "receipt_path": "reviews/publication-v45/validation-companion-v45.json",
+    "receipt_sha256": "e3965e153f55182f9b349e2739b55028eb5f42c09be7ef79bcfe0293e8835e55",
+    "embedded_receipt": "evidence/v45-companion-delivery-inherited.json",
+    "preserved_additions": [
+      "connection-checks-v45.py",
+      "evidence/v45/connection-results-v45.json"
+    ],
+    "scope": "Actual v45 additions retain their bytes and attribution; the eleven-group lab and saved-row arithmetic run fresh in this v46 extraction."
+  },
+  "reader_guide_binding_sha256": "a21cfa3d995644d31b26437d92d534738483b941c47aba8105703c71730827b0",
+  "public_release_claimed": false,
+  "purchaser_access_route": "not_established",
+  "frameworks_executed_by_this_packager": false,
+  "e3_experiment_executed": false,
+  "additive_sources": {
+    "orthogonal-checks-v44.py": {
+      "source": "scripts/orthogonal-checks-v44.py",
+      "origin": "inherited_v44_independent_numerical_lab",
+      "bytes": 36690,
+      "sha256": "a16d168314f32f8523b7f3c022161f7585d218de8535ca596db4beb4a90b20a1"
+    },
+    "deep-dive.md": {
+      "source": "companion-v44/deep-dive.md",
+      "origin": "inherited_v44_optional_constructive_extensions",
+      "bytes": 8589,
+      "sha256": "32ba7d9e739d4074f582538cef2d87bfffba62a247a45bff5fbd2c26c3bc0f17"
+    },
+    "evidence/v44/orthogonal-results-v44.json": {
+      "source": "reviews/publication-v44/evidence/orthogonal-results-v44.json",
+      "origin": "inherited_v44_repository_lab_snapshot",
+      "bytes": 396993,
+      "sha256": "2a1b4c3cff04ab6369f616be803bf6c7a6e5a454ac60089e9248c7868dcd9c9b"
+    },
+    "evidence/v44/orthogonal-lab-report-v44.md": {
+      "source": "reviews/publication-v44/evidence/orthogonal-lab-report-v44.md",
+      "origin": "inherited_v44_repository_lab_report",
+      "bytes": 5599,
+      "sha256": "d7ff73bfdb1a6cd12293cc189b211f1a79135ac7067fbb42133bdde21af4ce31"
+    },
+    "connection-checks-v45.py": {
+      "source": "scripts/connection-checks-v45.py",
+      "origin": "inherited_v45_independent_connection_checks",
+      "bytes": 21755,
+      "sha256": "a17252b55a76f6e96335202c5faa5e8591e62732af738ed0285656781b48c868"
+    },
+    "evidence/v45/connection-results-v45.json": {
+      "source": "reviews/publication-v45/evidence/connection-results-v45.json",
+      "origin": "inherited_v45_repository_connection_snapshot",
+      "bytes": 20450,
+      "sha256": "c910afe2415181cc25be068025b2fd8ef2a7408cafc2231778fc46216a58b973"
+    },
+    "reader-operations-v46.py": {
+      "source": "scripts/reader-operations-v46.py",
+      "origin": "new_v46_reader_operation_checks",
+      "bytes": 12122,
+      "sha256": "26a8dc8b496d9c3015a1906e76a2fc2aa394020a5acc9de4cbcc0a726e2e78fc"
+    },
+    "evidence/v46/reader-operations-v46.json": {
+      "source": "reviews/publication-v46/evidence/reader-operations-v46.json",
+      "origin": "new_v46_repository_reader_snapshot",
+      "bytes": 7923,
+      "sha256": "2bdbf9d866dc4c956855d1f8ee4d6be86e3af090df54e2dc53bb18a10000c6a1"
+    },
+    "where-to-return.md": {
+      "source": "companion-v46/where-to-return.md",
+      "origin": "new_v46_reader_material",
+      "bytes": 6466,
+      "sha256": "ac728f72fcc111e33dceb22e1fcf6215f4aed0cce0135c8f29a40045c47b7ad8"
+    },
+    "where-to-return.html": {
+      "source": "companion-v46/where-to-return.html",
+      "origin": "new_v46_reader_material",
+      "bytes": 11118,
+      "sha256": "46529456c04a00dca2ac6414bc8d2ac34d51832739eb8a986e68cf2a66392a09"
+    },
+    "reader-guide-bindings.json": {
+      "source": "companion-v46/reader-guide-bindings.json",
+      "origin": "new_v46_reader_material",
+      "bytes": 6022,
+      "sha256": "a21cfa3d995644d31b26437d92d534738483b941c47aba8105703c71730827b0"
+    },
+    "reader-exercise.md": {
+      "source": "companion-v46/reader-exercise.md",
+      "origin": "new_v46_reader_material",
+      "bytes": 2093,
+      "sha256": "61c815af6820e9b7337c54cef7c9f26436347d1aa79f6ad19bc86a1ad1d370b8"
+    },
+    "reader-exercise.html": {
+      "source": "companion-v46/reader-exercise.html",
+      "origin": "new_v46_reader_material",
+      "bytes": 3758,
+      "sha256": "350eccb8b281d456c77bb105b52aae3606142a218461a13836f6730db853993a"
+    },
+    "reader-exercise-key.md": {
+      "source": "companion-v46/reader-exercise-key.md",
+      "origin": "new_v46_reader_material",
+      "bytes": 2839,
+      "sha256": "9cfb384605bb1e629e705cc7f93baece00568c61c7353ad8162d55c44112206e"
+    },
+    "reader-exercise-key.html": {
+      "source": "companion-v46/reader-exercise-key.html",
+      "origin": "new_v46_reader_material",
+      "bytes": 4776,
+      "sha256": "c397359b198a692a72cf4b99a8b6ac575ebe377a23c41700343cd14e15deeffd"
+    },
+    "reader-pilot.md": {
+      "source": "companion-v46/reader-pilot.md",
+      "origin": "new_v46_reader_material",
+      "bytes": 4300,
+      "sha256": "37d7cb144b7a728832f922f1dd32f8a177b59ebb9ad574d48e7a63c9c4f8788d"
+    },
+    "reader-pilot.html": {
+      "source": "companion-v46/reader-pilot.html",
+      "origin": "new_v46_reader_material",
+      "bytes": 6002,
+      "sha256": "ad132a479238fc04846e0bad4bb5ae2705b8081bebe38ed8f68af57baa1cb0fe"
+    },
+    "reader-pilot-facilitator.md": {
+      "source": "companion-v46/reader-pilot-facilitator.md",
+      "origin": "new_v46_reader_material",
+      "bytes": 4912,
+      "sha256": "d7feb3f34e10f0da0faf8f477520dd5861b9b44d926a747de7a02482640da696"
+    },
+    "reader-pilot-facilitator.html": {
+      "source": "companion-v46/reader-pilot-facilitator.html",
+      "origin": "new_v46_reader_material",
+      "bytes": 6615,
+      "sha256": "1314b246bd4c58a8f7ef716a5a5091d6627f97b402a69d094d1177999f67f82f"
+    },
+    "reader-pilot-card-a.md": {
+      "source": "companion-v46/reader-pilot-card-a.md",
+      "origin": "new_v46_reader_material",
+      "bytes": 1632,
+      "sha256": "24930ba36112d46b4bdbe4eeea13b1901be8db0a0c8b56c56173f5f72897733f"
+    },
+    "reader-pilot-card-a.html": {
+      "source": "companion-v46/reader-pilot-card-a.html",
+      "origin": "new_v46_reader_material",
+      "bytes": 3012,
+      "sha256": "7b7b0ac47abf455f9200a8b60447fc6769d382dc651e956343365bb7b2e50a31"
+    },
+    "reader-pilot-card-b.md": {
+      "source": "companion-v46/reader-pilot-card-b.md",
+      "origin": "new_v46_reader_material",
+      "bytes": 1784,
+      "sha256": "8ef9a7f11c3f26664cddc9d65fe9d5c1a4fe42e28a6cced160c4b57570b1d9b3"
+    },
+    "reader-pilot-card-b.html": {
+      "source": "companion-v46/reader-pilot-card-b.html",
+      "origin": "new_v46_reader_material",
+      "bytes": 3184,
+      "sha256": "78005a4fe11746b715087fd1b72f0a00412e238253f750ccf34c6b2d21492633"
+    },
+    "reader-response-form.md": {
+      "source": "companion-v46/reader-response-form.md",
+      "origin": "new_v46_reader_material",
+      "bytes": 1044,
+      "sha256": "e72470fdf81ba95072ac21b3cb7a51e6da97a7fc2ae315e17cbbebe83465456f"
+    },
+    "reader-response-form.html": {
+      "source": "companion-v46/reader-response-form.html",
+      "origin": "new_v46_reader_material",
+      "bytes": 2700,
+      "sha256": "593fcca4e95a30034c3cf4e5caa7bc69c0e8be445be4c339b7723ca6acbbd1a2"
+    }
+  },
+  "scope": "Fresh 35-command legacy replay, unchanged v44 nine-group lab, unchanged v45 eleven-group lab plus P06 saved-row arithmetic, and four new v46 reader-operation groups. Scientific historical bytes are preserved. No original E3 or framework experiment, reader pilot, or public release is executed.",
+  "covered_pdf": {
+    "path": "output/pdf/how-matter-learns-to-continue-v46.pdf",
+    "sha256": "35ef0b88fc9a7493227d551b4f27e13cef7a3e2e4056bccc17be99dfc8748e1b",
+    "bytes": 6873052
+  },
+  "interior_pdf": {
+    "path": "output/pdf/how-matter-learns-to-continue-v46-interior.pdf",
+    "sha256": "22d9d7855e54c8707b14fc1fdb6f22ada92275d0b0725d9c02c195517c22584e",
+    "bytes": 4245255
+  },
+  "current_notes": {
+    "path": "manuscript/chapters/v46-01-neural-networks/notes-v46.tex",
+    "sha256": "59b1c6e4c30ba4298c482f7fd4ab14b80a9d09125af6b4a30c6038edff4cf66e",
+    "snippets": {
+      "torch": {
+        "sha256": "cc6141127b3e5593b7414a9b9461c6f9e2a9b42da8a41c0183822496a446b2d3",
+        "byte_equal_to_inherited_v40": true,
+        "fresh_execution": false
+      },
+      "tensorflow": {
+        "sha256": "fe3020cb2e9493d636fc954d1a3cecd8b4c9715eed5af91083b5c0709292afac",
+        "byte_equal_to_inherited_v40": true,
+        "fresh_execution": false
+      },
+      "jax": {
+        "sha256": "6e9102871d0ce93d4f460959d5d0d216642527bea01a03fbad264149bf274593",
+        "byte_equal_to_inherited_v40": true,
+        "fresh_execution": false
+      },
+      "keras": {
+        "sha256": "4fca36b6fd7acdd8ecb6b4fed417047745904be025f860eb6233c98ecc15189c",
+        "byte_equal_to_inherited_v40": true,
+        "fresh_execution": false
+      }
+    }
+  }
+}
