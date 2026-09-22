@@ -6,11 +6,11 @@ Start with a small example, change one assumption, and see what follows. This re
 
 ## Download the companion
 
-**[Download the checked v48 companion ZIP](https://github.com/pmikola/how-matter-learns-to-continue-companion/releases/download/companion-v48/how-matter-learns-to-continue-v48-companion.zip)** (about 1.1 MB).
+**[Download the book companion](https://github.com/pmikola/how-matter-learns-to-continue-companion/releases/download/companion-v48/how-matter-learns-to-continue-v48-companion.zip)** (ZIP, about 1.1 MB).
 
 Alternatively, browse the same files in [`companion/`](companion/). The release ZIP is the simplest way to keep the directory structure expected by the examples. Do not download only an individual script if it needs the accompanying data.
 
-This first public release is bound to the v48 PDF. The calculations may remain applicable to later copyedited editions, but page references and PDF links are edition-specific. Check the release notes before using them with another edition.
+The companion contains the experiments used in the book. Some optional page-reference guides were prepared for an earlier proof, so use chapter and section names if the page numbers differ. Internal revision identifiers are retained in the technical records for reproducibility. They do not denote separate reader editions.
 
 ## Start here
 
@@ -67,6 +67,6 @@ The archive includes selected Chapter 1 technical notes as evidence for code-sni
 
 ## Report a problem
 
-Use [Issues](https://github.com/pmikola/how-matter-learns-to-continue-companion/issues). Include the book and companion versions, chapter or example, command used, and relevant error message. Please do not upload the full book, private files, credentials or unrelated system logs.
+Use [Issues](https://github.com/pmikola/how-matter-learns-to-continue-companion/issues). Include the chapter or example, command used, and relevant error message. If you know the book edition or companion download date, include that too. Please do not upload the full book, private files, credentials or unrelated system logs.
 
 No additional open-source license has been selected for this initial release.
